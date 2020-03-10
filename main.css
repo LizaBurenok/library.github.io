@@ -1,0 +1,1205 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.block_wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+/* БЛОКИ И ИХ СТИЛИ*/
+.block{
+	width: 14.1395vw;
+	height: 14.1395vw;
+}
+
+.one{
+	background-color: #f9f4ff;
+	border: 1px solid #666;
+}
+
+.two{
+	background-color: #f9f4ff;
+	border: 1px solid #666;
+	z-index: 1;
+}
+
+.three,
+.four,
+.five,
+.six,
+.seven{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.first_line_four,
+.fourth_line_three,
+.fourth_line_four,
+.fourth_line_five{
+	background-color: #221712;
+	border: 1px solid #666;
+	z-index: 1;
+}
+
+.third_line_four,.fourth_line_six{
+	z-index: 1;
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.fourth_line_three,
+.fourth_line_two,
+.fourth_line_four
+{
+	z-index: 1;
+}
+.fourth_line_one, .fourth_line_two{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+/*ВЕРХНЯЯ ЛИНИЯ*/
+.line{
+	height: 60px;
+	background-color: #221712;
+	width: 100%;
+}
+
+.block_blackline{
+	width: 60px;
+	height: 480px;
+	background-color:#221712;
+	position: absolute;
+	z-index: 1;
+}
+/*БУКВЫ БРЕНДА*/
+.letter{
+	position: relative;
+}
+.letters:nth-child(odd){
+	color: #221712;
+}
+
+.letters:nth-child(even){
+	color:rgba(0, 0, 0, 0.2);
+}
+
+.letter_k,
+.letter_l,
+.letter_b,
+.letter_a{
+	position: absolute;
+	z-index: 2;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 39.8vw;
+	text-transform: uppercase;
+	transform: translateY(-8vw) translateX(-17.8vw);
+}
+
+.letter_o{
+	position: absolute;
+	z-index: 2;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 38vw;
+	text-transform: uppercase;
+	transform: translateY(-7vw) translateX(-15vw);
+}
+.letter_l,
+.letter_b,
+.letter_a{
+	visibility: hidden;
+}
+/*hidden books*/
+.war{
+	transform: translateY(-12.3vw) translateX(1.6vw);
+opacity: 0;
+}
+
+.story{
+	transform: translateX(1.6vw) translateY(-12.8vw);
+	opacity: 0;
+}
+.silent{
+	position: absolute;
+	transform: translateY(-12.6vw) translateX(1.8vw);
+	opacity: 0;
+}
+.bird{
+	transform: translateY(-12.8vw) translateX(1.6vw);
+	opacity: 0;
+}
+
+.lady{
+	transform: translateY(-12.6vw) translateX(1.6vw);
+	opacity: 0;
+}
+.drak{
+	transform: translateY(-16.7vw) translateX(1.7vw);
+	opacity: 0;
+}
+
+.shine{
+	position: absolute;
+	transform: translateY(-12.7vw) translateX(1.7vw);
+	opacity: 0;
+}
+
+.numb{
+	transform: translateY(-12.5vw) translateX(1.6vw);
+	opacity: 0;
+}
+
+/*КАРТИНКИ*/
+.retort{
+	text-align: center;
+	margin-top: 0.5vw;
+	z-index: 1;
+}
+
+.img_books{
+	margin-top: 6.8vw;
+	text-align: center;
+}
+
+.img_retort1{
+	position: absolute;
+	left: 27%;
+	top: 30%;
+}
+
+.img_retort2{
+	position: absolute;
+	left: 55%;
+	top: 50%;
+}
+
+/*САМИ КНИЖКИ И ИХ СТИЛИ*/
+.book{
+	width: 11vw;
+	height: 13vw;
+	margin: 0 auto;
+	transform: translateY(5%);
+}
+
+span{
+	font-family: 'Helvetica', sans-serif;
+	position: absolute;
+	font-weight: bold;
+}
+
+.harry_potter{
+	background-color: #eb3c1c;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: relative;
+	z-index: 1;
+}
+
+
+/*HARRY POTTER серия книг*/
+
+.cover_wrapper{
+	display:flex;
+	position: relative;
+}
+
+.harry_potter_series1{
+	background-color: #93cbb6;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+	transform: translateX(25px) translateY(10px);
+}
+
+.harry_potter_series2{
+	background-color: #8955ff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+	transform: translateX(25px) translateY(10px);
+}
+
+.harry_potter_series3{
+ background-color: #ff5c35;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ position: absolute;
+ opacity: 0;
+ transform: translateX(25px) translateY(10px);
+}
+
+.harry_potter_series4{
+	background-color: #8a006c;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+	transform: translateX(25px) translateY(10px);
+}
+
+.harry_potter_series5{
+	background-color: #340074;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+	transform: translateX(25px) translateY(10px);
+}
+
+.harry_potter span{
+	font-size: 1.7vw;
+	bottom: 7%;
+	left: 5%;
+	color: #fff;
+}
+
+.harry_face{
+	width: 6.5vw;
+	background-color: #ffe5b4;
+	height: 10.5vw;
+	border-radius: 10% 0 0 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.harry_glass{
+	border-radius: 50%;
+	width: 4vw;
+	height: 4vw;
+	border: 1px solid #8a1300;
+	transform: translateY(-10%);
+}
+
+.harry_glass hr{
+	border: 1px solid #8a1300;
+	width: 2.3vw;
+	position: absolute;
+	top: 30%;
+	right: 100%;
+}
+
+.dostoev{
+	background-color: #eb3c1c;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.brown_line{
+	width: 100%;
+	background-color: #4f0000;
+	height: 1vw;
+	position: absolute;
+	top: 41%;
+
+}
+
+.dostoev span{
+	color:#fff;
+	transform: rotate(-90deg) translateY(470%);
+	font-size: 0.8vw;
+	z-index: 1;
+}
+
+.chess{
+	background-color: #2887c8;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.chess_name{
+	height: 45%;
+}
+
+.chess_name span{
+	font-size: 1.4vw;
+	color: #fff;
+	margin-left: 1.5%;
+}
+.chess_block{
+	background-color: #2887c8;
+	width: 3.665vw;
+	height: 3.665vw;
+}
+
+.chess_block:nth-child(even){
+	background-color: #9ff0ff;
+}
+
+.far_451{
+	background-color: #7070cc;
+}
+
+.far_451 img{
+	transform: translateY(30%) translateX(10%);
+}
+
+.far_451 hr {
+	height: 10px;
+	width: 0.1px;
+	background-color: #f2f2f2;
+	transform: translateX(-2.7vw) translateY(1.2vw);
+}
+.white_princess{
+	background-color: #eb3c1c;
+	overflow: hidden;
+	position: relative;
+}
+
+.white_princess span{
+	color: #fff;
+	font-size: 1.2vw;
+	margin-left: 0.5vw;
+}
+.apple{
+	background-color: #8fd8d8;
+	border-radius: 50%;
+	width: 6.5vw;
+	height: 6.5vw;
+	position: absolute;
+	bottom: -7%;
+	left: -10%;
+}
+
+.apple_piece{
+	width: 0;
+	height: 0;
+	border-left: 1.2vw solid transparent;
+	border-right: 1.2vw solid transparent;
+	border-bottom: 2.4vw solid #aa6400;
+	transform: rotate(230deg) translateX(-90%) translateY(150%);
+}
+
+.master{
+	background-color: #eb3c1c;
+	position: relative;
+}
+
+.master span{
+	font-size: 1.112vw;
+	color: #fff;
+	transform: translateY(-20%);
+}
+
+.cube{
+	width: 6.5vw;
+	height: 6.5vw;
+	border-radius: 10%;
+}
+
+.master_first{
+	background-color: rgba(255, 255, 255, .5);
+	transform: translateY(15%);
+}
+
+.master_second{
+	background-color: rgba(252, 255, 244, .3);
+	transform: translateX(70%);
+}
+
+.da_vinci{
+	background-color: #8c90c8;
+	display: flex;
+	justify-content: center;
+}
+
+.hidden_x{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+	margin-top: 50%;
+	opacity: 0;
+}
+
+.da_vinci span{
+	font-size: 1.5vw;
+	color: #fff;
+}
+.da_vinci_wrapper{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.da_vinci_block{
+	width: 2vw;
+	height: 3vw;
+	background-color: #ffeac9;
+	border-radius: 10%;
+}
+
+.player{
+	background-color: #8fd8d8;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: relative;
+}
+
+.player span{
+	position: absolute;
+	top: -7%;
+	right: 5%;
+	font-size: 3.5vw;
+	color: #eb3c1c;
+}
+
+.plus_one{
+	background-color: #2887c8;
+	position: relative;
+}
+
+.plus_one span{
+	font-size: 8vw;
+	color: #ff3b36;
+	position: absolute;
+	left: 20%;
+}
+
+.plus_one img{
+	position: absolute;
+	right: 25%;
+	bottom: 5%;
+}
+
+.wheel_img img{
+	transform: translateX(40%) translateY(15%);
+	transform-origin: center;
+}
+
+.hidden_heart{
+	transform: translateY(-170%) translateX(30%);
+	opacity: 0;
+}
+
+@media screen and (min-width: 1680px) {
+  .block{
+    width: 14.165vw;
+    height: 15vw;
+  }
+
+  .letter_k,
+  .letter_l,
+  .letter_b,
+  .letter_a{
+    font-size: 42vw;
+		transform: translateY(-8.6vw) translateX(-17.4vw)
+  }
+
+  .letter_o{
+    font-size: 40vw;
+  }
+
+  .chess_name{
+    height: 42%;
+  }
+
+  .chess_block{
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .white_princess span{
+    font-size: 1.8vw;
+    margin-left: 0,5vw;
+  }
+
+  .apple{
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+
+  .cube{
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .da_vinci span{
+    font-size: 1.58vw;
+  }
+
+  .da_vinci_block{
+    width: 2.5vw;
+    height: 4vw;
+  }
+
+  .player span{
+    right: 3%;
+    font-size: 3.96vw;
+  }
+
+  .plus_one span{
+    left: 17%;
+  }
+
+  .img_books{
+    margin-top: 8.5vw;
+  }
+
+  .retort{
+    margin-top: 1vw
+  }
+
+  .book{
+    width: 12vw;
+    height: 14vw;
+  }
+
+  .harry_glass{
+    translateX(-2%);
+  }
+
+  .chess span{
+    font-size: 1.5vw;
+  }
+
+	.retort2{
+		width: 450vw;
+	}
+
+	.retort3{
+		width: 400vw;
+		transform: translateX(6vw);
+	}
+
+	.lineblock_first img{
+		width: 14.3vw;
+		height: 15vw;
+	}
+
+	.first_line img{
+		width: 14.3vw;
+	}
+}
+
+@media all and (max-width: 1400px){
+.letter_o{
+	top: 21%;
+	left: 0.5%;
+}
+
+.retort{
+	transform: scale(.9);
+}
+}
+
+@media all and (max-width: 1366px){
+	.letter_o{
+		transform: translateY(-10vw)
+translateX(-15vw);	}
+}
+
+@media screen and (max-width: 1280px){
+	.block{
+		width: 14.125vw;
+		height: 14.125vw;
+	}
+	.img_books{
+		transform: translateY(-0.6vw) scale(.9)
+	}
+	.lineblock_first img{
+		transform: scale(.9) translateX(-1.1vw) translateY(-1vw)}
+		.retort{
+			transform: translateY(-1vw) scale(.8)
+		}
+		.book{
+			width: 12vw;
+			height: 13.5vw;
+		}
+
+		.far_451 img{
+			transform: scale(1) translateY(2vw) translateX(1vw);
+		}
+		.far_451 hr{
+			transform: translateY(-1vw) translateX(-2.8vw);	}
+			.chess_block{
+				width: 51.2px;
+				height: 50px
+			}
+			.chess span{
+				font-size: 1.5vw;
+			}
+			.player span{
+				font-size: 4vw;
+				transform: translateX(0.3vw);
+			}
+			.harry_potter span{
+				transform: scale(1.2) translateX(0.8vw);
+			}
+			.white_princess span{
+				transform: scale(1.2) translateX(0.6vw) translateY(0.3vw);
+			}
+			.da_vinci span{
+				transform: scale(1.15);
+			}
+			.plus_one img{
+				transform: scale(.96) translateY(1vw);
+			}
+			.wheel_img{
+				transform: translateX(3.6vw) translateY(13.7vw)
+			}
+			.plus_one span{
+				transform: translateX(0.2vw);
+			}
+}
+@media all and (max-width: 1024px){
+	.block{
+		width: 24.8vw;
+		height: 24.8vw;
+	}
+
+	.letter_k,
+	.letter_l,
+	.letter_b,
+	.letter_a{
+font-size: 34.8vw;
+transform: translateX(-102.8vw) translateY(-32vw);
+}
+.letter_o{
+	font-size: 34vw;
+	text-transform: uppercase;
+	top: -1.2vw;
+}
+
+.img_books{
+	transform: scale(1.2) translateY(5.4vw);
+}
+
+.lineblock_first img{
+	z-index: 3;
+}
+
+.first_line img{
+	transform: scale(1.23) translateY(1.7vw) translateX(1.8vw)
+}
+.harry_potter{
+	transform: translateX(100vw) translateY(-200vw);
+}
+
+.retort{
+	transform: translateY(-97.6vw) translateX(-26vw) scale(1.2);
+	z-index: 3;
+}
+
+.book{
+	width: 21vw;
+	height: 23.5vw;
+}
+
+.dostoev{
+	transform: translateX(25vw) translateY(0.5vw);
+}
+
+.brown_line{
+	width: 100%;
+	background-color: #4f0000;
+	height: 1vw;
+	position: absolute;
+	top: 41%;
+
+}
+
+.dostoev span{
+	color:#fff;
+	transform: rotate(-90deg) translateY(470%);
+	font-size: 0.8vw;
+	z-index: 1;
+}
+
+.dostoev span{
+	font-size: 1.5vw;
+	z-index: 1;
+}
+
+.chess{
+	transform: translateX(-25vw) translateY(0.5vw);
+}
+
+.chess_name span{
+	font-size: 2.5vw;
+}
+
+.chess_block{
+	background-color: #2887c8;
+	width: 6vw;
+	height: 5vw;
+}
+
+.chess_block:nth-child(even){
+	background-color: #9ff0ff;
+}
+
+.img_retort1, .img_retort2{
+	visibility: hidden;
+}
+
+.chess_name{
+	height: 50%;
+}
+
+.far_451{
+	transform: translateX(50vw) translateY(-24.4vw);
+}
+
+.far_451 img{
+	transform: scale(1.38) translateY(4.7vw) translateX(2vw);
+}
+.far_451 hr {
+	transform: translateX(-5.8vw) translateY(5vw);
+}
+
+.white_princess{
+	transform: translateX(50vw) translateY(-24.6vw)
+}
+
+.white_princess span{
+	font-size: 3vw;
+}
+.apple{
+	background-color: #8fd8d8;
+	border-radius: 50%;
+	width: 11vw;
+	height: 11vw;
+}
+
+.apple_piece{
+	border-left: 3.2vw solid transparent;
+	border-right: 3.2vw solid transparent;
+	border-bottom: 6.4vw solid #aa6400;
+}
+
+#third_line_one,
+#third_line_two{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.lineblock_first img{
+	transform: scale(1.24) translateY(2vw) translateX(2vw)
+}
+
+.master span{
+	font-size: 2.1vw;
+}
+
+.cube{
+	width: 11.7vw;
+	height: 11.7vw;
+}
+
+.da_vinci{
+	transform: translateY(-24vw)
+}
+
+.hidden_x{
+	font-size: 2.5vw;
+}
+
+.da_vinci span{
+	font-size: 2.7vw;
+	transform: translateX(-0.2vw);
+}
+
+.da_vinci_block{
+	width: 3.5vw;
+	height: 6vw;
+}
+
+.player{
+	transform: translateX(-50vw) translateY(1vw);
+}
+
+.player span{
+	transform: translateX(0.5vw);
+	font-size: 7vw;§
+}
+
+.plus_one{
+	transform: translateY(-24vw) translateX(-50vw);
+}
+
+.plus_one span{
+	font-size: 15vw;
+	transform: translateY(2vw) translateX(-1.2vw);
+}
+
+.plus_one img{
+	transform: scale(1.2) translateY(-0.4vw) translateX(-2vw);
+}
+
+.wheel_img img{
+	transform: scale(1.4) translateX(-0.1vw) translateY(7vw);
+}
+
+.hidden_heart{
+	transform: translateY(-170%) translateX(30%);
+	opacity: 0;
+}
+}
+
+@media all and (max-width: 375px){
+	.block{
+		width: 185px;
+		height: 185px;
+	}
+	.block_wrapper{
+	 width: 375px;
+	 display: flex;
+	 flex-wrap: wrap;
+}
+
+.letter_k,
+	.letter_l,
+	.letter_b,
+	.letter_a{
+    position: absolute;;
+    font-size: 69vw;
+    left: -6%;
+     top: 24.2%;
+  }
+
+  .letter_o{
+	position: absolute;
+	z-index: 2;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 67vw;
+	text-transform: uppercase;
+	top: 25%;
+	left: -3;
+}
+
+.block_blackline{
+	width: 30px;
+	height: 450px;
+	right: 42%;
+	background-color:#221712;
+	position: absolute;
+	z-index: 2;
+}
+
+.line{
+	height: 30px;
+	background-color: #221712;
+	width: 100%;
+}
+
+.lineblock_first img{
+	transform: translateY(-203vw) scale(.9) translateX(-60vw)
+}
+
+/*CHANGE COLOR BLOCKS*/
+.first_line_four{
+	background-color: #fcca2a;
+}
+
+.five,
+.six{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.two{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+.three{
+	background-color: #f9f4ff;
+	border: 1px solid #666;
+}
+
+#second_line_five{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.first_line .seven{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.second_line .one{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+.img_books{
+	transform: translateY(-134px);
+	text-align: center;
+}
+
+.img_retort1{
+	transform: translateY(348vw) scale(.3) translateX(-140vw);
+}
+.img_retort2{
+	position: absolute;
+	visibility: hidden
+}
+
+.retort img{
+	transform: translateY(-1690px) scale(.9);
+}
+/*BOOKS*/
+.book{
+	width: 38vw;
+	height: 48vw;
+	margin: 0 auto;
+	transform: translateY(1.8%);
+}
+
+.harry_potter{
+	transform: translateY(-99.5vw)
+}
+
+.harry_potter span{
+	font-size: 7vw;
+	bottom: 7%;
+	left: 5%;
+	color: #fff;
+}
+
+.harry_face{
+	width: 20vw;
+	background-color: #ffe5b4;
+	height: 40vw;
+	border-radius: 20% 0 0 20%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.harry_glass{
+	border-radius: 50%;
+	width: 12vw;
+	height: 12vw;
+	border: 1px solid #8a1300;
+	transform: translateY(-10%);
+}
+
+.harry_glass hr{
+	border: 1px solid #8a1300;
+	width: 7.5vw;
+	position: absolute;
+	top: 30%;
+	right: 100%;
+}
+
+.brown_line{
+	width: 100%;
+	background-color: #4f0000;
+	height: 3vw;
+	position: absolute;
+	top: 41%;
+
+}
+
+.dostoev span{
+	color:#fff;
+	transform: rotate(-90deg) translateY(470%);
+	font-size: 2.8vw;
+	z-index: 1;
+}
+
+.chess_name span{
+	font-size: 1.8vw;
+	color: #fff;
+	margin-left: 1.5%;
+}
+.chess_block{
+	background-color: #2887c8;
+	width: 3.665vw;
+	height: 3.665vw;
+}
+
+.chess_block:nth-child(even){
+	background-color: #9ff0ff;
+}
+
+.far_451{
+	background-color: #7070cc;
+}
+
+.far_451 img{
+	transform: translateY(30%) translateX(10%);
+}
+
+.far_451 hr {
+	height: 10px;
+	width: 0.1px;
+	background-color: #f2f2f2;
+	transform: translateX(-2.7vw) translateY(1.2vw);
+}
+.white_princess{
+	background-color: #eb3c1c;
+	overflow: hidden;
+	position: relative;
+	transform: translateY(-99.2vw)
+}
+
+.white_princess span{
+	color: #fff;
+	font-size: 5vw;
+	margin-left: 0.5vw;
+}
+.apple{
+	background-color: #8fd8d8;
+	border-radius: 50%;
+	width: 26vw;
+	height: 26vw;
+	position: absolute;
+	bottom: -7%;
+	left: -10%;
+}
+
+.apple_piece{
+	width: 0;
+	height: 0;
+	border-left: 4.2vw solid transparent;
+	border-right: 4.2vw solid transparent;
+	border-bottom: 8.4vw solid #aa6400;
+}
+
+#second_line_three{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.da_vinci{
+	background-color: #8c90c8;
+	display: flex;
+	justify-content: center;
+	transform: translateY(-249.5vw)
+}
+
+.hidden_x{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+	margin-top: 50%;
+	opacity: 0;
+}
+
+.da_vinci span{
+	font-size:5vw;
+	color: #fff;
+}
+.da_vinci_wrapper{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.da_vinci_block{
+	width: 7vw;
+	height: 12vw;
+	background-color: #ffeac9;
+	border-radius: 10%;
+}
+
+.chess{
+	background-color: #2887c8;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	transform: translateY(50.6vw)
+translateX(50.5vw)}
+
+.chess_name{
+	height: 45%;
+}
+
+.chess_name span{
+	font-size:4vw;
+	color: #fff;
+}
+.chess_block{
+	background-color: #2887c8;
+	width: 12.667vw;
+	height: 12.667vw;
+}
+
+.chess_block:nth-child(even){
+	background-color: #9ff0ff;
+}
+
+#third_line_one{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.far_451{
+	background-color: #7070cc;
+}
+
+.far_451 img{
+	transform: translateY(22%) scale(1) translateX(8%);
+}
+
+.far_451 hr {
+	height: 10px;
+	width: 0.1px;
+	background-color: #f2f2f2;
+	transform: translateX(-2.7vw) translateY(1.2vw);
+}
+
+.player{
+	background-color: #8fd8d8;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: relative;
+	transform: translateY(-149.4vw)
+}
+
+.player span{
+	position: absolute;
+	top: -7%;
+	font-size: 12vw;
+	color: #eb3c1c;
+}
+
+.plus_one{
+	background-color: #2887c8;
+	position: relative;
+	transform: translateY(-249.3vw);
+	z-index: 3;
+}
+
+.plus_one span{
+	font-size: 30vw;
+	color: #ff3b36;
+	position: absolute;
+	left: 13%;
+}
+
+.plus_one img{
+	position: absolute;
+	right: 25%;
+	transform: scale(.9);
+}
+
+.wheel_img img{
+	transform: translateX(12vw) translateY(3vw);
+	transform-origin: center;
+}
+
+.master span{
+	font-size: 3.8vw;
+	color: #fff;
+	transform: translateY(-20%);
+}
+
+.cube{
+	width: 24vw;
+	height: 24vw;
+}
+}
