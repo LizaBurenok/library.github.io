@@ -113,40 +113,46 @@ body{
 /*hidden books*/
 .war{
 	transform: translateY(-12.3vw) translateX(1.6vw);
-opacity: 0;
+	opacity: 0;
 }
 
 .story{
-	transform: translateX(1.6vw) translateY(-12.8vw);
+	transform: translateX(1.6vw) translateY(0.4vw);
+	position: absolute;
 	opacity: 0;
 }
 .silent{
 	position: absolute;
-	transform: translateY(-12.6vw) translateX(1.8vw);
+	transform: translateY(0.5vw) translateX(1.7vw);
 	opacity: 0;
 }
 .bird{
-	transform: translateY(-12.8vw) translateX(1.6vw);
+	transform: translateY(0.5vw) translateX(1.5vw);
+	position: absolute;
 	opacity: 0;
 }
 
 .lady{
-	transform: translateY(-12.6vw) translateX(1.6vw);
-	opacity: 0;
+transform: translateX(1.2vw) translateY(0.4vw);
+position: absolute;
+opacity: 0;
 }
+
 .drak{
-	transform: translateY(-16.7vw) translateX(1.7vw);
+	transform: translateY(0.6vw) translateX(1.7vw);
+	position: absolute;
 	opacity: 0;
 }
 
 .shine{
 	position: absolute;
-	transform: translateY(-12.7vw) translateX(1.7vw);
+	transform: translateY(0.2vw) translateX(1.7vw);
 	opacity: 0;
 }
 
 .numb{
-	transform: translateY(-12.5vw) translateX(1.6vw);
+	transform: translateY(0.6vw)translateX(1.6vw);
+	position: absolute;
 	opacity: 0;
 }
 
