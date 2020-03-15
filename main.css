@@ -60,6 +60,27 @@ body{
 }
 
 /*ВЕРХНЯЯ ЛИНИЯ*/
+.bubble{
+	position: absolute;
+	z-index: 3;
+	left: 25%;
+}
+
+.bubbles-wrapper {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+	position: absolute;
+	z-index: 5;
+}
+.bubbles {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100%;
+	background-color: #0095ae;
+}
+
 .line{
 	height: 60px;
 	background-color: #221712;
@@ -105,55 +126,65 @@ body{
 	text-transform: uppercase;
 	transform: translateY(-7vw) translateX(-15vw);
 }
+
 .letter_l,
 .letter_b,
 .letter_a{
-	visibility: hidden;
+	opacity: 0;
+	margin-left: 62px;
+	font-size: 39.1vw;
+	margin-top: 7px;
 }
+
+.letter_b, .letter_l{
+		font-size: 40vw;
+		margin-top: 0;
+}
+
 /*hidden books*/
 .war{
 	transform: translateY(-12.3vw) translateX(1.6vw);
-	opacity: 0;
+	visibility: hidden;
 }
 
 .story{
 	transform: translateX(1.6vw) translateY(0.4vw);
 	position: absolute;
-	opacity: 0;
+	visibility: hidden;
 }
 .silent{
 	position: absolute;
 	transform: translateY(0.5vw) translateX(1.7vw);
-	opacity: 0;
+	visibility: hidden;
 }
 .bird{
 	transform: translateY(0.5vw) translateX(1.5vw);
 	position: absolute;
-	opacity: 0;
+	visibility: hidden;
 }
 
 .lady{
 transform: translateX(1.2vw) translateY(0.4vw);
 position: absolute;
-opacity: 0;
+visibility: hidden;
 }
 
 .drak{
 	transform: translateY(0.6vw) translateX(1.7vw);
 	position: absolute;
-	opacity: 0;
+	visibility: hidden;
 }
 
 .shine{
 	position: absolute;
 	transform: translateY(0.2vw) translateX(1.7vw);
-	opacity: 0;
+	visibility: hidden;
 }
 
 .numb{
-	transform: translateY(0.6vw)translateX(1.6vw);
+	transform: translateY(0.6vw) translateX(1.6vw);
 	position: absolute;
-	opacity: 0;
+ visibility: hidden;
 }
 
 /*КАРТИНКИ*/
@@ -179,7 +210,37 @@ opacity: 0;
 	left: 55%;
 	top: 50%;
 }
+/*
+.bubbles{
+	border-radius: 50%;
+	border: 3px solid #fff;
+	background-color: lightblue;
+	margin-bottom: 5px;
+	transform: translateX(10vw);
+}
 
+.bbl1{
+	transform: translateY(-150px) translateX(120px);
+	width: 20px;
+	height: 20px;
+}
+.bbl4{
+	width: 20px;
+	height: 20px;
+	transform: translateX(-2vw) translateY(-10vw);
+}
+
+.bbl2, .bbl5{
+	width: 35px;
+	height: 35px;
+	transform: translateX(10vw) translateY(-10vw);
+}
+
+.bbl3, .bbl6{
+	width: 45px;
+	height: 45px;
+	transform: translateX(8vw) translateY(-10vw;
+}
 /*САМИ КНИЖКИ И ИХ СТИЛИ*/
 .book{
 	width: 11vw;
@@ -352,10 +413,10 @@ span{
 }
 
 .far_451 hr {
-	height: 10px;
-	width: 0.1px;
+	height: 0.1px;
+	width: 10px;
 	background-color: #f2f2f2;
-	transform: translateX(-2.7vw) translateY(1.2vw);
+	transform: translateX(-2.7vw) translateY(1.2vw) rotate(90deg);
 }
 .white_princess{
 	background-color: #eb3c1c;
@@ -480,8 +541,8 @@ span{
 }
 
 .wheel_img img{
-	transform: translateX(40%) translateY(15%);
-	transform-origin: center;
+	transform: translateX(40%) translateY(13vw);
+	transform-origin: 50% 50%;
 }
 
 .hidden_heart{
@@ -587,6 +648,9 @@ span{
 	.first_line img{
 		width: 14.3vw;
 	}
+	.img_retort1, .img_retort2{
+		transform: scale(.8);
+	}
 }
 
 @media all and (max-width: 1400px){
@@ -598,12 +662,23 @@ span{
 .retort{
 	transform: scale(.9);
 }
+.img_retort1, .img_retort2{
+	transform: scale(.8);
+}
 }
 
-@media all and (max-width: 1366px){
+@media screen and (max-width: 1388px){
+	.letter_o{
+		transform: translateY(-10vw) translateX(-15vw);
+	}
+}
+@media screen and (max-width: 1366px){
 	.letter_o{
 		transform: translateY(-10vw)
-translateX(-15vw);	}
+translateX(-15vw);}
+.img_retort1, .img_retort2{
+	transform: scale(.8);
+}
 }
 
 @media screen and (max-width: 1280px){
@@ -622,6 +697,14 @@ translateX(-15vw);	}
 		.book{
 			width: 12vw;
 			height: 13.5vw;
+		}
+
+		.img_retort1{
+			transform: scale(.7) translateX(-3.4vw) translateY(-3.5vw);
+		}
+
+		.img_retort2{
+			transform: translateY(-7vw) scale(.7);
 		}
 
 		.far_451 img{
@@ -653,13 +736,13 @@ translateX(-15vw);	}
 				transform: scale(.96) translateY(1vw);
 			}
 			.wheel_img{
-				transform: translateX(3.6vw) translateY(13.7vw)
+				transform: translateX(3.6vw) translateY(3.7vw);
 			}
 			.plus_one span{
 				transform: translateX(0.2vw);
 			}
 }
-@media all and (max-width: 1024px){
+@media screen and (max-width: 1024px){
 	.block{
 		width: 24.8vw;
 		height: 24.8vw;
@@ -672,9 +755,10 @@ translateX(-15vw);	}
 font-size: 34.8vw;
 transform: translateX(-102.8vw) translateY(-32vw);
 }
+
 .letter_o{
 	font-size: 34vw;
-	text-transform: uppercase;
+	transform: translateY(-30.6vw) translateX(-105vw);
 	top: -1.2vw;
 }
 
@@ -689,8 +773,30 @@ transform: translateX(-102.8vw) translateY(-32vw);
 .first_line img{
 	transform: scale(1.23) translateY(1.7vw) translateX(1.8vw)
 }
+
 .harry_potter{
-	transform: translateX(100vw) translateY(-200vw);
+	transform: translateY(0.8vw);
+	z-index: 8;
+}
+
+.harry_face{
+	width: 11vw;
+	height: 19vw;
+	border-radius: 10% 0 0 10%;
+}
+
+.harry_glass{
+	width: 7vw;
+	height: 7vw;
+}
+
+.harry_potter hr{
+	width: 4vw;
+}
+
+.harry_potter span{
+	font-size: 3vw;
+	margin-left: 1vw;
 }
 
 .retort{
@@ -733,17 +839,12 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .chess_name span{
-	font-size: 2.5vw;
+	font-size: 2.7vw;
 }
 
 .chess_block{
-	background-color: #2887c8;
-	width: 6vw;
-	height: 5vw;
-}
-
-.chess_block:nth-child(even){
-	background-color: #9ff0ff;
+	width: 7vw;
+	height: 6.7vw;
 }
 
 .img_retort1, .img_retort2{
@@ -751,7 +852,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .chess_name{
-	height: 50%;
+	height: 40%;
 }
 
 .far_451{
@@ -759,7 +860,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .far_451 img{
-	transform: scale(1.38) translateY(4.7vw) translateX(2vw);
+	transform: scale(1.5) translateY(3.7vw) translateX(2.4vw);
 }
 .far_451 hr {
 	transform: translateX(-5.8vw) translateY(5vw);
@@ -771,6 +872,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 
 .white_princess span{
 	font-size: 3vw;
+	transform: translateX(0.2vw);
 }
 .apple{
 	background-color: #8fd8d8;
@@ -813,7 +915,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .da_vinci span{
-	font-size: 2.7vw;
+	font-size: 2.9vw;
 	transform: translateX(-0.2vw);
 }
 
@@ -826,9 +928,12 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	transform: translateX(-50vw) translateY(1vw);
 }
 
+.player img{
+	transform: scale(1.2) translateX(-0.7vw) translateY(-0.9vw);
+}
 .player span{
 	transform: translateX(0.5vw);
-	font-size: 7vw;§
+	font-size: 7.1vw;
 }
 
 .plus_one{
@@ -845,24 +950,287 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .wheel_img img{
-	transform: scale(1.4) translateX(-0.1vw) translateY(7vw);
+	transform: scale(1.4) translateX(2.4vw) translateY(16vw);
 }
 
 .hidden_heart{
 	transform: translateY(-170%) translateX(30%);
 	opacity: 0;
 }
+
+.story,
+.drak,
+.silent,
+.shine,
+.lady,
+.bird,
+.numb{
+	transform: translateX(1.95vw) translateY(0.8vw);
+	width: 21vw;
+	height: 23.5vw;
 }
 
-@media all and (max-width: 375px){
-	.block{
-		width: 185px;
-		height: 185px;
+.war{
+	position: absolute;
+	bottom: 6.7%;
+}
+}
+
+@media all and (max-width: 768px){
+	body{
+		width: 768px;
+		height: 1024px;
 	}
-	.block_wrapper{
-	 width: 375px;
-	 display: flex;
-	 flex-wrap: wrap;
+	.block{
+		width: 49.7vw;
+		height: 49.7vw;
+	}
+
+ .letter_k,
+.letter_l,
+.letter_b,
+.letter_a{
+	font-size: 70vw;
+	text-transform: uppercase;
+	transform: translateY(-164.5vw) translateX(-106.4vw);
+}
+
+.letter_o{
+	font-size: 67vw;
+	text-transform: uppercase;
+	transform: translateY(-161.5vw) translateX(-99.7vw);
+}
+
+.line{
+	width: 100vw;
+}
+.book{
+	transform: scale(2) translateY(5vw)
+}
+
+.block_blackline{
+	transform: translateY(-40.2vw) translateX(49.8vw);
+	height: 110vw;
+}
+
+.img_books{
+	transform: scale(1.6) translateY(14vw) translateX(2.5vw);
+}
+
+.lineblock_first img{
+	transform: scale(1.73) translateY(-196.4vw) translateX(-23.2vw);
+}
+
+.six img{
+	transform: translateY(60vw) scale(1.67) translateX(6vw);
+}
+
+.retort{
+	transform: scale(1.6) translateY(-243vw) translateX(-32vw);
+}
+
+.img_retort1, .img_retort2{
+	visibility: hidden;
+}
+
+.harry_potter{
+	transform: translateY(63vw) scale(1.9);
+}
+
+.harry_potter span{
+	font-size: 3.5vw;
+}
+
+.harry_face{
+	width: 11vw;
+	height: 19vw;
+}
+
+.harry_glass{
+	width: 6vw;
+	height: 6vw;
+	transform: translateX(-0.2vw);
+}
+
+.harry_potter hr{
+	width: 4.6vw;
+}
+
+.harry_potter_series1,
+.harry_potter_series2,
+.harry_potter_series3,
+.harry_potter_series4,
+.harry_potter_series5{
+	transform: translateY(64vw) translateX(14.3vw) scale(1.9);
+}
+
+.harry_potter_series1 img,
+.harry_potter_series2 img,
+.harry_potter_series3 img,
+.harry_potter_series4 img,
+.harry_potter_series5 img{
+	transform: scale(.9) translateY(2.4vw) translateX(1.2vw);
+}
+
+.dostoev{
+	transform: translateY(63vw) scale(1.9) translateX(26.5vw);
+}
+.dostoev span{
+	font-size: 1.56vw;
+}
+
+.chess{
+	transform: translateY(11vw) scale(1.8);
+}
+
+.chess_block{
+	width: 7vw;
+	height: 7vw;
+}
+
+.chess span{
+	font-size: 2.6vw;
+	transform: translateY(-0.5vw);
+}
+
+.far_451{
+	transform: translateY(-212.6vw) scale(1.9);
+}
+
+.far_451 img{
+	transform: translateY(3.6vw) scale(.97) translateX(1.3vw);
+}
+
+.white_princess{
+	transform: scale(1.9) translateY(7vw);
+}
+
+.white_princess span{
+	font-size: 2.5vw;
+	transform: translateX(0.2vw);
+}
+
+.da_vinci{
+	transform: translateY(-136.6vw) scale(1.9);
+}
+
+.da_vinci span{
+	font-size: 3vw;
+	transform: translateX(0.05vw);
+}
+
+.da_vinci_block{
+	width: 3.8vw;
+	height: 7vw;
+}
+
+.master{
+	transform: scale(1.9) translateY(-7.2vw) translateX(-26vw);
+}
+
+.master_first, .master_second{
+	width: 11.7vw;
+	height: 11.7vw;
+}
+
+.player{
+	z-index: 4;
+	transform: scale(1.9) translateY(-19.5vw) translateX(27vw);
+}
+
+.player img{
+	transform: scale(1);
+}
+
+.hidden_heart{
+	transform: translateY(-88vw) translateX(-40vw);
+}
+
+.player span{
+	font-size: 7.3vw;
+	transform: translateX(1vw) translateY(-1vw);
+}
+.plus_one{
+	transform: translateY(-237vw) scale(1.9);
+	z-index: 3;
+}
+
+.plus_one span{
+	transform: translateX(-0.2vw) translateY(-0.1vw) scale(1);
+}
+
+.plus_one img{
+	transform: scale(.96) translateY(1.3vw);
+}
+.wheel_img img{
+	transform:translateY(25.3vw) scale(1) translateX(7vw);
+}
+
+.war{
+	transform: translateY(385vw) translateX(67vw) scale(1.41);
+	opacity: 0;
+	z-index: 30;
+}
+
+.story{
+	transform: translateX(-36.3vw) translateY(-238.8vw) scale(1.7);
+	opacity: 0;
+	z-index: 5;
+	width: 23vw;
+	height: 26.6vw;
+}
+.silent{
+	transform: translateY(-38.4vw) translateX(13.5vw) scale(1.64);
+	opacity: 0;
+	width: 25vw;
+	height: 28.5vw;
+}
+.bird{
+	transform: translateY(12.5vw) translateX(64.2vw) scale(1.83);
+	opacity: 0;
+	height: 25.2vw;
+}
+
+.lady{
+transform: translateX(-35.7vw) translateY(11.7vw) scale(1.68);
+opacity: 0;
+}
+
+.drak{
+	position: relative;
+	opacity: 0;
+	bottom: 340px;
+	left: 6%;
+	width: 24vw;
+	height: 26.6vw;
+}
+
+.shine{
+	transform: translateY(-139.4vw) translateX(62.7vw) scale(1.65);
+	opacity: 0;
+	z-index: 8;
+	width: 24vw;
+	height: 28vw;
+}
+
+.numb{
+	top: -1722px;
+	left: 367px;
+	position: relative;
+	opacity: 0;
+	width: 24vw;
+	height: 27.2vw;
+}
+}
+
+@media (max-width: 375px){
+.block{
+		width: 49.4vw;
+		height: 49.4vw;
+	}
+
+body{
+	width: 375px;
 }
 
 .letter_k,
@@ -872,7 +1240,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
     position: absolute;;
     font-size: 69vw;
     left: -6%;
-     top: 24.2%;
+     top: 2%;
   }
 
   .letter_o{
@@ -881,32 +1249,35 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	font-family: 'Helvetica', sans-serif;
 	font-size: 67vw;
 	text-transform: uppercase;
-	top: 25%;
+	top: -2%;
 	left: -3;
 }
 
 .block_blackline{
-	width: 30px;
-	height: 450px;
-	right: 42%;
-	background-color:#221712;
+	width: 15px;
+	height: 30vw;
 	position: absolute;
-	z-index: 2;
 }
 
 .line{
 	height: 30px;
-	background-color: #221712;
-	width: 100%;
 }
 
 .lineblock_first img{
-	transform: translateY(-203vw) scale(.9) translateX(-60vw)
+	transform: translateY(-352vw) scale(.92) translateX(-57vw)
 }
 
-/*CHANGE COLOR BLOCKS*/
+.six img{
+	transform: scale(.9) translateY(52vw) translateX(-3.5vw);
+}
+
 .first_line_four{
 	background-color: #fcca2a;
+}
+
+.first_line .six{
+	background-color: #221712;
+	border: 1px solid #666;
 }
 
 .five,
@@ -938,8 +1309,18 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	background-color: #221712;
 	border: 1px solid #666;
 }
+
+.seven{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.third_line_four{
+	background-color: #221712;
+	border: 1px solid #666;
+}
 .img_books{
-	transform: translateY(-134px);
+	transform: translateY(-132px) scale(.9);
 	text-align: center;
 }
 
@@ -952,76 +1333,69 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .retort img{
-	transform: translateY(-1690px) scale(.9);
+	transform: translateY(86vw) scale(.56) translateX(57vw);
 }
-/*BOOKS*/
+
 .book{
-	width: 38vw;
+	width: 39vw;
 	height: 48vw;
 	margin: 0 auto;
-	transform: translateY(1.8%);
+	transform: translateY(1.9%);
 }
 
 .harry_potter{
-	transform: translateY(-99.5vw)
+	transform: translateY(-49vw) translateX(50vw);
 }
 
 .harry_potter span{
 	font-size: 7vw;
 	bottom: 7%;
 	left: 5%;
-	color: #fff;
 }
 
 .harry_face{
 	width: 20vw;
-	background-color: #ffe5b4;
 	height: 40vw;
-	border-radius: 20% 0 0 20%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
 }
 
 .harry_glass{
-	border-radius: 50%;
 	width: 12vw;
 	height: 12vw;
-	border: 1px solid #8a1300;
 	transform: translateY(-10%);
 }
 
 .harry_glass hr{
-	border: 1px solid #8a1300;
 	width: 7.5vw;
 	position: absolute;
 	top: 30%;
 	right: 100%;
 }
 
+.dostoev{
+	transform: translateY(-48.5vw) translateX(-0.5vw);
+}
+
 .brown_line{
 	width: 100%;
-	background-color: #4f0000;
 	height: 3vw;
-	position: absolute;
 	top: 41%;
-
 }
 
 .dostoev span{
-	color:#fff;
 	transform: rotate(-90deg) translateY(470%);
 	font-size: 2.8vw;
 	z-index: 1;
 }
 
+.chess{
+	transform: translateY(201vw);
+}
+
 .chess_name span{
 	font-size: 1.8vw;
-	color: #fff;
 	margin-left: 1.5%;
 }
 .chess_block{
-	background-color: #2887c8;
 	width: 3.665vw;
 	height: 3.665vw;
 }
@@ -1031,7 +1405,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .far_451{
-	background-color: #7070cc;
+	transform: translateY(-26.1vw)
 }
 
 .far_451 img{
@@ -1044,11 +1418,9 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	background-color: #f2f2f2;
 	transform: translateX(-2.7vw) translateY(1.2vw);
 }
+
 .white_princess{
-	background-color: #eb3c1c;
-	overflow: hidden;
-	position: relative;
-	transform: translateY(-99.2vw)
+	transform: translateY(-49.3vw) translateX(-49.6vw);
 }
 
 .white_princess span{
@@ -1088,53 +1460,36 @@ transform: translateX(-102.8vw) translateY(-32vw);
 
 .hidden_x{
 	font-family: 'Helvetica', sans-serif;
-	font-size: 1.5vw;
+	font-size: 4.5vw;
 	text-align: center;
 	margin-top: 50%;
 	opacity: 0;
 }
 
+.da_vinci{
+	transform: translateY(-298.7vw) translateX(50vw);
+}
+
 .da_vinci span{
 	font-size:5vw;
-	color: #fff;
 }
-.da_vinci_wrapper{
-	width: 80%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+
 .da_vinci_block{
 	width: 7vw;
 	height: 12vw;
-	background-color: #ffeac9;
 	border-radius: 10%;
 }
-
-.chess{
-	background-color: #2887c8;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	transform: translateY(50.6vw)
-translateX(50.5vw)}
 
 .chess_name{
 	height: 45%;
 }
 
 .chess_name span{
-	font-size:4vw;
-	color: #fff;
+	font-size:5vw;
 }
 .chess_block{
-	background-color: #2887c8;
-	width: 12.667vw;
-	height: 12.667vw;
-}
-
-.chess_block:nth-child(even){
-	background-color: #9ff0ff;
+	width: 12.98vw;
+	height: 12.97vw;
 }
 
 #third_line_one{
@@ -1143,9 +1498,8 @@ translateX(50.5vw)}
 }
 
 .far_451{
-	background-color: #7070cc;
+	transform: translateY(1vw);
 }
-
 .far_451 img{
 	transform: translateY(22%) scale(1) translateX(8%);
 }
@@ -1153,16 +1507,10 @@ translateX(50.5vw)}
 .far_451 hr {
 	height: 10px;
 	width: 0.1px;
-	background-color: #f2f2f2;
 	transform: translateX(-2.7vw) translateY(1.2vw);
 }
 
 .player{
-	background-color: #8fd8d8;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	position: relative;
 	transform: translateY(-149.4vw)
 }
 
@@ -1170,19 +1518,16 @@ translateX(50.5vw)}
 	position: absolute;
 	top: -7%;
 	font-size: 12vw;
-	color: #eb3c1c;
 }
 
 .plus_one{
-	background-color: #2887c8;
 	position: relative;
-	transform: translateY(-249.3vw);
+	transform: translateY(-198.6vw);
 	z-index: 3;
 }
 
 .plus_one span{
 	font-size: 30vw;
-	color: #ff3b36;
 	position: absolute;
 	left: 13%;
 }
@@ -1194,12 +1539,15 @@ translateX(50.5vw)}
 }
 
 .wheel_img img{
-	transform: translateX(12vw) translateY(3vw);
+	transform: translateX(12vw) translateY(49vw);
 	transform-origin: center;
 }
 
+.master{
+	transform: translateY(51vw)
+}
 .master span{
-	font-size: 3.8vw;
+	font-size: 3.9vw;
 	color: #fff;
 	transform: translateY(-20%);
 }
@@ -1207,5 +1555,71 @@ translateX(50.5vw)}
 .cube{
 	width: 24vw;
 	height: 24vw;
+}
+.war, .numb, .story, .bird, .lady, .silent, .shine, .drak{
+ opacity: 1;
+ transform: scale(2);
+}
+.war{
+ transform: translateX(52.4vw) scale(.77) translateY(-35vw);
+ height: 70vw;}
+
+.silent{
+ transform: translateY(-187.4vw) scale(1.6) translateX(8vw);
+}
+
+.story{
+ transform: translateY(-239.4vw) scale(1.65) translateX(8vw);
+ height: 29.1vw;
+}
+
+.lady{
+ transform: translateY(-36.8vw) scale(1.85) translateX(8vw);
+ height: 25.1vw;
+ z-index: 2;
+}
+
+.bird{
+ transform: translateY(262vw) scale(1.8) translateX(7.5vw);
+ height: 26.1vw;
+}
+
+.shine{
+ transform: translateY(50vw);
+}
+
+.drak{
+ z-index: 2;
+ position: absolute;
+ top: 279%;
+ left: 57%;
+ width: 42vw;
+ height: 52vw;
+}
+
+.shine{
+ transform: translateY(-290.7vw) scale(1.6) translateX(8vw);
+ height: 31vw
+}
+
+.numb{
+ position: absolute;
+ top: 142.8%;
+ width: 42vw;
+ height: 52vw;
+ right: 20%;
+}
+
+.letter_l,
+.letter_b,
+.letter_a{
+	opacity: 0;
+	margin-left: 32px;
+	margin-top: 0;
+}
+
+.third{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
 }
 }
