@@ -153,7 +153,7 @@ code.add({
 })
 
 let books = anime.timeline({
-  duration: 2500,
+  duration: 1000,
   easing: 'linear',
   autoplay: 0
 })
@@ -230,61 +230,214 @@ let hr = anime.timeline({
 
 hr.add({
   targets: '.451_hr',
-  backgroundColor: 'rgb(212, 27, 22)',
-  height: 1
+  width: 30
 })
 
 hr.add({
   targets: '.451_hr',
-  height: 2
+  width: 50
 })
 
 hr.add({
   targets: '.451_hr',
-  height: 4
+  width: 70
 })
 
-let retort = anime.timeline({
+hr.add({
+  targets: '.451_hr',
+  width: 100
+})
+
+let wheel = anime({
+  targets: '.wheel_img',
+  rotate: [0, 360],
   duration: 2000,
+  autoplay: false,
+  direction: 'linear',
+  transformOrigin: '50% 50%'
+})
+
+// /*
+let bbl = anime.timeline({
+  duration: 4000,
+  easing: 'easeInOutCirc',
+  autoplay: false,
+  delay: 500
+})
+
+bbl.add({
+  targets: '.bbl1',
+  translateY: -360
+})
+
+bbl.add({
+  targets: '.bbl2',
+  translateY: -360
+})
+
+bbl.add({
+  targets: '.bbl3',
+  translateY: -360
+})
+
+let letter = anime.timeline({
+  duration: 250,
   autoplay: false
 })
 
-retort.add({
-  targets: ['.harry_potter', '.harry_glass', '.harry_face', '.chess', '.far_451', '.white_princess', '.master', '.da_vinci', '.plus_one', '.player'],
+letter.add({
+  targets: '.letter_k',
+  opacity: {
+    value: 0
+  }, delay: 100
+})
+
+letter.add({
+  targets: '.letter_o',
+  opacity: {
+    value: 1,
+    duration: 300
+  },
+  color: 'rgb(85, 255, 89)'
+})
+
+letter.add({
+  targets: '.letter_o',
   opacity: {
     value: 0
   }
 })
 
-retort.add({
-  targets: ['.war', '.story', '.lady', '.drak', '.bird', '.numb', '.silent', '.shine'],
-  opacity:{
+letter.add({
+  targets: '.letter_l',
+  opacity: {
     value: 1
+  }, color: 'rgb(170, 0, 38)'
+})
+
+letter.add({
+  targets: '.letter_l',
+  opacity: {
+    value: 0
   }
 })
 
-let btnRetort = document.querySelector('.retort').onclick = retort.restart
+letter.add({
+  targets: '.letter_b',
+  opacity: {
+    value: 1
+  },
+  color: 'rgb(116, 0, 203)'
+})
+
+letter.add({
+  targets: '.letter_b',
+  opacity: {
+    value: 0
+  }
+})
+
+letter.add({
+  targets: '.letter_a',
+  opacity: {
+    value: 1
+  },
+  color: 'rgb(45, 252, 25)'
+})
+
+let bubble = anime({
+  targets: '.bubble',
+  translateX: {
+    value: 800
+  }, rotate: {
+    value: '+=3turn',
+    easing: 'linear'
+  },   duration: 6000,
+    direction: 'alternate',
+    loop: true
+})
+
 /*КАРТЫ ГЕНЕРИРОВАНИЕ
 let numberOfCards = 10
 for (let i = 0; i < numberOfCards; i += 1) {
   let div = document.createElement('div')
-  let size = `${anime.random(0,200)}px`
+  let size = `${anime.random(0,20)}px`
   div.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
   div.style.width = size
   let ace = div
 }
-
-let btn08 = document.querySelector('.player').onclick = ace.play
-/*
-let cover = document.querySelector('.book')
-cover.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
-let btn03 = document.querySelector ('.img_books').onclick = cover.play
 */
+
+//Generate bubbles
+let controller = new ScrollMagic.Controller()
+
+let btnBubl = document.querySelector('.bubble')
+btnBubl.onclick = function(){
+  let lastSection = document.getElementById('section')
+  let loader = document.querySelector('.loader')
+  let bubblesWrapper = document.querySelector('.bubbles-wrapper')
+
+  let loadingScene = new ScrollMagic.Scene({
+    triggerElement: loader,
+    triggerHook: 'onLeave'
+  })
+  .addTo(controller)
+  .on('leave', () => {
+    setTimeout( 1000, 40)
+  })
+  let amount = 40;
+  let count = 0;
+  while (amount > count) {
+    let newDiv = document.createElement('div')
+    newDiv.classList.add('bubbles')
+    bubblesWrapper.append(newDiv)
+    count += 1
+  }
+}
+
+//Create visible/hidden books function
+let state = {
+    hiddenBooks: false
+}
+
+let btnRetort = document.querySelector('.retort').onclick = function(){
+  let visibleBooks = document.querySelectorAll('.visible');
+  let hiddenBooks = document.querySelectorAll('.hidden');
+  if (state.hiddenBooks) {
+        for (let i = 0; i < hiddenBooks.length; i++) {
+            hiddenBooks[i].style.visibility = 'hidden'
+            visibleBooks[i].style.visibility = 'visible'
+        }
+        state.hiddenBooks = false
+    } else {
+        for (let i = 0; i < hiddenBooks.length; i++) {
+            hiddenBooks[i].style.visibility = 'visible'
+           visibleBooks[i].style.visibility = 'hidden'}
+        state.hiddenBooks = true
+    }}
+//
+
+//Change color of covers
+let btnColorCover = document.querySelector('.img_books')
+btnColorCover.onclick = function() {
+  let cover = document.querySelectorAll('.visible')
+  for (let i = 0; i < cover.length; i++){
+    cover[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+  }
+}
+
+//Add flowing bubbles
+//let btnBubble = document.querySelector('.')
+
+
+
 let btn01 = document.querySelector ('.chess').onclick = chess.restart
 let btn02 = document.querySelector ('.white_princess').onclick = apple.restart
 let btn04 = document.querySelector('.master').onclick = cards.restart
 let btn05 = document.querySelector('.dostoev').onclick = line.play
 let btn06 = document.querySelector('.da_vinci').onclick = code.restart
 let btn07 = document.querySelector('.harry_potter').onclick = books.restart
+letbtnLet = document.querySelector('.block_lines').onclick = letter.restart
 
 let btn09 = document.querySelector('.far_451').onclick = hr.play
+let btn10 = document.querySelector('.plus_one').onclick = wheel.restart
