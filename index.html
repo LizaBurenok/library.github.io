@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>Колба</title>
   <link rel="stylesheet" href="main.css">
@@ -11,17 +12,20 @@
   <!-- ПРОПИСЫВАЮ БЛОКИ, В КОТОРЫХ БУДУТ КНИГИ-->
   <div class="line"></div>
   <!--ПЕРВАЯ ЛИНИЯ БЛОКОВ -->
+  <section id="bubble-section">
+    <div class="bubbles-wrapper"></div>
 <div class="block_wrapper">
   <div class="block first_line one"></div>
   <div class="block first_line two"></div>
   <div class="block first_line three">
+    <div class="bubble"><img src="bubble.png" alt="" width="100vw"></div>
     <div class="block_blackline"></div>
   </div>
   <div class="block first_line_four">
   <div class="img_books"><img src="books.png" alt="" width="180vw"></div></div>
   <div class="block first_line five">
     <div class="cover_wrapper">
-    <div class="book harry_potter"><span>Гарри Поттер</span><div class="harry_face"><div class="harry_glass"><hr></div></div>
+    <div class="book harry_potter visible"><span>Гарри Поттер</span><div class="harry_face"><div class="harry_glass"><hr></div></div>
   </div>
   <div class="book harry_potter_series1"><img src="ser1.png" alt="" width="150vw"></div>
   <div class="book harry_potter_series2"><img src="ser2.png" alt="" width="150vw"></div>
@@ -35,13 +39,13 @@
     <img src="ser5.png" alt="" width="150vw">
   </div>
 </div>
-<div class="war"><img src="war.png" alt="" width="155vw"></div>
+<div class="war hidden"><img src="war.png" alt="" width="155vw"></div>
 </div>
   <div class="block first_line six">
-    <div><img src="lines2.png" alt="" width="210vw"></div>
+    <div><img src="lines2.png" alt="" width="210vw" class="block_lines"></div>
   </div>
   <div class="block first_line seven">
-    <div class="book dostoev"><span class="span_line">преступление и наказание</span><div class="brown_line"></div></div>
+    <div class="book dostoev visible"><span class="span_line">преступление и наказание</span><div class="brown_line"></div></div>
   </div>
   <!--ВТОРАЯ ЛИНИЯ БЛОКОВ -->
   <div class="block second_line one" id="second_line_one"></div>
@@ -56,8 +60,8 @@
   <div class="block second_line three" id="second_line_three"></div>
   <div class="img_retort1"><img src="retort2.png" alt="" width="300vw"></div>
   <div class="block second_line four">
-    <img src="bird.png" alt="" class="bird" width="159vw">
-    <div class="book chess"><div class="chess_name"><span>защита лужина</span></div>
+    <img src="bird.png" alt="" class="bird hidden" width="159vw">
+    <div class="book chess visible"><div class="chess_name"><span>защита лужина</span></div>
       <div class="chess_block"  id="down_chess"></div>
       <div class="chess_block" id="center_chess1"></div>
       <div class="chess_block" id="down_chess"></div>
@@ -72,34 +76,34 @@
   <div class="block second_line five" id="second_line_five"></div>
   <div class="img_retort2"><img src="retort3.png" alt="" width="250vw"></div>
   <div class="block second_line six">
-    <img src="1984.png" alt="" class="numb" width="157vw">
-    <div class="book far_451">
+    <img src="1984.png" alt="" class="numb hidden" width="157vw">
+    <div class="book far_451 visible">
       <img src="far.png" alt="" width="130vw">
       <hr class="451_hr">
     </div>
 
   </div>
   <div class="block second_line seven">
-    <img src="lady.png" alt="" class="lady" width="160vw">
-    <div class="book white_princess"><span>Белоснежка и 7 гномов</span><div class="apple"><div class="apple_piece"></div>
+    <img src="lady.png" alt="" class="lady hidden" width="160vw">
+    <div class="book white_princess visible"><span>Белоснежка и 7 гномов</span><div class="apple"><div class="apple_piece"></div>
   </div></div>
   </div>
   <!--ТРЕТЬЯ ЛИНИЯ БЛОКОВ -->
   <div class="block third_line one" id="third_line_one"></div>
   <div class="block third_line two" id="third_line_two"></div>
-  <div class="block third_line three"></div>
+  <div class="block third_line three third"></div>
   <div class="block third_line_four">
     <div class="lineblock_first"><img src="lines1.png" alt="" width="205vw"></div>
   </div>
   <div class="block third_line five"></div>
   <div class="block third_line six">
-    <img src="drak.png" alt="" class="drak" width="157vw">
-    <div class="book master"><span>мастер и маргарита</span><div class="master_first cube"></div><div class="master_second cube"></div></div>
+  <img src="drak.png" alt="" class="drak hidden" width="157vw">
+    <div class="book master visible"><span>мастер и маргарита</span><div class="master_first cube"></div><div class="master_second cube"></div></div>
     <div class="hidden_heart"><img src="heart.png" alt="" width="70vw"></div>
   </div>
   <div class="block third_line seven">
-    <img src="shine.png" alt="" class="shine" width="157vw">
-  <div class="book da_vinci"><span>код да Винчи</span>
+    <img src="shine.png" alt="" class="shine hidden" width="157vw">
+  <div class="book da_vinci visible"><span>код да Винчи</span>
    <div class="da_vinci_wrapper">
     <div class="da_vinci_block"><div class="hidden_x">X</div></div>
     <div class="da_vinci_block"><div class="hidden_x">X</div></div>
@@ -111,8 +115,8 @@
   <!--ЧЕТВЕРТАЯ ЛИНИЯ БЛОКОВ -->
   <div class="block fourth_line_one"></div>
   <div class="block fourth_line_two">
-    <img src="silent.png" alt="" class="silent" width="162vw">
-    <div class="book player"><span>игрок</span><img src="card.png" alt="" width="70vw" id="ace">
+    <img src="silent.png" alt="" class="silent hidden" width="162vw">
+    <div class="book player visible"><span>игрок</span><img src="card.png" alt="" width="70vw" id="ace">
     </div>
   </div>
   <div class="block fourth_line_three"></div>
@@ -122,8 +126,8 @@
   </div>
   <div class="block fourth_line_six"></div>
   <div class="block fourth_line seven">
-    <img src="story.png" alt="" class="story" width="159vw">
-    <div class="book plus_one">
+    <img src="story.png" alt="" class="story hidden" width="159vw">
+    <div class="book plus_one visible">
       <span>+1</span>
       <img src="chair.png" alt="" width="100vw">
       <div class="wheel_img"><img src="wheel.png" alt="" width="120vw"></div>
@@ -131,6 +135,10 @@
   </div>
 </div>
 </div>
+</section>
+<div class="loader"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
