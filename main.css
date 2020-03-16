@@ -1333,7 +1333,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	height: 2700px;
 }
 .wrap{
-	transform: scale(.9) translateX(44vw) translateY(10vw);
+	transform: scale(.9) translateX(40vw) translateY(10vw);
 }
 
 .bubbles-wrapper, .bubble {
@@ -1673,7 +1673,7 @@ body{
 }
 	
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-95vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-35vw);
  height: 70vw;}
 
 .silent{
