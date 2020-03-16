@@ -1,6 +1,72 @@
-body{
+ody{
 	margin: 0;
 	padding: 0;
+}
+.wrap{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightpink;
+    border: 5px solid #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  overflow: hidden;
+	position: absolute;
+	z-index: 23;
+	transform: translateY(10vw) translateX(45vw);
+}
+
+.retort_wrapper{
+    position: relative;
+		z-index: 23;
+}
+.glass_retort{
+    width: 20px;
+    height: 40px;
+    background-color: #fff;
+			z-index: 23;
+}
+
+.retort_entry{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+   transform: translateY(-12px) translateX(-6.8px);
+	 	z-index: 23;
+}
+.liquid{
+    width: 35px;
+    height: 19px;
+    background-color: lightblue;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+    z-index: 3;
+    position: absolute;
+    transform: translateX(-6.5px) translateY(6px);
+			z-index: 23;
+}
+.drop{
+    width: 10px;
+    height: 10px;
+    background-color: lightblue;
+    z-index: 4;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-40px) translateX(5px);
+    opacity: 0;
+			z-index: 23;
+}
+
+.curtain{
+	width: 1440px;
+	height: 880px;
+	position: absolute;
+	background-color: #e9ef9a;
+	z-index: 20;
 }
 
 .block_wrapper{
@@ -201,7 +267,7 @@ visibility: hidden;
 
 .img_retort1{
 	position: absolute;
-	left: 27%;
+	left: 26%;
 	top: 30%;
 }
 
@@ -210,6 +276,11 @@ visibility: hidden;
 	left: 55%;
 	top: 50%;
 }
+
+.six img{
+	z-index: 100;
+}
+
 /*
 .bubbles{
 	border-radius: 50%;
@@ -412,12 +483,6 @@ span{
 	transform: translateY(30%) translateX(10%);
 }
 
-.far_451 hr {
-	height: 0.1px;
-	width: 10px;
-	background-color: #f2f2f2;
-	transform: translateX(-2.7vw) translateY(1.2vw) rotate(90deg);
-}
 .white_princess{
 	background-color: #eb3c1c;
 	overflow: hidden;
@@ -550,7 +615,7 @@ span{
 	opacity: 0;
 }
 
-@media screen and (min-width: 1680px) {
+@media (min-width: 1680px) {
   .block{
     width: 14.165vw;
     height: 15vw;
@@ -653,9 +718,9 @@ span{
 	}
 }
 
-@media all and (max-width: 1400px){
+@media (max-width: 1440px){
 .letter_o{
-	top: 21%;
+	top: 21%
 	left: 0.5%;
 }
 
@@ -667,12 +732,12 @@ span{
 }
 }
 
-@media screen and (max-width: 1388px){
+@media (max-width: 1388px){
 	.letter_o{
-		transform: translateY(-10vw) translateX(-15vw);
+		transform: translateY(-7vw) translateX(-15vw);
 	}
 }
-@media screen and (max-width: 1366px){
+@media (max-width: 1366px){
 	.letter_o{
 		transform: translateY(-10vw)
 translateX(-15vw);}
@@ -681,10 +746,13 @@ translateX(-15vw);}
 }
 }
 
-@media screen and (max-width: 1280px){
+@media (max-width: 1280px){
 	.block{
 		width: 14.125vw;
 		height: 14.125vw;
+	}
+	.letter_o{
+		transform: translateY(-7vw) translateX(-15vw);
 	}
 	.img_books{
 		transform: translateY(-0.6vw) scale(.9)
@@ -736,13 +804,13 @@ translateX(-15vw);}
 				transform: scale(.96) translateY(1vw);
 			}
 			.wheel_img{
-				transform: translateX(3.6vw) translateY(3.7vw);
+				transform: translateX(3.6vw) translateY(33.7vw);
 			}
 			.plus_one span{
 				transform: translateX(0.2vw);
 			}
 }
-@media screen and (max-width: 1024px){
+@media (max-width: 1024px){
 	.block{
 		width: 24.8vw;
 		height: 24.8vw;
@@ -974,16 +1042,53 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	position: absolute;
 	bottom: 6.7%;
 }
+.story{
+	transform: translateX(-48vw) translateY(0.7vw);
+	z-index: 2;
 }
 
-@media all and (max-width: 768px){
+.bird{
+	transform: translateY(100.7vw) translateX(-48vw);
+	z-index: 2;
+}
+.shine{
+	transform: translateY(-49.5vw) translateX(2vw);
+}
+
+.drak{
+	transform: translateX(-23vw) translateY(0.7vw);
+}
+.lady{
+	transform: translateX(52vw) translateY(1vw);
+	z-index: 2;
+}
+.silent{
+	transform: translateX(-23vw) translateY(-49vw);
+}
+
+.numb{
+	transform: translateX(52vw) translateY(1vw);
+}
+}
+
+@media (max-width: 768px){
 	body{
 		width: 768px;
 		height: 1024px;
 	}
+
+	.curtain{
+		width: 768px;
+		height: 5500px;
+	}
 	.block{
 		width: 49.7vw;
 		height: 49.7vw;
+	}
+
+	.book{
+		width: 22vw;
+		height: 25vw;
 	}
 
  .letter_k,
@@ -1004,9 +1109,6 @@ transform: translateX(-102.8vw) translateY(-32vw);
 .line{
 	width: 100vw;
 }
-.book{
-	transform: scale(2) translateY(5vw)
-}
 
 .block_blackline{
 	transform: translateY(-40.2vw) translateX(49.8vw);
@@ -1014,15 +1116,15 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .img_books{
-	transform: scale(1.6) translateY(14vw) translateX(2.5vw);
+	transform: scale(1.6) translateY(15vw) translateX(2.8vw);
 }
 
 .lineblock_first img{
-	transform: scale(1.73) translateY(-196.4vw) translateX(-23.2vw);
+	transform: scale(1.86) translateY(-182vw) translateX(-20.65vw);
 }
 
 .six img{
-	transform: translateY(60vw) scale(1.67) translateX(6vw);
+	transform: translateY(61.1vw) scale(1.84) translateX(6.1vw);
 }
 
 .retort{
@@ -1073,36 +1175,37 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .dostoev{
-	transform: translateY(63vw) scale(1.9) translateX(26.5vw);
+	transform: translateY(62.5vw) scale(1.9) translateX(26.5vw);
 }
 .dostoev span{
 	font-size: 1.56vw;
 }
 
 .chess{
-	transform: translateY(11vw) scale(1.8);
+	transform: translateY(12vw) scale(1.8);
+	height: 26vw;
 }
 
 .chess_block{
-	width: 7vw;
-	height: 7vw;
+	width: 7.32vw;
+	height: 7.32vw;
 }
 
 .chess span{
-	font-size: 2.6vw;
+	font-size: 2.8vw;
 	transform: translateY(-0.5vw);
 }
 
 .far_451{
-	transform: translateY(-212.6vw) scale(1.9);
+	transform: translateY(-214.3vw) scale(1.9) translateX(26.6vw);
 }
 
 .far_451 img{
-	transform: translateY(3.6vw) scale(.97) translateX(1.3vw);
+	transform: translateY(4.9vw) scale(1.1) translateX(1.3vw);
 }
 
 .white_princess{
-	transform: scale(1.9) translateY(7vw);
+	transform: scale(1.9) translateY(6.5vw);
 }
 
 .white_princess span{
@@ -1111,7 +1214,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .da_vinci{
-	transform: translateY(-136.6vw) scale(1.9);
+	transform: translateY(-137.5vw) scale(1.9);
 }
 
 .da_vinci span{
@@ -1129,13 +1232,16 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .master_first, .master_second{
-	width: 11.7vw;
-	height: 11.7vw;
+	width: 12.47vw;
+	height: 12.47vw;
 }
 
+.master span{
+	font-size: 2.2vw;
+}
 .player{
 	z-index: 4;
-	transform: scale(1.9) translateY(-19.5vw) translateX(27vw);
+	transform: scale(1.9) translateY(-19.7vw) translateX(27vw);
 }
 
 .player img{
@@ -1143,83 +1249,76 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .hidden_heart{
-	transform: translateY(-88vw) translateX(-40vw);
+	transform: translateY(-90vw) translateX(-42vw);
 }
 
 .player span{
-	font-size: 7.3vw;
-	transform: translateX(1vw) translateY(-1vw);
+	font-size: 7.5vw;
+	transform: translateX(0.7vw) translateY(-0.9vw);
 }
 .plus_one{
-	transform: translateY(-237vw) scale(1.9);
+	transform: translateY(-237.3vw) scale(1.9);
 	z-index: 3;
 }
 
 .plus_one span{
-	transform: translateX(-0.2vw) translateY(-0.1vw) scale(1);
+	transform: translateX(0.5vw) scale(1) translateY(2.9vw);
 }
 
 .plus_one img{
 	transform: scale(.96) translateY(1.3vw);
 }
 .wheel_img img{
-	transform:translateY(25.3vw) scale(1) translateX(7vw);
+	transform:translateY(26.7vw) scale(1) translateX(6.2vw);
 }
 
 .war{
-	transform: translateY(385vw) translateX(67vw) scale(1.41);
-	opacity: 0;
+	transform: translateY(108.5vw) translateX(14vw) scale(1.6);
 	z-index: 30;
+	width: 34vw;
 }
 
 .story{
-	transform: translateX(-36.3vw) translateY(-238.8vw) scale(1.7);
-	opacity: 0;
+	transform: translateX(-37vw) translateY(-239vw) scale(1.7);
 	z-index: 5;
-	width: 23vw;
-	height: 26.6vw;
+	width: 24vw;
+	height: 28.3vw;
 }
 .silent{
-	transform: translateY(-38.4vw) translateX(13.5vw) scale(1.64);
-	opacity: 0;
+	transform: translateY(-38.7vw) translateX(13.5vw) scale(1.69);
 	width: 25vw;
 	height: 28.5vw;
 }
 .bird{
 	transform: translateY(12.5vw) translateX(64.2vw) scale(1.83);
-	opacity: 0;
 	height: 25.2vw;
 }
 
 .lady{
-transform: translateX(-35.7vw) translateY(11.7vw) scale(1.68);
-opacity: 0;
+transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 }
 
 .drak{
 	position: relative;
-	opacity: 0;
-	bottom: 340px;
-	left: 6%;
-	width: 24vw;
-	height: 26.6vw;
+	bottom: 378px;
+	left: 5.2%;
+	width: 23vw;
+	height: 26vw;
 }
 
 .shine{
 	transform: translateY(-139.4vw) translateX(62.7vw) scale(1.65);
-	opacity: 0;
 	z-index: 8;
 	width: 24vw;
 	height: 28vw;
 }
 
 .numb{
-	top: -1722px;
-	left: 367px;
+	top: -1910px;
+	left: 6px;
 	position: relative;
-	opacity: 0;
-	width: 24vw;
-	height: 27.2vw;
+	width: 23vw;
+	height: 26vw;
 }
 }
 
@@ -1561,7 +1660,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-35vw);
+ transform: translateX(52.4vw) scale(.77) translateY(5vw);
  height: 70vw;}
 
 .silent{
@@ -1603,13 +1702,13 @@ body{
 }
 
 .numb{
+ z-index: 4;
  position: absolute;
- top: 142.8%;
+ top: 142.6%;
+ left: 57%;
  width: 42vw;
  height: 52vw;
- right: 20%;
 }
-
 .letter_l,
 .letter_b,
 .letter_a{
