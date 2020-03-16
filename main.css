@@ -1330,14 +1330,14 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 
 .curtain{
 	width: 375px;
-	height: 2700px;
+	height: 2650px;
 }
 .wrap{
 	transform: scale(.9) translateX(37vw) translateY(10vw);
 }
 
 .bubbles-wrapper, .bubble {
-	visibility: hidden;
+	display: none;
 }
 
 body{
@@ -1436,11 +1436,10 @@ body{
 }
 
 .img_retort1{
-	transform: translateY(348vw) scale(.3) translateX(-140vw);
+	display: none;
 }
 .img_retort2{
-	position: absolute;
-	visibility: hidden
+	display: none;
 }
 
 .retort img{
@@ -1734,4 +1733,3 @@ body{
 	border: 1px solid #fff;
 }
 }
-
