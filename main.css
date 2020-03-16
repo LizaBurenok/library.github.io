@@ -1327,10 +1327,10 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 		width: 49.4vw;
 		height: 49.4vw;
 	}
-	
+
 .curtain{
 	width: 375px;
-	height: 2600px;
+	height: 2650px;
 }
 .wrap{
 	transform: scale(.9) translateX(25vw) translateY(10vw);
@@ -1338,6 +1338,10 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 
 .bubbles-wrapper, .bubble {
 	visibility: hidden;
+}
+
+body{
+	width: 375px;
 }
 
 .letter_k,
@@ -1668,7 +1672,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-101vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-100.8vw);
  height: 70vw;}
 
 .silent{
@@ -1698,7 +1702,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 .drak{
  z-index: 2;
  position: absolute;
- top: 212.5%;
+ top: 212.7%;
  left: 57%;
  width: 42vw;
  height: 52vw;
@@ -1712,7 +1716,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 .numb{
  z-index: 4;
  position: absolute;
- top: 120.2%;
+ top: 120.3%;
  left: 57%;
  width: 42vw;
  height: 52vw;
