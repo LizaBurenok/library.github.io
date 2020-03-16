@@ -1321,3 +1321,417 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	height: 26vw;
 }
 }
+
+@media (max-width: 375px) and (min-width: 320px){
+.block{
+		width: 49.4vw;
+		height: 49.4vw;
+	}
+
+.curtain{
+	width: 375px;
+	height: 2700px;
+}
+.wrap{
+	transform: scale(.9) translateX(37vw) translateY(10vw);
+}
+
+.bubbles-wrapper, .bubble {
+	visibility: hidden;
+}
+
+body{
+	width: 375px;
+}
+
+.letter_k,
+	.letter_l,
+	.letter_b,
+	.letter_a{
+    position: absolute;;
+    font-size: 69vw;
+    left: -6%;
+     top: 2%;
+  }
+
+  .letter_o{
+	position: absolute;
+	z-index: 2;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 67vw;
+	text-transform: uppercase;
+	top: -2%;
+	left: -3;
+}
+
+.block_blackline{
+	width: 15px;
+	height: 30vw;
+	position: absolute;
+}
+
+.line{
+	height: 30px;
+}
+
+.lineblock_first img{
+	transform: translateY(-352vw) scale(.92) translateX(-57vw)
+}
+
+.six img{
+	transform: scale(.9) translateY(52vw) translateX(-3.5vw);
+}
+
+.first_line_four{
+	background-color: #fcca2a;
+}
+
+.first_line .six{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.five,
+.six{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.two{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+.three{
+	background-color: #f9f4ff;
+	border: 1px solid #666;
+}
+
+#second_line_five{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.first_line .seven{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.second_line .one{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.seven{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.third_line_four{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+.img_books{
+	transform: translateY(-132px) scale(.9);
+	text-align: center;
+}
+
+.img_retort1{
+	transform: translateY(348vw) scale(.3) translateX(-140vw);
+}
+.img_retort2{
+	position: absolute;
+	visibility: hidden
+}
+
+.retort img{
+	transform: translateY(86vw) scale(.56) translateX(57vw);
+}
+
+.book{
+	width: 39vw;
+	height: 48vw;
+	margin: 0 auto;
+	transform: translateY(1.9%);
+}
+
+.harry_potter{
+	transform: translateY(-49vw) translateX(50vw);
+}
+
+.harry_potter span{
+	font-size: 7vw;
+	bottom: 7%;
+	left: 5%;
+}
+
+.harry_face{
+	width: 20vw;
+	height: 40vw;
+}
+
+.harry_glass{
+	width: 12vw;
+	height: 12vw;
+	transform: translateY(-10%);
+}
+
+.harry_glass hr{
+	width: 7.5vw;
+	position: absolute;
+	top: 30%;
+	right: 100%;
+}
+
+.dostoev{
+	transform: translateY(-48.5vw) translateX(-0.5vw);
+}
+
+.brown_line{
+	width: 100%;
+	height: 3vw;
+	top: 41%;
+}
+
+.dostoev span{
+	transform: rotate(-90deg) translateY(470%);
+	font-size: 2.8vw;
+	z-index: 1;
+}
+
+.chess{
+	transform: translateY(201vw);
+}
+
+.chess_name span{
+	font-size: 1.8vw;
+	margin-left: 1.5%;
+}
+.chess_block{
+	width: 3.665vw;
+	height: 3.665vw;
+}
+
+.chess_block:nth-child(even){
+	background-color: #9ff0ff;
+}
+
+.far_451{
+	transform: translateY(-26.1vw)
+}
+
+.far_451 img{
+	transform: translateY(30%) translateX(10%);
+}
+
+.far_451 hr {
+	height: 10px;
+	width: 0.1px;
+	background-color: #f2f2f2;
+	transform: translateX(-2.7vw) translateY(1.2vw);
+}
+
+.white_princess{
+	transform: translateY(-49.3vw) translateX(-49.6vw);
+}
+
+.white_princess span{
+	color: #fff;
+	font-size: 5vw;
+	margin-left: 0.5vw;
+}
+.apple{
+	background-color: #8fd8d8;
+	border-radius: 50%;
+	width: 26vw;
+	height: 26vw;
+	position: absolute;
+	bottom: -7%;
+	left: -10%;
+}
+
+.apple_piece{
+	width: 0;
+	height: 0;
+	border-left: 4.2vw solid transparent;
+	border-right: 4.2vw solid transparent;
+	border-bottom: 8.4vw solid #aa6400;
+}
+
+#second_line_three{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.da_vinci{
+	background-color: #8c90c8;
+	display: flex;
+	justify-content: center;
+	transform: translateY(-249.5vw)
+}
+
+.hidden_x{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 4.5vw;
+	text-align: center;
+	margin-top: 50%;
+	opacity: 0;
+}
+
+.da_vinci{
+	transform: translateY(-298.7vw) translateX(50vw);
+}
+
+.da_vinci span{
+	font-size:5vw;
+}
+
+.da_vinci_block{
+	width: 7vw;
+	height: 12vw;
+	border-radius: 10%;
+}
+
+.chess_name{
+	height: 45%;
+}
+
+.chess_name span{
+	font-size:5vw;
+}
+.chess_block{
+	width: 12.98vw;
+	height: 12.97vw;
+}
+
+#third_line_one{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.far_451{
+	transform: translateY(1vw);
+}
+.far_451 img{
+	transform: translateY(22%) scale(1) translateX(8%);
+}
+
+.far_451 hr {
+	height: 10px;
+	width: 0.1px;
+	transform: translateX(-2.7vw) translateY(1.2vw);
+}
+
+.player{
+	transform: translateY(-149.4vw)
+}
+
+.player span{
+	position: absolute;
+	top: -7%;
+	font-size: 12vw;
+}
+
+.plus_one{
+	position: relative;
+	transform: translateY(-198.6vw);
+	z-index: 3;
+}
+
+.plus_one span{
+	font-size: 30vw;
+	position: absolute;
+	left: 13%;
+}
+
+.plus_one img{
+	position: absolute;
+	right: 25%;
+	transform: scale(.9);
+}
+
+.wheel_img img{
+	transform: translateX(12vw) translateY(49vw);
+	transform-origin: center;
+}
+
+.master{
+	transform: translateY(51vw)
+}
+.master span{
+	font-size: 3.9vw;
+	color: #fff;
+	transform: translateY(-20%);
+}
+
+.cube{
+	width: 24vw;
+	height: 24vw;
+}
+.war, .numb, .story, .bird, .lady, .silent, .shine, .drak{
+ opacity: 1;
+ transform: scale(2);
+}
+.war{
+ transform: translateX(52.4vw) scale(.77) translateY(-59.5vw);
+ height: 70vw;}
+
+.silent{
+ transform: translateY(-187.4vw) scale(1.6) translateX(8vw);
+}
+
+.story{
+ transform: translateY(-239.4vw) scale(1.65) translateX(8vw);
+ height: 29.1vw;
+}
+
+.lady{
+ transform: translateY(-36.8vw) scale(1.85) translateX(8vw);
+ height: 25.1vw;
+ z-index: 2;
+}
+
+.bird{
+ transform: translateY(262vw) scale(1.8) translateX(7.5vw);
+ height: 26.1vw;
+}
+
+.shine{
+ transform: translateY(50vw);
+}
+
+.drak{
+ z-index: 2;
+ position: absolute;
+ top: 251.7%;
+ left: 57%;
+ width: 42vw;
+ height: 52vw;
+}
+
+.shine{
+ transform: translateY(-290.7vw) scale(1.6) translateX(8vw);
+ height: 31vw
+}
+
+.numb{
+ z-index: 4;
+ position: absolute;
+ top: 142.6%;
+ left: 57%;
+ width: 42vw;
+ height: 52vw;
+}
+.letter_l,
+.letter_b,
+.letter_a{
+	opacity: 0;
+	margin-left: 32px;
+	margin-top: 0;
+}
+
+.third{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+}
+
