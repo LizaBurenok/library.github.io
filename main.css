@@ -1322,7 +1322,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) and (min-width: 320px{
 .block{
 		width: 49.4vw;
 		height: 49.4vw;
@@ -1333,7 +1333,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	height: 2700px;
 }
 .wrap{
-	transform: scale(.9) translateX(50vw) translateY(10vw);
+	transform: scale(.9) translateX(47vw) translateY(10vw);
 }
 
 .bubbles-wrapper, .bubble {
