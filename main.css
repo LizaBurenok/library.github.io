@@ -1726,10 +1726,12 @@ body{
 	height: 2700px;
 }
 .wrap{
-	transform: scale(.9) translateX(25vw) translateY(10vw);
+	transform: scale(.9) translateX(35vw) translateY(10vw);
 }
 	
-.bubbles-wrapper, .bubble {
+.bubbles-wrapper {
 	visibility: hidden;
 }
+	.bubble img{
+		visibility: hidden;
 }
