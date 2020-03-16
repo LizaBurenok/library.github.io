@@ -1,3 +1,84 @@
+let retortEntry = anime.timeline({
+  targets: '.retort_wrapper',
+  autoplay: false,
+  rotate: {
+  value: 180,
+  delay: 1500
+},
+  duration: 1000,
+  easing: 'linear',
+})
+
+retortEntry.add({
+  targets: '.wrap',
+  backgroundColor: 'rgb(206, 87, 154)',
+  duration: 1500
+})
+
+retortEntry.add ({
+  targets: '.drop_one',
+  translateX: {
+    value: 5
+  },
+  translateY: -50,
+  opacity: {
+    value: 1,
+    delay: 1500
+  },
+  translateY: {
+    value: -160,
+    delay: 1500
+  }
+})
+
+retortEntry.add({
+  targets: '.drop_two',
+  translateX: 5,
+  translateY: -50,
+  opacity: {
+    value: 1,
+    delay: 450
+  }, translateY: {
+    value: -170,
+    delay: 1500
+  }
+})
+
+retortEntry.add({
+  targets: '.drop_three',
+  translateX: 5,
+  tranlsateY: -50,
+  opacity: {
+    value: 1,
+    delay: 400
+  }, translateY: {
+    value: -170,
+    delay: 1500
+  }
+})
+
+retortEntry.add({
+  targets: '.curtain',
+  backgroundColor: 'rgb(255, 255, 255)',
+  opacity: {
+    value: 0
+  },
+  zIndex:
+  {value: -20}
+})
+
+retortEntry.add({
+  targets: '.wrap',
+  opacity: {
+    value: 0,
+    duration: 300
+  },
+  zIndex:
+  {value: 0}
+})
+let btnEntry = document.querySelector('.wrap')
+btnEntry.onclick = retortEntry.restart
+
 let chess = anime.timeline({
   easing: 'easeInOutCirc',
   duration: 2000,
@@ -437,6 +518,7 @@ let btn04 = document.querySelector('.master').onclick = cards.restart
 let btn05 = document.querySelector('.dostoev').onclick = line.play
 let btn06 = document.querySelector('.da_vinci').onclick = code.restart
 let btn07 = document.querySelector('.harry_potter').onclick = books.restart
-let btnLet = document.querySelector('.block_lines').onclick = letter.restart
+letbtnLet = document.querySelector('.block_lines').onclick = letter.restart
+
 let btn09 = document.querySelector('.far_451').onclick = hr.play
 let btn10 = document.querySelector('.plus_one').onclick = wheel.restart
