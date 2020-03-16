@@ -1327,9 +1327,17 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 		width: 49.4vw;
 		height: 49.4vw;
 	}
-
-body{
+	
+.curtain{
 	width: 375px;
+	height: 2600px;
+}
+.wrap{
+	transform: scale(.9) translateX(25vw) translateY(10vw);
+}
+
+.bubbles-wrapper, .bubble {
+	visibility: hidden;
 }
 
 .letter_k,
@@ -1660,7 +1668,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-10vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-101vw);
  height: 70vw;}
 
 .silent{
@@ -1690,7 +1698,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 274%;
+ top: 212.5%;
  left: 57%;
  width: 42vw;
  height: 52vw;
@@ -1704,7 +1712,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 92.6%;
+ top: 120.2%;
  left: 57%;
  width: 42vw;
  height: 52vw;
@@ -1721,17 +1729,4 @@ body{
 	background-color: #fcca2a;
 	border: 1px solid #fff;
 }
-.curtain{
-	width: 375px;
-	height: 2700px;
-}
-.wrap{
-	transform: scale(.9) translateX(35vw) translateY(10vw);
-}
-	
-.bubbles-wrapper {
-	visibility: hidden;
-}
-	.bubble img{
-		visibility: hidden;
 }
