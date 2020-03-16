@@ -1690,7 +1690,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 272%;
+ top: 274%;
  left: 57%;
  width: 42vw;
  height: 52vw;
@@ -1726,6 +1726,10 @@ body{
 	height: 2700px;
 }
 .wrap{
-	transform: scale(.9) translateX(18vw) translateY(10vw);
+	transform: scale(.9) translateX(25vw) translateY(10vw);
+}
+	
+.bubbles-wrapper, .bubble {
+	visibility: hidden;
 }
 }
