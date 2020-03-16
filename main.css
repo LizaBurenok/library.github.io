@@ -1333,7 +1333,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	height: 2700px;
 }
 .wrap{
-	transform: scale(.9) translateX(54vw) translateY(10vw);
+	transform: scale(.9) translateX(50vw) translateY(10vw);
 }
 
 .bubbles-wrapper, .bubble {
@@ -1703,7 +1703,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 262%;
+ top: 272%;
  left: 57%;
  width: 42vw;
  height: 52vw;
@@ -1717,7 +1717,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 132.6%;
+ top: 152.6%;
  left: 57%;
  width: 42vw;
  height: 52vw;
