@@ -1333,7 +1333,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	height: 2700px;
 }
 .wrap{
-	transform: scale(.9) translateX(47vw) translateY(10vw);
+	transform: scale(.9) translateX(44vw) translateY(10vw);
 }
 
 .bubbles-wrapper, .bubble {
@@ -1673,7 +1673,7 @@ body{
 }
 	
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-115vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-95vw);
  height: 70vw;}
 
 .silent{
@@ -1703,7 +1703,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 272%;
+ top: 287%;
  left: 57%;
  width: 42vw;
  height: 52vw;
@@ -1717,7 +1717,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 152.6%;
+ top: 172.6%;
  left: 57%;
  width: 42vw;
  height: 52vw;
