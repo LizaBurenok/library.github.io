@@ -1660,7 +1660,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-3vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-10vw);
  height: 70vw;}
 
 .silent{
@@ -1704,7 +1704,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 122.6%;
+ top: 92.6%;
  left: 57%;
  width: 42vw;
  height: 52vw;
