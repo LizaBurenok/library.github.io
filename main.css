@@ -686,7 +686,7 @@ span{
 
 @media (max-width: 1440px){
 	.curtain{
-		height: 682px;
+		height: 880px;
 	}
 
 	.block_wrapper{
@@ -707,7 +707,7 @@ span{
 
 @media (max-width: 1388px){
 	.curtain{
-		height: 950px;
+		height: 1000px;
 	}
 
 	.block_wrapper{
@@ -735,7 +735,7 @@ translateX(-15vw);}
 
 @media (max-width: 1280px){
 	.curtain{
-		width: 1270px;
+		width: 12px;
 		height: 800px;
 	}
 
@@ -823,7 +823,7 @@ translateX(-15vw);}
 	}
 
 	.curtain{
-		height: 800px;
+		height: 1000px;
 	}
 
 	.block_wrapper{
