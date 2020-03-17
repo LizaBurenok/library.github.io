@@ -140,12 +140,6 @@ body{
 	position: absolute;
 	z-index: 5;
 }
-.bubbles {
-  width: 5vw;
-  height: 5vw;
-  border-radius: 100%;
-	background-color: #0095ae;
-}
 
 .line{
 	height: 60px;
@@ -281,38 +275,6 @@ visibility: hidden;
 	z-index: 100;
 }
 
-/*
-.bubbles{
-	border-radius: 50%;
-	border: 3px solid #fff;
-	background-color: lightblue;
-	margin-bottom: 5px;
-	transform: translateX(10vw);
-}
-
-.bbl1{
-	transform: translateY(-150px) translateX(120px);
-	width: 20px;
-	height: 20px;
-}
-.bbl4{
-	width: 20px;
-	height: 20px;
-	transform: translateX(-2vw) translateY(-10vw);
-}
-
-.bbl2, .bbl5{
-	width: 35px;
-	height: 35px;
-	transform: translateX(10vw) translateY(-10vw);
-}
-
-.bbl3, .bbl6{
-	width: 45px;
-	height: 45px;
-	transform: translateX(8vw) translateY(-10vw;
-}
-/*САМИ КНИЖКИ И ИХ СТИЛИ*/
 .book{
 	width: 11vw;
 	height: 13vw;
@@ -334,9 +296,6 @@ span{
 	position: relative;
 	z-index: 1;
 }
-
-
-/*HARRY POTTER серия книг*/
 
 .cover_wrapper{
 	display:flex;
@@ -616,6 +575,13 @@ span{
 }
 
 @media (min-width: 1680px) {
+	.curtain{
+		height: 882px;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
   .block{
     width: 14.165vw;
     height: 15vw;
@@ -719,6 +685,13 @@ span{
 }
 
 @media (max-width: 1440px){
+	.curtain{
+		height: 1000px;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
 .letter_o{
 	top: 21%
 	left: 0.5%;
@@ -733,11 +706,25 @@ span{
 }
 
 @media (max-width: 1388px){
+	.curtain{
+		height: 1000px;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
 	.letter_o{
 		transform: translateY(-7vw) translateX(-15vw);
 	}
 }
 @media (max-width: 1366px){
+	.curtain{
+		height: 1000px;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
 	.letter_o{
 		transform: translateY(-10vw)
 translateX(-15vw);}
@@ -747,6 +734,19 @@ translateX(-15vw);}
 }
 
 @media (max-width: 1280px){
+	.curtain{
+		width: 1270px;
+		height: 800px;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	.bubble, .bubbles-wrapper{
+		display: none;
+	}
+
 	.block{
 		width: 14.125vw;
 		height: 14.125vw;
@@ -780,9 +780,10 @@ translateX(-15vw);}
 		}
 		.far_451 hr{
 			transform: translateY(-1vw) translateX(-2.8vw);	}
+
 			.chess_block{
-				width: 51.2px;
-				height: 50px
+				width: 50.1px;
+				height: 48px
 			}
 			.chess span{
 				font-size: 1.5vw;
@@ -809,6 +810,11 @@ translateX(-15vw);}
 			.plus_one span{
 				transform: translateX(0.2vw);
 			}
+
+			.story, .silent, .shine, .lady, .war, .bird, .drak, .numb{
+				width: 12vw;
+				height: 13.5vw;
+			}
 }
 @media (max-width: 1024px){
 	.block{
@@ -816,6 +822,13 @@ translateX(-15vw);}
 		height: 24.8vw;
 	}
 
+	.curtain{
+		height: 1000px;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
 	.letter_k,
 	.letter_l,
 	.letter_b,
@@ -1069,17 +1082,24 @@ transform: translateX(-102.8vw) translateY(-32vw);
 .numb{
 	transform: translateX(52vw) translateY(1vw);
 }
+
+.bubbles-wrapper, .bubble{
+		display: none;
+	}
+
+	.curtain{
+		width: 1024px;
+	}
 }
 
 @media (max-width: 768px){
 	body{
 		width: 768px;
-		height: 1024px;
 	}
 
 	.curtain{
 		width: 768px;
-		height: 5500px;
+		height: 4500px;
 	}
 	.block{
 		width: 49.7vw;
@@ -1132,7 +1152,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .img_retort1, .img_retort2{
-	visibility: hidden;
+	display: none;
 }
 
 .harry_potter{
@@ -1197,7 +1217,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .far_451{
-	transform: translateY(-214.3vw) scale(1.9) translateX(26.6vw);
+	transform: translateY(-213vw) scale(1.9) translateX(26.6vw);
 }
 
 .far_451 img{
@@ -1320,6 +1340,14 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	width: 23vw;
 	height: 26vw;
 }
+
+.block_wrapper{
+	overflow: hidden;
+}
+
+.bubbles-wrapper, .bubble {
+	display: none;
+}
 }
 
 @media (max-width: 375px) and (min-width: 320px){
@@ -1330,10 +1358,15 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 
 .curtain{
 	width: 375px;
-	height: 2650px;
+	height: 2275;
 }
+
+.block_wrapper{
+	overflow: hidden;
+}
+
 .wrap{
-	transform: scale(.9) translateX(37vw) translateY(10vw);
+	transform: scale(.9) translateX(34vw) translateY(10vw);
 }
 
 .bubbles-wrapper, .bubble {
@@ -1442,8 +1475,12 @@ body{
 	display: none;
 }
 
+.retort{
+	position: absolute;
+}
+
 .retort img{
-	transform: translateY(86vw) scale(.56) translateX(57vw);
+	transform: scale(.56) translateX(126vw) translateY(-69vw);
 }
 
 .book{
@@ -1498,7 +1535,7 @@ body{
 }
 
 .chess{
-	transform: translateY(201vw);
+	transform: translateY(150.6vw);
 }
 
 .chess_name span{
@@ -1654,7 +1691,7 @@ body{
 }
 
 .master{
-	transform: translateY(51vw)
+	transform: translateY(1vw)
 }
 .master span{
 	font-size: 3.9vw;
@@ -1690,7 +1727,7 @@ body{
 }
 
 .bird{
- transform: translateY(262vw) scale(1.8) translateX(7.5vw);
+ transform: translateY(162vw) scale(1.8) translateX(36vw);
  height: 26.1vw;
 }
 
@@ -1701,8 +1738,8 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 251.7%;
- left: 57%;
+ top: 224.3%;
+ left: 7%;
  width: 42vw;
  height: 52vw;
 }
@@ -1715,8 +1752,8 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 142.6%;
- left: 57%;
+ top: 170%;
+ left: 8%;
  width: 42vw;
  height: 52vw;
 }
@@ -1731,5 +1768,13 @@ body{
 .third{
 	background-color: #fcca2a;
 	border: 1px solid #fff;
+}
+
+.fourth_line_two, .fourth_line_three, .fourth_line_four, .fourth_line_six, .fourth_line_seven{
+	display: none;
+}
+.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+	transform: translateX(55vw) translateY(-49vw);
+	z-index: 3;
 }
 }
