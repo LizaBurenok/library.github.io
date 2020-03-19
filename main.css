@@ -1,3 +1,4 @@
+
 body{
 	margin: 0;
 	padding: 0;
@@ -247,6 +248,18 @@ visibility: hidden;
  visibility: hidden;
 }
 
+.animal{
+	transform: translateX(1.2vw) translateY(0.4vw);
+	position: absolute;
+	visibility: hidden;
+}
+
+.animal_mask, .animal_mask1{
+	position: absolute;
+	transform: translateY(60%) translateX(70%);
+	opacity: 0;
+}
+
 /*КАРТИНКИ*/
 .retort{
 	text-align: center;
@@ -442,6 +455,23 @@ span{
 	transform: translateY(30%) translateX(10%);
 }
 
+.fareng_space{
+	position: absolute;
+	width: 11vw;
+	height: 2vw;
+	margin: 0 auto;
+	transform: translateY(15%) translateX(14%);
+	z-index: 20;
+}
+
+.little_circle{
+	width: 35px;
+	height: 35px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
+}
+
 .white_princess{
 	background-color: #eb3c1c;
 	overflow: hidden;
@@ -574,6 +604,231 @@ span{
 	opacity: 0;
 }
 
+@media (min-width: 2780px) and (max-width: 2880px){
+	.wrap{
+		transform: scale(2.6) translateX(330%) translateY(150%);
+	}
+	.curtain{
+		transform: scale(3.14);
+		width: 1395px;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	.line{
+		height: 3vw;
+	}
+
+	.bubble img{
+		transform: scale(.7)
+	}
+
+	.img_books{
+		transform: scale(2) translateY(0.4vw);
+	}
+	.animal{
+		transform: scale(.8)
+	}
+	.animal_mask, .animal_mask1{
+			transform: scale(.5);
+		}
+	.img_retort1 img{
+		transform: scale(3.18)
+	}
+
+	.img_retort2 img{
+		transform: scale(2.2) translateX(2.4vw) translateY(2vw);
+	}
+
+	.far_451 img{
+		transform: scale(2.5) translateY(2.1vw) translateX(1.5vw);
+	}
+
+	.retort{
+		transform: scale(2.1) translateY(1.45vw);
+	}
+	.player img{
+		transform: scale(2.3) translateY(-1.15vw) translateX(-0.7vw);
+	}
+
+	.da_vinci_block{
+		width: 2.2vw;
+	}
+
+	.plus_one img{
+		transform: scale(2.1) translateY(-1vw) translateX(-1.25vw);
+	}
+
+	.wheel_img{
+		position: absolute;
+		top: 104%;
+		left: 103%;
+	}
+
+	.war{
+			transform: translateY(-14.9vw) scale(.85);
+		}
+
+.animal{
+			transform: translateY(-1.3vw) scale(.85);
+		}
+
+		.animal_mask, .animal_mask1{
+			transform: scale(.7)
+		}
+
+		.bird, .numb, .story, .silent, .shine, .drak, .lady{
+			transform: scale(2.2) translateY(2.05vw) translateX(2vw);
+		}
+}
+@media (min-width: 2560px) and (max-width: 2600px){
+
+	.wrap{
+		transform: scale(2) translateX(400%) translateY(100%);
+	}
+	.curtain{
+		width: 1405px;
+		transform: scale(2.64);
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	.img_retort1 img{
+		transform: scale(3);
+	}
+
+	.img_retort2 img{
+		transform: scale(2) translateX(2.5vw) translateY(2vw);
+	}
+
+	.retort{
+		transform: scale(1.85) translateY(1.5vw);
+	}
+
+	.img_books{
+		transform: scale(1.86) translateY(0.24vw);
+	}
+
+	.far_451 img{
+		transform: scale(2.2) translateY(2vw) translateX(1.6vw);
+	}
+
+	.da_vinci_block{
+		width: 2.2vw;
+	}
+
+	.player img{
+		transform: scale(1.9) translateY(-1vw) translateX(-0.7vw);
+	}
+
+	.plus_one img{
+		transform: scale(1.9) translateX(-1.23vw) translateY(-0.9vw);
+	}
+
+	.wheel_img{
+		position: absolute;
+		top: 104%;
+		left: 104%;
+	}
+
+.animal{
+	transform: scale(.7)
+}
+
+.bubble img{
+	transform: scale(.7)
+}
+
+.war{
+			transform: translateY(-14.9vw) scale(.82);
+		}
+
+.animal{
+			transform: translateY(-1.3vw) scale(.82);
+		}
+
+		.animal_mask, .animal_mask1{
+			transform: scale(.7)
+		}
+
+		.bird, .numb, .story, .silent, .shine, .drak, .lady{
+			transform: scale(1.9) translateY(2.05vw) translateX(2vw);
+		}
+}
+
+
+@media (min-width: 2340px) and (max-width: 2500px){
+	.curtain{
+		width: 100%;
+		height: 250%;
+	}
+
+	.letter_k{
+		margin-top: 1px
+	}
+
+	.img_books{
+		transform: scale(1.7) translateY(0.2vw);
+	}
+
+	.block_wrapper{
+		overflow: hidden;}
+
+		.img_retort1, .img_retort2{
+			transform: scale(1.3) translateX(2.8vw) translateY(3vw);
+		}
+
+		.retort{
+			transform: scale(1.6) translateY(1.7vw);
+		}
+
+		.book{
+			width: 12vw;
+		}
+
+		.bubble img{
+			transform: scale(.7)
+		}
+
+		.war{
+			transform: translateY(-14.9vw) scale(.8);
+		}
+
+		.animal{
+			transform: translateY(-1.3vw) scale(.8);
+		}
+
+		.animal_mask, .animal_mask1{
+			transform: scale(.7)
+		}
+
+		.bird, .numb, .story, .silent, .shine, .drak, .lady{
+			transform: scale(1.7) translateY(2.05vw) translateX(2vw);
+		}
+
+		.far_451 img{
+			transform: scale(2) translateY(2.2vw) translateX(1.6vw);
+		}
+
+		.player img{
+			transform: scale(1.7) translateY(-1.1vw) translateX(-0.7vw);
+		}
+
+		.plus_one img{
+			transform: scale(1.7) translateY(-0.95vw) translateX(-1.3vw);
+		}
+
+		.wheel_img{
+			position: absolute;
+			top: 104%;
+			left: 103%
+		}
+		}
+
 @media (min-width: 1680px) {
 	.curtain{
 		height: 882px;
@@ -684,6 +939,31 @@ span{
 	}
 }
 
+@media (width: 1600px){
+	body{
+		width: 100%;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+	.img_books{
+		transform: scale(1.1) translateY(0.3vw);
+	}
+
+	.curtain{
+		width: 100%;
+		height: 55%;
+	}
+	.img_retort1{
+		transform: translateY(-15vw) translateX(1vw);
+	}
+
+	.img_retort2{
+		transform: translateY(-30vw) translateX(1.5vw);
+	}
+}
+
 @media (max-width: 1440px){
 	.curtain{
 		height: 880px;
@@ -707,7 +987,8 @@ span{
 
 @media (max-width: 1388px){
 	.curtain{
-		height: 1000px;
+		height: 800px;
+		width: 100%;
 	}
 
 	.block_wrapper{
@@ -816,6 +1097,327 @@ translateX(-15vw);}
 				height: 13.5vw;
 			}
 }
+
+@media (min-width: 1036px) and (max-width: 1250px){
+	body{
+		width: 100%;
+	}
+
+	.block{
+		width: 24.8vw;
+		height: 24.8vw;
+	}
+
+	.book{
+		width: 20vw;
+		height: 23.2vw;
+	}
+
+	.six img{
+		transform: scale(1.23) translateX(1.8vw) translateY(1.9vw);
+	}
+	.lineblock_first img{
+		transform: scale(1.25) translateY(1.9vw) translateX(1.9vw);
+	}
+
+	.img_books{
+		transform: scale(1.3) translateY(4.6vw);
+	}
+
+	#second_two{
+		background-color: background-color: #f9f4ff;
+		border: none;
+	}
+
+	.img_retort1{
+		z-index: 3;
+		transform: translateY(108vw)translateX(-3vw) scale(.8);
+	}
+
+	.img_retort2{
+		opacity: 0.6;
+		z-index: 3;
+		transform: translateX(20.5vw) scale(.8) translateY(30vw);
+	}
+
+	#second_line_one, #third_line_one, #third_line_two{
+		background-color: #fcca2a;
+	border: 1px solid #fff;
+	}
+
+	.block_blackline{
+		width: 4vw;
+	}
+
+	.retort{
+		transform: translateY(-97vw) scale(1.1) translateX(-23vw);
+	}
+
+	.letter_k{
+		font-size: 37vw;
+		transform: translateY(-34vw) translateX(-103vw);
+	}
+
+	.letter_o{
+		font-size: 32.3vw;
+		transform: translateX(-99vw) translateY(-30.5vw);
+	}
+
+	.da_vinci, .far_451, .harry_potter{
+		transform: translateX(1.4vw) translateY(1.1vw);
+	}
+
+	.harry_face{
+		width: 12vw;
+		height: 19vw;
+	}
+
+	.harry_glass{
+		width: 6vw;
+		height: 6vw;
+		margin-right: 2px;
+	}
+
+	.harry_potter hr{
+		width: 5.5vw;
+	}
+
+	.harry_potter span{
+		font-size: 3vw;
+		padding-left: 1vw;
+	}
+
+	.dostoev{
+		transform: translateX(25.1vw) translateY(1vw);
+	}
+
+	.dostoev span{
+		font-size: 1.5vw;
+	}
+
+	.chess_block{
+		width: 4vw;
+		height: 4vw;
+	}
+
+	.chess_name{
+		height: 6vw;
+	}
+
+	.chess span{
+		font-size: 2.5vw;
+		transform: translateY(-6vw);
+	}
+
+	.far_451 img{
+		transform: translateY(7vw) scale(1.3) translateX(2vw);
+	}
+
+	.master span{
+		font-size: 2vw;
+	}
+
+	.cube{
+		width: 11.3vw;
+		height: 11.6vw;
+	}
+
+	.da_vinci span{
+		font-size: 2.699vw;
+		transform: translateX(-0.2vw);
+	}
+
+	.da_vinci_block{
+		width: 3.4vw;
+		height: 6vw
+	}
+
+	.hidden_x{
+		font-size: 3vw
+	}
+
+	.player span{
+		font-size: 6.7vw;
+		transform: translateX(0.4vw);
+	}
+
+	.player img{
+		transform: scale(1.3) translateY(-1.15vw) translateX(-1vw);
+	}
+
+	.plus_one img{
+		transform: scale(1.2) translateX(-1vw) translateY(-0.4vw);
+	}
+
+	.wheel_img{
+		position: absolute;
+		top: 102%;
+		left: 103%;
+	}
+
+	.plus_one span{
+		font-size: 13vw;
+		transform: translateX(0.7vw) translateY(0.8vw);
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1035px){
+	body{
+		width: 100%;
+	}
+
+	.curtain{
+			width: 100%;
+			height: 160%
+		}
+
+	.block{
+		width: 24.8vw;
+		height: 24.8vw;
+	}
+
+	#second_line_one, #second_two, #third_line_one, #third_line_two{
+		background-color: #fcca2a;
+		border: 1px solid #fff;
+	}
+
+	.img_retort1{
+		transform: translateX(-28.3vw) scale(.7) translateY(65vw);
+	}
+
+	.img_retort2{
+		transform: translateX(20.3vw) translateY(-3vw);
+		z-index: 2;
+	}
+
+.letter_k,
+.letter_l,
+.letter_b,
+.letter_a{
+	font-size: 35.8vw;
+	transform: translateY(-33vw) translateX(-102.6vw);
+}
+
+.letter_l,
+.letter_b,
+.letter_a{
+	font-size: 35vw;
+	transform: translateY(-33vw) translateX(-105.6vw);
+}
+
+.letter_l,
+.letter_b{
+	font-size: 35vw;
+	transform: translateY(-32vw) translateX(-105.6vw);
+}
+
+.letter_o{
+	font-size: 34vw;
+	transform: translateY(-32vw) translateX(-100vw);
+}
+
+.img_books{
+	transform: scale(1.2) translateY(5.5vw);
+}
+
+.block_blackline{
+	width: 4vw;
+}
+
+.lineblock_first{
+	transform: scale(1.4) translateY(2.5vw) translateX(3.4vw);
+}
+
+.six img{
+	transform: scale(1.23) translateX(1.8vw) translateY(2vw);
+}
+
+.book{
+	transform: scale(1.7) translateY(3.3vw);
+}
+
+.harry_potter{
+}
+
+.chess_block{
+	width: 2.4vw;
+	height: 2.4vw;
+}
+
+.retort{
+	transform: scale(1.2) translateY(2vw);
+}
+
+.far_451{
+	transform: translateX(25vw) translateY(-19.4vw) scale(1.7);
+	z-index: 2;
+	width: 12vw;
+}
+
+.far_451 img{
+	transform: scale(.83) translateY(1vw);
+}
+
+.player img{
+	transform: scale(.86) translateY(1vw) translateX(0.5vw);
+}
+
+.plus_one img{
+	transform: scale(.8) translateY(2vw) translateX(1vw);
+}
+
+.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+	transform: translateX(6vw) scale(1.7) translateY(3.4vw);
+}
+
+ .lady{
+	transform: scale(1.7) translateX(4vw) translateY(3.5vw);
+}
+
+.war{
+	transform: scale(1.29) translateX(3.4vw) translateY(-8.4vw);
+}
+
+.numb{
+	width: 16vw;
+	height: 18.8vw;
+	position: absolute;
+	left: 2%;
+	top: 69.99%;
+}
+
+.animal{
+	transform: scale(1.24) translateY(2.3vw) translateX(4vw);
+}
+
+.drak{
+	width: 16vw;
+	height: 18.8vw;
+	position: absolute;
+	top: 91.2%;
+	left: 77%
+}
+
+.bird{
+	height: 13.6vw;
+	transform: scale(1.7) translateX(3.9vw) translateY(3.28vw);
+}
+
+.shine{
+	transform: scale(1.77) translateX(3.5vw) translateY(3.1vw);
+}
+
+.story{
+	transform: scale(1.7) translateX(3.7vw) translateY(3.1vw);
+	height: 14vw;
+}
+
+.silent{
+	transform: scale(1.7) translateX(4vw) translateY(3.3vw);
+	height: 14vw
+}
+}
+
 @media (max-width: 1024px){
 	.block{
 		width: 24.8vw;
@@ -967,6 +1569,9 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	border-right: 3.2vw solid transparent;
 	border-bottom: 6.4vw solid #aa6400;
 }
+#second_line_one{
+	background-color: #fcca2a;
+	border: 1px solid #fff;}
 
 #third_line_one,
 #third_line_two{
@@ -1091,15 +1696,139 @@ transform: translateX(-102.8vw) translateY(-32vw);
 		width: 1024px;
 	}
 }
+@media (min-width: 800px) and (max-width: 1000px){
+	.block{
+		width: 24.75vw;
+		height: 24.75vw;
+	}
+
+	body{
+		width: 100%;
+	}
+
+	.bubble, .bubble{
+		display: none;
+		position: absolute;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.img_retort1, .img_retort2{
+		display: none;
+	}
+
+	.book{
+		width: 21vw;
+		height: 24vw;
+	}
+
+	.img_books{
+		transform: scale(.95) translateY(5.4vw);
+	}
+
+	.block_blackline{
+		width: 4vw;
+		height: 40vw;
+	}
+
+	.six img{
+		transform: scale(.96) translateY(-1vw) translateX(-0.7vw);
+	}
+
+	.lineblock_first img{
+		transform: scale(.97) translateX(-0.4vw) translateY(-0.4vw);
+	}
+
+	#second_line_one{
+		background-color: #fcca2a;
+	border: 1px solid #fff;
+	}
+
+	.retort{
+		transform: scale(.9) translateY(-111vw) translateX(-28vw);
+	}
+
+	.far_451 img{
+		transform: scale(1.2) translateY(3vw) translateX(2vw);
+	}
+
+	#second_two{
+		background-color: #f9f4ff;
+		border: none;
+	}
+}
+
+@media (min-width: 770px) and (max-width: 800px){
+
+	.curtain{
+		width: 100%;
+		height: 210%
+	}
+
+	body{
+		width: 100%;
+	}
+
+	.block{
+		width: 24.74vw;
+		height: 24.74vw;
+	}
+
+	.bubbles, .bubbles-wrapper{
+		display: none;
+	}
+
+	.block-wrapper{
+		overflow: hidden;
+	}
+	#second_line_one{
+		background-color: #fcca2a;
+		border: 1px solid #fff;}
+	.fourth_line #none{
+		display: none;
+	}
+
+	.retort{
+		transform: scale(.9) translateY(-112vw) translateX(-28vw);
+	}
+
+	.lineblock_first img{
+		transform: scale(.95) translateY(-1vw) translateX(-1vw);
+	}
+
+	.six img{
+		transform: scale(.92) translateY(-1.2vw) translateX(-1.3vw);
+	}
+
+	.img_books{
+		transform: scale(.96) translateY(4.6vw);
+	}
+
+	.block_blackline{
+		width: 4vw;
+		height: 40vw;
+	}
+
+	.far_451 img{
+		transform: scale(1.2) translateY(3vw) translateX(2vw);
+	}
+}
 
 @media (max-width: 768px){
 	body{
 		width: 768px;
 	}
 
+#second_line_one{
+	background-color: #fcca2a;
+	border: 1px solid #fff;}
+
 	.curtain{
 		width: 768px;
-		height: 4500px;
+		height: 100%;
 	}
 	.block{
 		width: 49.7vw;
