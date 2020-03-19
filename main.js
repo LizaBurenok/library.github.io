@@ -512,6 +512,9 @@ animalCover.add({
   }
 })
 
+
+
+let btn11 = document.querySelector('.animal').onclick = animalCover.restart
 /*КАРТЫ ГЕНЕРИРОВАНИЕ
 let numberOfCards = 10
 for (let i = 0; i < numberOfCards; i += 1) {
@@ -622,4 +625,3 @@ letbtnLet = document.querySelector('.block_lines').onclick = letter.restart
 
 let btn09 = document.querySelector('.far_451').onclick = hr.play
 let btn10 = document.querySelector('.plus_one').onclick = wheel.restart
-let btn11 = document.querySelector('.animal').onclick = animalCover.restart
