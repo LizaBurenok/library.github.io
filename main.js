@@ -438,6 +438,80 @@ let bubble = anime({
     loop: true
 })
 
+let animalCover = anime.timeline({
+  easing: 'easeOutSine',
+  duration: 3000,
+  autoplay: false
+})
+
+animalCover.add({
+  targets: '.animal_mask1',
+  translateX: {
+    value: 55,
+    duration: 100
+  },
+  translateY: {
+    value: 60,
+    duration: 100
+  },
+  opacity: {
+    value: 1,
+    duration: 3000
+  }, scale: {
+    value: 1.2,
+    duration: 3000,
+    delay: 1000
+  }
+})
+
+animalCover.add({
+targets: '.animal_mask1',
+opacity: {
+  value: 0,
+  delay: 200,
+  duration: 4000
+}
+})
+
+animalCover.add({
+  targets: '.animal_mask',
+  translateX: {
+    value: 55,
+    duration: 100
+  },
+  translateY: {
+    value: 60,
+    duration: 100
+  },
+  opacity: {
+    value: 1,
+    duration: 3000
+  }, scale: {
+    value: 1.2,
+    duration: 3000
+  }
+})
+
+animalCover.add({
+  targets: '.animal_mask1',
+  translateX: {
+    value: 55,
+    duration: 100
+  },
+  translateY: {
+    value: 60,
+    duration: 100
+  },
+  opacity: {
+    value: 1,
+    duration: 1500
+  }, scale: {
+    value: 1.2,
+    duration: 1500,
+    delay: 1000
+  }
+})
+
 /*КАРТЫ ГЕНЕРИРОВАНИЕ
 let numberOfCards = 10
 for (let i = 0; i < numberOfCards; i += 1) {
@@ -507,8 +581,34 @@ btnColorCover.onclick = function() {
   }
 }
 
-//Add flowing bubbles
-//let btnBubble = document.querySelector('.')
+
+
+let btnCircle = document.querySelector('.far_img')
+btnCircle.onclick = function (){
+  let numberOfCircles = 8;
+  for (let i = 0; i <= numberOfCircles; i+= 1){
+    let bookInsert = document.querySelector('.fareng_space')
+    let littleCircles = document.createElement('div')
+    littleCircles.classList.toggle('little_circle')
+    bookInsert.append(littleCircles)
+    littleCircles.addEventListener('mouseout', function() {
+        littleCircles.style.display = 'none'})
+  }}
+
+
+/*
+  for (let i = 0; i < numberOfCirles; i += 1) {
+    let littleCircles = document.createElement('div')
+    document.body.append(littleCircles)
+    if (anime.random(0,100) % 2 === 0) {
+      let size = `${anime.random(0,100)}px`
+      div.style.width = size
+      div.style.height = size
+      div.style.borderRadius = '50%'
+    } else {
+      div.style.width = `${anime.random(0,500)}px`
+      div.style.height = `${anime.random(0,500)}px`
+    }*/
 
 
 
@@ -522,3 +622,4 @@ letbtnLet = document.querySelector('.block_lines').onclick = letter.restart
 
 let btn09 = document.querySelector('.far_451').onclick = hr.play
 let btn10 = document.querySelector('.plus_one').onclick = wheel.restart
+let btn11 = document.querySelector('.animal').onclick = animalCover.restart
