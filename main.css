@@ -711,15 +711,15 @@ span{
 	}
 
 	.img_retort1 img{
-		transform: scale(3);
+		transform: scale(1.4) translateX(2vw) translateY(2vw);
 	}
 
 	.img_retort2 img{
-		transform: scale(2) translateX(2.5vw) translateY(2vw);
+		transform: scale(1.4) translateX(1.5vw) translateY(2vw);
 	}
 
 	.retort{
-		transform: scale(1.85) translateY(1.5vw);
+		transform: scale(2) translateY(1.5vw);
 	}
 
 	.img_books{
