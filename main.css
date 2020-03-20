@@ -2411,19 +2411,22 @@ body{
 	.letter_b,
 	.letter_a{
     position: absolute;;
-    font-size: 69vw;
+    font-size: 66vw;
     left: -6%;
-     top: 2%;
+     top: 1%;
   }
 
-  .letter_o{
+  .letter_l,
+	.letter_b,
+	.letter_a{
+    font-size: 67vw;
+    margin-left: 32px;
+  }
+
+.letter_l, .letter_b{
+	top: 3%;
 	position: absolute;
-	z-index: 2;
-	font-family: 'Helvetica', sans-serif;
-	font-size: 67vw;
-	text-transform: uppercase;
-	top: -2%;
-	left: -3;
+	font-size: 69vw;
 }
 
 .block_blackline{
@@ -2437,7 +2440,7 @@ body{
 }
 
 .lineblock_first img{
-	transform: translateY(-352vw) scale(.92) translateX(-57vw)
+	transform: translateY(-349vw) scale(.92) translateX(-57vw)
 }
 
 .six img{
@@ -2673,6 +2676,11 @@ body{
 	border: 1px solid #666;
 }
 
+#second_three{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
 .far_451{
 	transform: translateY(1vw);
 }
@@ -2714,11 +2722,6 @@ body{
 	transform: scale(.9);
 }
 
-.wheel_img img{
-	transform: translateX(12vw) translateY(49vw);
-	transform-origin: center;
-}
-
 .master{
 	transform: translateY(1vw)
 }
@@ -2737,7 +2740,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-59.5vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-101.5vw);
  height: 70vw;}
 
 .silent{
@@ -2767,8 +2770,8 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 224.3%;
- left: 7%;
+ top: 166.4%;
+ left: 8%;
  width: 42vw;
  height: 52vw;
 }
@@ -2781,19 +2784,17 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 170%;
+ top: 143.4%;
  left: 8%;
  width: 42vw;
  height: 52vw;
 }
-.letter_l,
-.letter_b,
-.letter_a{
-	opacity: 0;
-	margin-left: 32px;
-	margin-top: 0;
-}
 
+.animal{
+	position: absolute;
+	left: 7%;
+	top: 52%
+}
 .third{
 	background-color: #fcca2a;
 	border: 1px solid #fff;
