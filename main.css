@@ -2739,9 +2739,14 @@ body{
  opacity: 1;
  transform: scale(2);
 }
-.war{
- transform: translateX(52.4vw) scale(.77) translateY(-101.5vw);
- height: 70vw;}
+
+	.war{
+	position: absolute;
+	top: 47.8%;
+	left: 53%;
+	transform: scale(.78);
+
+}
 
 .silent{
  transform: translateY(-187.4vw) scale(1.6) translateX(8vw);
@@ -2770,7 +2775,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 189.4%;
+ top: 240%;
  left: 8%;
  width: 42vw;
  height: 52vw;
@@ -2784,7 +2789,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 120.2%;
+ top: 150.2%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2793,7 +2798,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 52%
+	top: 72%
 }
 .third{
 	background-color: #fcca2a;
