@@ -1,9 +1,8 @@
-
 body{
 	margin: 0;
 	padding: 0;
 }
-.wrap{
+/*.wrap{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -69,11 +68,13 @@ body{
 	background-color: #e9ef9a;
 	z-index: 20;
 }
+*/
 
 .block_wrapper{
 	display: flex;
 	flex-wrap: wrap;
 }
+
 /* БЛОКИ И ИХ СТИЛИ*/
 .block{
 	width: 14.1395vw;
@@ -126,22 +127,25 @@ body{
 	border: 1px solid #fff;
 }
 
+.book:hover {
+	background-color: #fff;
+	opacity: .5;
+}
+
+.letter_k:hover{
+	color: pink;
+	opacity: .6;
+}
+
+.third_line_four:hover{
+	filter:  brightness(100%) contrast(70%) blur(3px) hue-rotate(90deg);
+}
+
+.img_books:hover{
+filter: contrast(100%) brightness(50%);
+}
+
 /*ВЕРХНЯЯ ЛИНИЯ*/
-.bubble{
-	position: absolute;
-	z-index: 3;
-	left: 25%;
-}
-
-.bubbles-wrapper {
-  display: flex;
-  width: 100%;
-  flex-flow: row wrap;
-  justify-content: space-around;
-	position: absolute;
-	z-index: 5;
-}
-
 .line{
 	height: 60px;
 	background-color: #221712;
@@ -280,7 +284,7 @@ visibility: hidden;
 
 .img_retort2{
 	position: absolute;
-	left: 55%;
+	left: 54.75%;
 	top: 50%;
 }
 
@@ -605,24 +609,25 @@ span{
 }
 
 @media (min-width: 2780px) and (max-width: 2880px){
-	.wrap{
+	/*.wrap{
 		transform: scale(2.6) translateX(330%) translateY(150%);
 	}
 	.curtain{
 		transform: scale(3.14);
 		width: 1395px;
-	}
+	}*/
 
 	.block_wrapper{
 		overflow: hidden;
 	}
 
-	.line{
-		height: 3vw;
+	.block_blackline{
+		width: 3.2vw;
+		height: 20vw;
 	}
 
-	.bubble img{
-		transform: scale(.7)
+	.line{
+		height: 3vw;
 	}
 
 	.img_books{
@@ -635,7 +640,7 @@ span{
 			transform: scale(.5);
 		}
 	.img_retort1 img{
-		transform: scale(3.18)
+		transform: scale(3.18);
 	}
 
 	.img_retort2 img{
@@ -685,16 +690,21 @@ span{
 }
 @media (min-width: 2560px) and (max-width: 2600px){
 
-	.wrap{
+	/*.wrap{
 		transform: scale(2) translateX(400%) translateY(100%);
 	}
 	.curtain{
 		width: 1405px;
 		transform: scale(2.64);
-	}
+	}*/
 
 	.block_wrapper{
 		overflow: hidden;
+	}
+
+	.block_blackline{
+		width: 3.2vw;
+		height: 20vw;
 	}
 
 	.img_retort1 img{
@@ -739,10 +749,6 @@ span{
 	transform: scale(.7)
 }
 
-.bubble img{
-	transform: scale(.7)
-}
-
 .war{
 			transform: translateY(-14.9vw) scale(.82);
 		}
@@ -759,13 +765,11 @@ span{
 			transform: scale(1.9) translateY(2.05vw) translateX(2vw);
 		}
 }
-
-
 @media (min-width: 2340px) and (max-width: 2500px){
-	.curtain{
+	/*.curtain{
 		width: 100%;
 		height: 250%;
-	}
+	}*/
 
 	.letter_k{
 		margin-top: 1px
@@ -788,10 +792,6 @@ span{
 
 		.book{
 			width: 12vw;
-		}
-
-		.bubble img{
-			transform: scale(.7)
 		}
 
 		.war{
@@ -830,28 +830,29 @@ span{
 		}
 
 @media (min-width: 1680px) {
-	.curtain{
+/*	.curtain{
 		height: 882px;
-	}
+	}*/
 
 	.block_wrapper{
 		overflow: hidden;
 	}
+
   .block{
-    width: 14.165vw;
-    height: 15vw;
+    width: 14.167vw;
+    height: 14.62vw;
   }
 
   .letter_k,
   .letter_l,
   .letter_b,
   .letter_a{
-    font-size: 42vw;
-		transform: translateY(-8.6vw) translateX(-17.4vw)
+    font-size: 41vw;
+	transform: translateY(-8.3vw) translateX(-17.4vw)
   }
 
   .letter_o{
-    font-size: 40vw;
+    font-size: 39vw;
   }
 
   .chess_name{
@@ -896,47 +897,104 @@ span{
     left: 17%;
   }
 
+	.img_retort1{
+		transform: scale(1.1) translateX(1vw);
+	}
+
+	.img_retort2{
+		transform: scale(1.1) translateX(2vw);
+	}
+
   .img_books{
-    margin-top: 8.5vw;
+   transform: scale(1.2) translateY(0.7vw);
   }
 
   .retort{
-    margin-top: 1vw
+    margin-top: 1vw;
+    transform: scale(1.1) translateY(0.4vw);
   }
 
   .book{
     width: 12vw;
     height: 14vw;
+    bottom: 2.2%;
+    position: relative;
+  }
+
+  .harry_potter{
+  	position: absolute;
+  	left: 7.5%;
+		top: 13%;
+  }
+
+  .dostoev span{
+  	font-size: 0.88vw;
+  }
+  .far_451 img{
+  	transform: scale(1.4) translateY(2.3vw) translateX(1.5vw);
   }
 
   .harry_glass{
     translateX(-2%);
   }
 
+  .da_vinci_block{
+  	width: 2.2vw;
+  }
+
+  .player img{
+  	transform: scale(1.35) translateY(-0.8vw) translateX(-0.5vw);
+  }
+
   .chess span{
     font-size: 1.5vw;
   }
-
-	.retort2{
-		width: 450vw;
-	}
-
-	.retort3{
-		width: 400vw;
-		transform: translateX(6vw);
-	}
-
 	.lineblock_first img{
 		width: 14.3vw;
 		height: 15vw;
 	}
 
+	.plus_one span{
+		font-size: 8vw;
+		transform: translateX(0.6vw) translateY(0.3vw);
+	}
+	.plus_one img{
+		transform: scale(1.2) translateX(-0.8vw) translateY(-0.4vw);
+	}
+
+	.wheel_img{
+		position: absolute;
+		top: 102%;
+		left: 102%;
+	}
+
 	.first_line img{
 		width: 14.3vw;
 	}
-	.img_retort1, .img_retort2{
-		transform: scale(.8);
+
+	.bird, .numb, .lady, .shine, .silent, .story, .drak{
+	width: 11.8vw;
+    height: 14vw;
 	}
+
+	.war{
+		transform: scale(.83) translateY(-1.5vw);
+	}
+
+	.animal{
+		transform: scale(.83) translateY(-1.7vw);
+	}
+
+	.harry_potter_series1, .harry_potter_series2,
+	.harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+		position: absolute;
+		top: 15%;
+}
+
+.harry_potter_series1 img, .harry_potter_series2 img,
+.harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+	transform: scale(.8) translateX(1.85vw);
+}
 }
 
 @media (width: 1600px){
@@ -951,45 +1009,83 @@ span{
 		transform: scale(1.1) translateY(0.3vw);
 	}
 
-	.curtain{
+/*	.curtain{
 		width: 100%;
 		height: 55%;
-	}
-	.img_retort1{
-		transform: translateY(-15vw) translateX(1vw);
-	}
-
+	}*/
 	.img_retort2{
-		transform: translateY(-30vw) translateX(1.5vw);
+		transform: translateY(-5vw) translateX(1.5vw);
 	}
 }
 
 @media (max-width: 1440px){
-	.curtain{
+/*	.curtain{
 		height: 880px;
+	}*/
+	.block{
+			height: 14.45vw;
+		}
+
+		.letter_k{
+			font-size: 40.6vw;
+			transform: translateY(0.1vw) translateX(-17.5vw) translateY(-8.3vw);
+		}
+
+		.letter_a{
+		font-size: 39.8vw;
 	}
 
-	.block_wrapper{
-		overflow: hidden;
+	.letter_b{
+		margin-top: -2.9px;
+		font-size: 41vw;
 	}
-.letter_o{
-	top: 21%
-	left: 0.5%;
-}
 
-.retort{
-	transform: scale(.9);
-}
-.img_retort1, .img_retort2{
-	transform: scale(.8);
-}
-}
+	.img_retort2{
+		transform: scale(.8) translateX(1vw);
+	}
+
+	.img_books{
+			transform: translateY(0.1vw)
+		}
+
+	body{
+		width: 100%
+	}
+		.block_wrapper{
+			overflow: hidden;
+		}
+	.letter_o{
+		top: 1.%;
+		left: 0.5%;
+		font-size: 38.5vw;
+	}
+
+	.book{
+		transform: scale(1.05) translateY(0.7vw);
+	}
+
+	.retort{
+		transform: scale(.9);
+	}
+	.img_retort1{
+		transform: scale(.8);
+	}
+
+	.lineblock_first{
+		transform: scale(1.01) translateY(0.1vw);
+	}
+
+	.far_451 img{
+		transform: translateY(2.1vw) translateX(0.7vw);
+	}
+	}
+
 
 @media (max-width: 1388px){
-	.curtain{
+/*	.curtain{
 		height: 800px;
 		width: 100%;
-	}
+	}*/
 
 	.block_wrapper{
 		overflow: hidden;
@@ -997,35 +1093,97 @@ span{
 	.letter_o{
 		transform: translateY(-7vw) translateX(-15vw);
 	}
-}
-@media (max-width: 1366px){
-	.curtain{
-		height: 1000px;
+	.img_books{
+		transform: translateY(-0.1vw);
 	}
+}
+@media (max-width: 1380px){
+	/*.curtain{
+		height: 1000px;
+	}*/
 
 	.block_wrapper{
 		overflow: hidden;
 	}
 	.letter_o{
-		transform: translateY(-10vw)
+		transform: translateY(-7vw)
 translateX(-15vw);}
+
 .img_retort1, .img_retort2{
 	transform: scale(.8);
 }
+
+.block{
+	width: 14.13vw;
 }
 
-@media (max-width: 1280px){
-	.curtain{
-		width: 12px;
-		height: 800px;
+.far_451 img{
+	transform: translateY(2vw) translateX(0.8vw);
+}
+
+.img_books{
+	transform: translateY(-0.1vw);
+}
+}
+
+@media (min-width: 1282px) and (max-width: 1355px){
+	.block{
+		width: 14.13vw;
+		height: 14.2vw;
+	}
+
+	.letter_o{
+		transform: translateY(-7.5vw) translateX(-14.3vw);
+	}
+
+	.img_books{
+		transform: scale(.96) translateY(-0.68vw);
+	}
+	.img_retort2{
+		transform: scale(.67);
 	}
 
 	.block_wrapper{
 		overflow: hidden;
-	}
+		}
 
-	.bubble, .bubbles-wrapper{
-		display: none;
+		.retort{
+			transform: translateY(-0.8vw) scale(.86);
+		}
+
+		.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+			left: 12.4%;
+		}
+
+		.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+			transform: scale(.9) translateX(0.vw);
+		}
+
+		.far_451 img{
+			transform: scale(.95) translateY(2vw) translateX(0.4vw);
+		}
+
+		.animal{
+			transform: scale(.888) translateX(1.2vw) translateY(-0.4vw);
+		}
+		.war{
+			transform: scale(.9) translateY(-14.5vw) translateX(0.95vw);
+		}
+		.numb,.drak ,.silent, .story, .lady,  .shine{
+			transform: scale(.9) translateX(1.2vw) translateY(-0.2vw);
+		}
+		.bird{
+			transform: scale(.92) translateX(1.1vw) translateY(-0.4vw);
+		}
+}
+@media (max-width: 1280px){
+	/*.curtain{
+		width: 12px;
+		height: 800px;
+	}*/
+
+	.block_wrapper{
+		overflow: hidden;
 	}
 
 	.block{
@@ -1086,7 +1244,9 @@ translateX(-15vw);}
 				transform: scale(.96) translateY(1vw);
 			}
 			.wheel_img{
-				transform: translateX(3.6vw) translateY(33.7vw);
+					position: absolute;
+					top: 104%;
+					left: 104%;
 			}
 			.plus_one span{
 				transform: translateX(0.2vw);
@@ -1097,183 +1257,280 @@ translateX(-15vw);}
 				height: 13.5vw;
 			}
 }
-
-@media (min-width: 1036px) and (max-width: 1250px){
-	body{
-		width: 100%;
-	}
-
-	.block{
-		width: 24.8vw;
-		height: 24.8vw;
-	}
-
+@media (min-width: 1252px) and (max-width: 1278px){
 	.book{
-		width: 20vw;
-		height: 23.2vw;
-	}
-
-	.six img{
-		transform: scale(1.23) translateX(1.8vw) translateY(1.9vw);
-	}
-	.lineblock_first img{
-		transform: scale(1.25) translateY(1.9vw) translateX(1.9vw);
-	}
-
-	.img_books{
-		transform: scale(1.3) translateY(4.6vw);
-	}
-
-	#second_two{
-		background-color: background-color: #f9f4ff;
-		border: none;
-	}
-
-	.img_retort1{
-		z-index: 3;
-		transform: translateY(108vw)translateX(-3vw) scale(.8);
-	}
-
-	.img_retort2{
-		opacity: 0.6;
-		z-index: 3;
-		transform: translateX(20.5vw) scale(.8) translateY(30vw);
-	}
-
-	#second_line_one, #third_line_one, #third_line_two{
-		background-color: #fcca2a;
-	border: 1px solid #fff;
-	}
-
-	.block_blackline{
-		width: 4vw;
-	}
-
-	.retort{
-		transform: translateY(-97vw) scale(1.1) translateX(-23vw);
-	}
-
-	.letter_k{
-		font-size: 37vw;
-		transform: translateY(-34vw) translateX(-103vw);
-	}
-
-	.letter_o{
-		font-size: 32.3vw;
-		transform: translateX(-99vw) translateY(-30.5vw);
-	}
-
-	.da_vinci, .far_451, .harry_potter{
-		transform: translateX(1.4vw) translateY(1.1vw);
-	}
-
-	.harry_face{
-		width: 12vw;
-		height: 19vw;
-	}
-
-	.harry_glass{
-		width: 6vw;
-		height: 6vw;
-		margin-right: 2px;
-	}
-
-	.harry_potter hr{
-		width: 5.5vw;
-	}
-
-	.harry_potter span{
-		font-size: 3vw;
-		padding-left: 1vw;
-	}
-
-	.dostoev{
-		transform: translateX(25.1vw) translateY(1vw);
-	}
-
-	.dostoev span{
-		font-size: 1.5vw;
+		transform: scale(.99) translateY(0.3vw);
 	}
 
 	.chess_block{
 		width: 4vw;
-		height: 4vw;
 	}
+}
 
-	.chess_name{
-		height: 6vw;
-	}
+@media (min-width: 1036px) and (max-width: 1250px){
+body{
+	width: 100%;
+}
 
-	.chess span{
-		font-size: 2.5vw;
-		transform: translateY(-6vw);
-	}
+.block{
+	width: 24.8vw;
+	height: 24.8vw;
+}
 
-	.far_451 img{
-		transform: translateY(7vw) scale(1.3) translateX(2vw);
-	}
+.book{
+	width: 20vw;
+	height: 23.2vw;
+	transform: translateY(0.3vw);
+}
 
-	.master span{
-		font-size: 2vw;
-	}
+.six img{
+	transform: scale(1.23) translateX(1.8vw) translateY(1.9vw);
+}
+.lineblock_first img{
+	transform: scale(1.25) translateY(1.9vw) translateX(1.9vw);
+}
 
-	.cube{
-		width: 11.3vw;
-		height: 11.6vw;
-	}
+.img_books{
+	transform: scale(1.42) translateY(4.6vw);
+}
 
-	.da_vinci span{
-		font-size: 2.699vw;
-		transform: translateX(-0.2vw);
-	}
+#second_two{
+	background-color: #fcca2a;
+	border: none;
+}
 
-	.da_vinci_block{
-		width: 3.4vw;
-		height: 6vw
-	}
+.img_retort1, .img_retort2{
+	display: none;
+}
 
-	.hidden_x{
-		font-size: 3vw
-	}
+#second_line_one, #third_line_one, #third_line_two{
+background-color: #fcca2a;
+border: 1px solid #fff;
+}
 
-	.player span{
-		font-size: 6.7vw;
-		transform: translateX(0.4vw);
-	}
+.block_blackline{
+	width: 4vw;
+}
 
-	.player img{
-		transform: scale(1.3) translateY(-1.15vw) translateX(-1vw);
-	}
+.retort{
+	transform: translateY(-96vw) scale(1.2) translateX(-22vw);
+}
 
+.letter_k{
+	font-size: 37vw;
+	transform: translateY(-34vw) translateX(-103vw);
+}
+
+.letter_l, .letter_b, .letter_a{
+	font-size: 34vw;
+	transform: translateY(-32vw) translateX(-104vw);
+}
+
+.letter_o{
+	font-size: 32.3vw;
+	transform: translateX(-99vw) translateY(-30.5vw);
+}
+
+.da_vinci, .far_451, .harry_potter{
+	transform: translateX(1.4vw) translateY(1.1vw);
+}
+
+.harry_potter{
+	transform: translateX(-0.1vw) translateY(1vw);
+}
+.harry_face{
+	width: 12vw;
+	height: 19vw;
+}
+
+.harry_glass{
+	width: 6vw;
+	height: 6vw;
+	margin-right: 2px;
+}
+
+.harry_potter hr{
+	width: 5.5vw;
+}
+
+.harry_potter span{
+	font-size: 3vw;
+	padding-left: 1vw;
+}
+
+.dostoev{
+	transform: translateX(25.1vw) translateY(1vw);
+}
+
+.dostoev span{
+	font-size: 1.5vw;
+}
+
+.chess{
+	transform: translateX(-25vw) translateY(1vw);
+}
+
+.chess_block{
+	width: 4vw;
+	height: 4vw;
+}
+
+.chess_name{
+	height: 6vw;
+}
+
+.chess span{
+	font-size: 2.5vw;
+	transform: translateY(-6vw);
+}
+
+.far_451{
+	transform: translateY(-24.1vw) translateX(50vw);
+}
+
+.far_451 img{
+	transform: translateY(6vw) scale(1.4) translateX(2.5vw);
+}
+
+.master span{
+	font-size: 2vw;
+}
+
+.cube{
+	width: 11.3vw;
+	height: 11.6vw;
+}
+
+.white_princess{
+	transform: translateY(-24.2vw) translateX(50.2vw);
+}
+
+.white_princess span{
+	font-size: 2.3vw;
+	transform: translateX(0.1vw);
+}
+
+.apple{
+	transform: scale(2.4)
+}
+
+.apple_piece{
+	transform: scale(1.3) translateY(-2vw);
+}
+.da_vinci{
+	transform: translateY(-24vw);
+}
+
+.da_vinci span{
+	font-size: 2.69vw;
+	transform: translateX(-0.2vw);
+}
+
+.da_vinci_block{
+	width: 3.4vw;
+	height: 6vw
+}
+
+.hidden_x{
+	font-size: 3vw
+}
+
+.player{
+	transform: translateX(-50vw) translateY(1vw);
+}
+.player span{
+	font-size: 6.7vw;
+	transform: translateX(0.4vw);
+}
+
+.player img{
+	transform: scale(1.3) translateY(-1.15vw) translateX(-1vw);
+}
+
+.plus_one{
+	transform: translateY(-24vw) translateX(-49.9vw);
+}
 	.plus_one img{
-		transform: scale(1.2) translateX(-1vw) translateY(-0.4vw);
-	}
+	transform: scale(1.4) translateX(-1vw) translateY(-0.6vw);
+}
 
-	.wheel_img{
-		position: absolute;
-		top: 102%;
-		left: 103%;
-	}
+.wheel_img{
+	position: absolute;
+	top: 102%;
+	left: 103%;
+}
 
-	.plus_one span{
-		font-size: 13vw;
-		transform: translateX(0.7vw) translateY(0.8vw);
-	}
+.plus_one span{
+	font-size: 13vw;
+	transform: translateX(0.7vw) translateY(0.8vw);
+}
+
+.war{
+	transform: scale(1.34) translateY(-15.3vw) translateX(3vw);
+}
+
+.animal{
+	transform: translateX(30vw) scale(1.3) translateY(2.6vw);
+	height: 18vw;
+}
+
+.shine{
+	height: 14vw;
+	transform: translateY(-70vw) translateX(31vw) scale(1.7);
+}
+
+.bird{
+	transform: translateY(80.8vw) translateX(-43.2vw) scale(1.7);
+	z-index: 2;
+}
+
+.silent{
+transform: translateY(-19vw) scale(1.75) translateX(-24.8vw);
+}
+
+.numb{
+	position: absolute;
+	left: 52%;
+	height: 19vw;
+	width: 17vw;
+	bottom: 23.5%;
+}
+
+.lady{
+	height: 13.1vw;
+	transform: translateY(-19.1vw) translateX(56vw) scale(1.76);
+}
+
+.story{
+	transform: translateY(-19.4vw) translateX(-43.5vw) scale(1.75);
+	z-index: 1;
+}
+
+.drak{
+	position: absolute;
+	top: 107.5%;
+	left: 76.7%;
+	height: 19.1vw;
+	width: 17vw;
+}
 }
 
 @media (min-width: 1025px) and (max-width: 1035px){
 	body{
 		width: 100%;
 	}
-
-	.curtain{
+	/*.curtain{
 			width: 100%;
 			height: 160%
-		}
+		}*/
 
 	.block{
 		width: 24.8vw;
 		height: 24.8vw;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
 	}
 
 	#second_line_one, #second_two, #third_line_one, #third_line_two{
@@ -1281,13 +1538,8 @@ translateX(-15vw);}
 		border: 1px solid #fff;
 	}
 
-	.img_retort1{
-		transform: translateX(-28.3vw) scale(.7) translateY(65vw);
-	}
-
-	.img_retort2{
-		transform: translateX(20.3vw) translateY(-3vw);
-		z-index: 2;
+	.img_retort1, .img_retort2{
+		display: none;
 	}
 
 .letter_k,
@@ -1325,7 +1577,7 @@ translateX(-15vw);}
 }
 
 .lineblock_first{
-	transform: scale(1.4) translateY(2.5vw) translateX(3.4vw);
+	transform: scale(1.4) translateY(2.7vw) translateX(3.4vw);
 }
 
 .six img{
@@ -1336,7 +1588,20 @@ translateX(-15vw);}
 	transform: scale(1.7) translateY(3.3vw);
 }
 
-.harry_potter{
+.dostoev{
+	transform: translateX(25vw) scale(1.7) translateY(3.3vw);
+}
+
+.brown_line{
+	height: 0.7vw;
+}
+.far_451{
+	position: absolute;
+	left: 31%
+}
+
+.chess{
+	transform: translateX(-25vw) scale(1.7) translateY(3.3vw);
 }
 
 .chess_block{
@@ -1344,8 +1609,13 @@ translateX(-15vw);}
 	height: 2.4vw;
 }
 
+.white_princess{
+	position; absolute;
+	bottom: 101%;
+	left: 202%;
+}
 .retort{
-	transform: scale(1.2) translateY(2vw);
+	transform: scale(1.2) translateY(-81vw) translateX(-21vw);
 }
 
 .far_451{
@@ -1354,10 +1624,33 @@ translateX(-15vw);}
 	width: 12vw;
 }
 
+.da_vinci{
+	transform: translateY(-19.3vw) scale(1.7) translateX(0.25vw);
+}
+
+
+.master{
+	transform: translateY(5.6vw) scale(1.7);
+	z-index: 1;
+}
 .far_451 img{
 	transform: scale(.83) translateY(1vw);
 }
 
+.plus_one{
+	z-index: 1;
+	transform: translateY(-19.3vw) scale(1.7) translateX(-29.4vw);
+}
+
+.wheel_img{
+	position: absolute;
+	top: 108%;
+	left: 108%
+}
+
+.player{
+	transform: translateX(-49.5vw) scale(1.7) translateY(3.4vw);
+}
 .player img{
 	transform: scale(.86) translateY(1vw) translateX(0.5vw);
 }
@@ -1367,11 +1660,15 @@ translateX(-15vw);}
 }
 
 .harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
-	transform: translateX(6vw) scale(1.7) translateY(3.4vw);
+	transform: translateX(6.7vw) scale(1.7) translateY(3.4vw);
 }
 
- .lady{
-	transform: scale(1.7) translateX(4vw) translateY(3.5vw);
+.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+	transform: scale(.7) translateX(3.1vw);
+}
+
+.lady{
+	transform: scale(1.7) translateX(33vw) translateY(-11.34vw);
 }
 
 .war{
@@ -1382,51 +1679,52 @@ translateX(-15vw);}
 	width: 16vw;
 	height: 18.8vw;
 	position: absolute;
-	left: 2%;
-	top: 69.99%;
+	left: 52.6%;
+	top: 56.9%;
 }
 
 .animal{
-	transform: scale(1.24) translateY(2.3vw) translateX(4vw);
+	transform: scale(1.24) translateY(2.3vw) translateX(23.6vw);
 }
 
 .drak{
 	width: 16vw;
 	height: 18.8vw;
 	position: absolute;
-	top: 91.2%;
-	left: 77%
+	top: 107.2%;
+	left: 77.38%
 }
 
 .bird{
 	height: 13.6vw;
-	transform: scale(1.7) translateX(3.9vw) translateY(3.28vw);
+	z-index: 1;
+	transform: scale(1.7) translateX(-25.3vw) translateY(47.5vw);
 }
 
 .shine{
-	transform: scale(1.77) translateX(3.5vw) translateY(3.1vw);
+	transform: scale(1.77) translateX(3.8vw) translateY(-11vw);
 }
 
 .story{
-	transform: scale(1.7) translateX(3.7vw) translateY(3.1vw);
+	transform: scale(1.7) translateX(-25.6vw) translateY(-11.6vw);
 	height: 14vw;
+	z-index: 1;
 }
 
 .silent{
-	transform: scale(1.7) translateX(4vw) translateY(3.3vw);
+	transform: scale(1.7) translateX(-10.5vw) translateY(-40.7vw);
 	height: 14vw
 }
 }
-
 @media (max-width: 1024px){
 	.block{
 		width: 24.8vw;
 		height: 24.8vw;
 	}
 
-	.curtain{
+	/*.curtain{
 		height: 1000px;
-	}
+	}*/
 
 	.block_wrapper{
 		overflow: hidden;
@@ -1439,9 +1737,19 @@ font-size: 34.8vw;
 transform: translateX(-102.8vw) translateY(-32vw);
 }
 
+.letter_l,
+.letter_b{
+	font-size: 34.7vw;
+	transform: translateX(-102.8vw) translateY(-31.8vw);
+}
+
+.letter_a{
+	font-size: 34vw;
+	transform: translateX(-104vw) translateY(-32.2vw);
+}
 .letter_o{
 	font-size: 34vw;
-	transform: translateY(-30.6vw) translateX(-105vw);
+	transform: translateY(-30.6vw) translateX(-100vw);
 	top: -1.2vw;
 }
 
@@ -1628,15 +1936,11 @@ transform: translateX(-102.8vw) translateY(-32vw);
 
 .plus_one span{
 	font-size: 15vw;
-	transform: translateY(2vw) translateX(-1.2vw);
+	transform: translateY(2vw) translateX(-0.1vw);
 }
 
 .plus_one img{
-	transform: scale(1.2) translateY(-0.4vw) translateX(-2vw);
-}
-
-.wheel_img img{
-	transform: scale(1.4) translateX(2.4vw) translateY(16vw);
+	transform: scale(1) translateY(0.8.6vw) translateX(-0.2vw);
 }
 
 .hidden_heart{
@@ -1688,13 +1992,14 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	transform: translateX(52vw) translateY(1vw);
 }
 
-.bubbles-wrapper, .bubble{
-		display: none;
-	}
-
+#second_two{
+	background-color: #fcca2a;
+	border: none;
+}
+/*
 	.curtain{
 		width: 1024px;
-	}
+	}*/
 }
 @media (min-width: 800px) and (max-width: 1000px){
 	.block{
@@ -1704,11 +2009,6 @@ transform: translateX(-102.8vw) translateY(-32vw);
 
 	body{
 		width: 100%;
-	}
-
-	.bubble, .bubble{
-		display: none;
-		position: absolute;
 	}
 
 	.block_wrapper{
@@ -1726,7 +2026,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	}
 
 	.img_books{
-		transform: scale(.95) translateY(5.4vw);
+		transform: scale(1) translateY(5.4vw);
 	}
 
 	.block_blackline{
@@ -1756,17 +2056,17 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	}
 
 	#second_two{
-		background-color: #f9f4ff;
+		background-color: #fcca2a;
 		border: none;
 	}
 }
 
 @media (min-width: 770px) and (max-width: 800px){
 
-	.curtain{
+/*	.curtain{
 		width: 100%;
 		height: 210%
-	}
+	}*/
 
 	body{
 		width: 100%;
@@ -1775,10 +2075,6 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	.block{
 		width: 24.74vw;
 		height: 24.74vw;
-	}
-
-	.bubbles, .bubbles-wrapper{
-		display: none;
 	}
 
 	.block-wrapper{
@@ -1825,11 +2121,12 @@ transform: translateX(-102.8vw) translateY(-32vw);
 #second_line_one{
 	background-color: #fcca2a;
 	border: 1px solid #fff;}
-
+/*
 	.curtain{
 		width: 768px;
 		height: 100%;
-	}
+	}*/
+
 	.block{
 		width: 49.7vw;
 		height: 49.7vw;
@@ -1869,7 +2166,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .lineblock_first img{
-	transform: scale(1.86) translateY(-182vw) translateX(-20.65vw);
+	transform: scale(1.86) translateY(-180.2vw) translateX(-20.4vw);
 }
 
 .six img{
@@ -2017,12 +2314,8 @@ transform: translateX(-102.8vw) translateY(-32vw);
 .plus_one img{
 	transform: scale(.96) translateY(1.3vw);
 }
-.wheel_img img{
-	transform:translateY(26.7vw) scale(1) translateX(6.2vw);
-}
-
 .war{
-	transform: translateY(108.5vw) translateX(14vw) scale(1.6);
+	transform: translateY(53vw) translateX(14vw) scale(1.6);
 	z-index: 30;
 	width: 34vw;
 }
@@ -2070,12 +2363,15 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	height: 26vw;
 }
 
-.block_wrapper{
-	overflow: hidden;
+.animal{
+	position: absolute;
+	top: 158.7%;
+	left: 57%;
+	width: 31vw;
 }
 
-.bubbles-wrapper, .bubble {
-	display: none;
+.block_wrapper{
+	overflow: hidden;
 }
 }
 
@@ -2085,22 +2381,18 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 		height: 49.4vw;
 	}
 
-.curtain{
+/*.curtain{
 	width: 375px;
 	height: 2275;
-}
+}*/
 
 .block_wrapper{
 	overflow: hidden;
 }
 
-.wrap{
+/*.wrap{
 	transform: scale(.9) translateX(34vw) translateY(10vw);
-}
-
-.bubbles-wrapper, .bubble {
-	display: none;
-}
+}*/
 
 body{
 	width: 375px;
