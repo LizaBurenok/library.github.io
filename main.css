@@ -145,8 +145,13 @@ body{
 filter: contrast(100%) brightness(50%);
 }
 
+#first_img:hover{
+	filter:  brightness(100%) contrast(70%) blur(3px) hue-rotate(90deg);
+}
+
 .retort:hover{
-	filter: contrast(100%) brightness(50%);}
+	filter: contrast(100%) brightness(50%)
+}
 
 /*ВЕРХНЯЯ ЛИНИЯ*/
 .line{
