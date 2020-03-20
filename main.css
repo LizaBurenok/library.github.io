@@ -2742,7 +2742,7 @@ body{
 
 	.war{
 	position: absolute;
-	top: 30%;
+	top: 33.5%;
 	left: 53%;
 	transform: scale(.78);
 
@@ -2789,7 +2789,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 153%;
+ top: 155%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2798,7 +2798,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 62%
+	top: 64.2%
 }
 .third{
 	background-color: #fcca2a;
