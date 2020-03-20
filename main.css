@@ -2742,7 +2742,7 @@ body{
 
 	.war{
 	position: absolute;
-	top: 47.8%;
+	top: 44%;
 	left: 53%;
 	transform: scale(.78);
 
@@ -2775,7 +2775,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 240%;
+ top: 243%;
  left: 8%;
  width: 42vw;
  height: 52vw;
@@ -2789,7 +2789,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 150.2%;
+ top: 152.5%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2798,7 +2798,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 72%
+	top: 69%
 }
 .third{
 	background-color: #fcca2a;
