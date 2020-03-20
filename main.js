@@ -1,87 +1,6 @@
-let retortEntry = anime.timeline({
-  targets: '.retort_wrapper',
-  autoplay: false,
-  rotate: {
-  value: 180,
-  delay: 1500
-},
-  duration: 1000,
-  easing: 'linear',
-})
-
-retortEntry.add({
-  targets: '.wrap',
-  backgroundColor: 'rgb(206, 87, 154)',
-  duration: 1500
-})
-
-retortEntry.add ({
-  targets: '.drop_one',
-  translateX: {
-    value: 5
-  },
-  translateY: -50,
-  opacity: {
-    value: 1,
-    delay: 1500
-  },
-  translateY: {
-    value: -160,
-    delay: 1500
-  }
-})
-
-retortEntry.add({
-  targets: '.drop_two',
-  translateX: 5,
-  translateY: -50,
-  opacity: {
-    value: 1,
-    delay: 450
-  }, translateY: {
-    value: -170,
-    delay: 1500
-  }
-})
-
-retortEntry.add({
-  targets: '.drop_three',
-  translateX: 5,
-  tranlsateY: -50,
-  opacity: {
-    value: 1,
-    delay: 400
-  }, translateY: {
-    value: -170,
-    delay: 1500
-  }
-})
-
-retortEntry.add({
-  targets: '.curtain',
-  backgroundColor: 'rgb(255, 255, 255)',
-  opacity: {
-    value: 0
-  },
-  zIndex:
-  {value: -20}
-})
-
-retortEntry.add({
-  targets: '.wrap',
-  opacity: {
-    value: 0,
-    duration: 300
-  },
-  zIndex:
-  {value: 0}
-})
-let btnEntry = document.querySelector('.wrap')
-btnEntry.onclick = retortEntry.restart
-
 let chess = anime.timeline({
   easing: 'easeInOutCirc',
-  duration: 2000,
+  duration: 1000,
   autoplay: false
 })
 
@@ -124,7 +43,7 @@ backgroundColor: 'rgb(180, 137, 0)'
 
 let cards = anime.timeline({
   easing: 'easeInOutQuad',
-  duration: 1000,
+  duration: 500,
   autoplay: false
 })
 
@@ -135,7 +54,7 @@ cards.add({
   },
   translateX: {
     value: 30,
-    delay: 1500
+    delay: 1000
   }
 })
 
@@ -146,7 +65,7 @@ cards.add({
   },
   translateX: {
     value: 30,
-    delay: 1500
+    delay: 1000
   }
 })
 
@@ -162,7 +81,7 @@ cards.add({
 
 let line = anime.timeline({
   easing: 'linear',
-  duration: 2000,
+  duration: 1000,
   autoplay: false
 })
 
@@ -217,7 +136,7 @@ line.add({
 })
 
 let player = anime.timeline({
-  duration: 3000,
+  duration: 2500,
   autoplay: false
 })
 
@@ -234,7 +153,7 @@ code.add({
 })
 
 let books = anime.timeline({
-  duration: 1000,
+  duration: 700,
   easing: 'linear',
   autoplay: 0
 })
@@ -304,31 +223,6 @@ books.add({
   value: 0}
 })
 
-let hr = anime.timeline({
-  duration: 2500,
-  easing: 'linear'
-})
-
-hr.add({
-  targets: '.451_hr',
-  width: 30
-})
-
-hr.add({
-  targets: '.451_hr',
-  width: 50
-})
-
-hr.add({
-  targets: '.451_hr',
-  width: 70
-})
-
-hr.add({
-  targets: '.451_hr',
-  width: 100
-})
-
 let wheel = anime({
   targets: '.wheel_img',
   rotate: [0, 360],
@@ -336,29 +230,6 @@ let wheel = anime({
   autoplay: false,
   direction: 'linear',
   transformOrigin: '50% 50%'
-})
-
-// /*
-let bbl = anime.timeline({
-  duration: 4000,
-  easing: 'easeInOutCirc',
-  autoplay: false,
-  delay: 500
-})
-
-bbl.add({
-  targets: '.bbl1',
-  translateY: -360
-})
-
-bbl.add({
-  targets: '.bbl2',
-  translateY: -360
-})
-
-bbl.add({
-  targets: '.bbl3',
-  translateY: -360
 })
 
 let letter = anime.timeline({
@@ -425,7 +296,7 @@ letter.add({
   },
   color: 'rgb(45, 252, 25)'
 })
-
+/*
 let bubble = anime({
   targets: '.bubble',
   translateX: {
@@ -437,10 +308,10 @@ let bubble = anime({
     direction: 'alternate',
     loop: true
 })
-
+*/
 let animalCover = anime.timeline({
   easing: 'easeOutSine',
-  duration: 3000,
+  duration: 2000,
   autoplay: false
 })
 
@@ -511,10 +382,33 @@ animalCover.add({
     delay: 1000
   }
 })
+/*
+let blinkingBlock = anime.timeline({
+  loop: true
+})
 
+blinkingBlock.add({
+  targets: '#first_one',
+  background: {
+    value: 'rgb(252, 202, 42)',
+    duration: 700
+  }
+})
 
+blinkingBlock.add({
+  targets: '#first_one',
+  background: {
+    value: 'rgb(249, 244, 255)',
+    duration: 700
+  }
+})
 
-let btn11 = document.querySelector('.animal').onclick = animalCover.restart
+let stopBlik = document.getElementById('first_one')
+stopBlik.onclick = function(){
+  let stopBlikingBlock = document.getElementById('first_one')
+  stopBlikingBlock.stop()
+}
+
 /*КАРТЫ ГЕНЕРИРОВАНИЕ
 let numberOfCards = 10
 for (let i = 0; i < numberOfCards; i += 1) {
@@ -525,31 +419,49 @@ for (let i = 0; i < numberOfCards; i += 1) {
   let ace = div
 }
 */
+//Create a button > onclick change color and shape of covers
+let btnTransformCover = document.querySelector('#fist_two')
+btnTransformCover.onclick = function() {
+  let changedBook = document.querySelectorAll('.book')
+  for (let i = 0; i < changedBook.length; i++){
+    changedBook[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+    changedBook[i].style.transform = `translate(${anime.random(0,8)}vw,${anime.random(0,8)}vh) rotate(${anime.random(0,360)}deg)`
+  }
+}
 
-//Generate bubbles
-let controller = new ScrollMagic.Controller()
-
-let btnBubl = document.querySelector('.bubble')
-btnBubl.onclick = function(){
-  let lastSection = document.getElementById('section')
-  let loader = document.querySelector('.loader')
-  let bubblesWrapper = document.querySelector('.bubbles-wrapper')
-
-  let loadingScene = new ScrollMagic.Scene({
-    triggerElement: loader,
-    triggerHook: 'onLeave'
-  })
-  .addTo(controller)
-  .on('leave', () => {
-    setTimeout( 1000, 40)
-  })
-  let amount = 40;
-  let count = 0;
-  while (amount > count) {
-    let newDiv = document.createElement('div')
-    newDiv.classList.add('bubbles')
-    bubblesWrapper.append(newDiv)
-    count += 1
+let btnInitialCover = document.querySelector('#first_one')
+btnInitialCover.onclick = function() {
+  let initialBook = document.querySelectorAll('.book')
+  for (let i = 0; i < initialBook.length; i++){
+    let harryCover = document.querySelector('.harry_potter')
+    harryCover.style.background = 'rgb(235, 60, 28)'
+    let chessCover = document.querySelector('.chess')
+    chessCover.style.background = 'rgb(40, 135, 200)'
+    let princessCover = document.querySelector('.white_princess')
+    princessCover.style.background = 'rgb(235, 60, 28)'
+    let codeCover = document.querySelector('.da_vinci')
+    codeCover.style.background = 'rgb(140, 144, 200)'
+    let masterCover = document.querySelector('.master')
+    masterCover.style.background = 'rgb(235, 60, 28)'
+    let farCover = document.querySelector('.far_451')
+    farCover.style.background = 'rgb(112, 112, 204)'
+    let plusOneCover = document.querySelector('.plus_one')
+    plusOneCover.style.background = 'rgb(40, 135, 200)'
+    let punishCover = document.querySelector('.dostoev')
+    punishCover.style.background = 'rgb(235, 60, 28)'
+    let coverArray = {
+      harryCover: 'rgb(235, 60, 28)',
+      playerCover: 'rgb(143, 216, 216)',
+      chessCover: 'rgb(40, 135, 200)',
+      princessCover: 'rgb(235, 60, 28)',
+      codeCover: 'rgb(140, 144, 200)',
+      masterCover: 'rgb(235, 60, 28)',
+      farCover: 'rgb(112, 112, 204)',
+      plusOneCover: 'rgb(40, 135, 200)',
+      punishCover: 'rgb(235, 60, 28)'
+    }
+    initialBook[i].style.background =  coverArray
+    initialBook[i].style.transform = `translate(${anime.random(0,0)}vw, 1.5vh) rotate(${anime.random(0,0)}deg)`
   }
 }
 
@@ -578,14 +490,69 @@ let btnRetort = document.querySelector('.retort').onclick = function(){
 //Change color of covers
 let btnColorCover = document.querySelector('.img_books')
 btnColorCover.onclick = function() {
-  let cover = document.querySelectorAll('.visible')
+  let cover = document.querySelectorAll('.block')
   for (let i = 0; i < cover.length; i++){
     cover[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
   }
 }
+/*change blank books in filled with color*/
 
+let btnBlankCover = document.querySelector('.third_line_four')
+btnBlankCover.onclick = function(){
+  let blankCover = document.querySelectorAll('.visible')
+  let playerCover = document.querySelector('.player')
+  playerCover.style.background = 'rgb(143, 216, 216)'
+let harryCover = document.querySelector('.harry_potter')
+harryCover.style.background = 'rgb(235, 60, 28)'
+let chessCover = document.querySelector('.chess')
+chessCover.style.background = 'rgb(40, 135, 200)'
+let princessCover = document.querySelector('.white_princess')
+princessCover.style.background = 'rgb(235, 60, 28)'
+let codeCover = document.querySelector('.da_vinci')
+codeCover.style.background = 'rgb(140, 144, 200)'
+let masterCover = document.querySelector('.master')
+masterCover.style.background = 'rgb(235, 60, 28)'
+let farCover = document.querySelector('.far_451')
+farCover.style.background = 'rgb(112, 112, 204)'
+let plusOneCover = document.querySelector('.plus_one')
+plusOneCover.style.background = 'rgb(40, 135, 200)'
+let punishCover = document.querySelector('.dostoev')
+punishCover.style.background = 'rgb(235, 60, 28)'
+let coverArray = {
+  harryCover: 'rgb(235, 60, 28)',
+  playerCover: 'rgb(143, 216, 216)',
+  chessCover: 'rgb(40, 135, 200)',
+  princessCover: 'rgb(235, 60, 28)',
+  codeCover: 'rgb(140, 144, 200)',
+  masterCover: 'rgb(235, 60, 28)',
+  farCover: 'rgb(112, 112, 204)',
+  plusOneCover: 'rgb(40, 135, 200)',
+  punishCover: 'rgb(235, 60, 28)'
+}
+  let coverState = {
+    filledBooks: false
+  }
+  if (state.filledBooks){
+    for (let i = 0; i < blankCover.length; i++){
+    blankCover[i].style.background = 'transparent'
+    blankCover[i].style.borderWidth = 'bold'
+  } state.filledBooks = false}
+  else {
+    for (let i = 0; i < blankCover.length; i++){
+    blankCover[i].style.background = coverArray
+    state.filledBooks = true
+  }}
+}/*
 
-
+{
+  let blankCover = document.querySelectorAll('.visible')
+  for (let i = 0; i < blankCover.length; i++){
+  blankCover[i].style.background = 'transparent'
+  blankCover[i].style.borderWidth = 'medium'
+  blankCover[i].style.borderColor = "green purple"
+  }
+}
+/*generate bubbles*/
 let btnCircle = document.querySelector('.far_img')
 btnCircle.onclick = function (){
   let numberOfCircles = 8;
@@ -612,8 +579,24 @@ btnCircle.onclick = function (){
       div.style.width = `${anime.random(0,500)}px`
       div.style.height = `${anime.random(0,500)}px`
     }*/
+/*Create moving line*/
+let btnMovingLine = document.querySelector('.block_blackline')
+btnMovingLine.onclick = function(){
+let start = Date.now()
+let lineTimer = setInterval(function() {
+let timePassed = Date.now() - start;
+  if (timePassed >= 7000) {
+      clearInterval(lineTimer);
+      return;
+    } draw(timePassed);
 
-
+  }, 40);
+  function draw(timePassed) {
+  let movingLine = document.querySelector('.block_blackline')
+  movingLine.style.left = timePassed / 5 + 'px';
+}
+  let timePassed = Date.now() - start;
+}
 
 let btn01 = document.querySelector ('.chess').onclick = chess.restart
 let btn02 = document.querySelector ('.white_princess').onclick = apple.restart
@@ -622,6 +605,5 @@ let btn05 = document.querySelector('.dostoev').onclick = line.play
 let btn06 = document.querySelector('.da_vinci').onclick = code.restart
 let btn07 = document.querySelector('.harry_potter').onclick = books.restart
 letbtnLet = document.querySelector('.block_lines').onclick = letter.restart
-
-let btn09 = document.querySelector('.far_451').onclick = hr.play
 let btn10 = document.querySelector('.plus_one').onclick = wheel.restart
+let btn11 = document.querySelector('.animal').onclick = animalCover.restart
