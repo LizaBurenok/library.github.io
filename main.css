@@ -2412,7 +2412,7 @@ body{
 	.letter_a{
     position: absolute;;
     font-size: 69vw;
-    left: -6%;
+    left: -3%;
      top: 1%;
   }
 
@@ -2748,7 +2748,7 @@ body{
 }
 
 .story{
- transform: translateY(-239.4vw) scale(1.65) translateX(8vw);
+ transform: translateY(-189.7vw) scale(1.65) translateX(-23vw);
  height: 29.1vw;
 }
 
@@ -2759,7 +2759,7 @@ body{
 }
 
 .bird{
- transform: translateY(162vw) scale(1.8) translateX(36vw);
+ transform: translateY(161.2vw) scale(1.8) translateX(36vw);
  height: 26.1vw;
 }
 
@@ -2770,7 +2770,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 170.4%;
+ top: 189.4%;
  left: 8%;
  width: 42vw;
  height: 52vw;
@@ -2784,8 +2784,8 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 146.4%;
- left: 8%;
+ top: 120.2%;
+ left: 58%;
  width: 42vw;
  height: 52vw;
 }
@@ -2793,7 +2793,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 56%
+	top: 52%
 }
 .third{
 	background-color: #fcca2a;
