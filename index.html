@@ -8,19 +8,6 @@
   </head>
   <script src="anime.min.js"></script>
 <body>
-  <!--
-  <div class="wrap">
-    <div class="retort_wrapper">
-    <div class="glass_retort"></div>
-    <div class="retort_entry"></div>
-    <div class="liquid"></div>
-    <div class="drop drop_one"></div>
-    <div class="drop drop_two"></div>
-    <div class="drop drop_three"></div>
-    </div>
-</div>
-
-<div class="curtain"></div>!-->
 <div class="main_wrapper">
   <!-- ПРОПИСЫВАЮ БЛОКИ, В КОТОРЫХ БУДУТ КНИГИ-->
   <div class="line"></div>
@@ -72,18 +59,9 @@
   <div class="img_retort1"><img src="retort2.png" alt="" width="300vw"></div>
   <div class="block second_line four">
     <img src="bird.png" alt="" class="bird hidden" width="159vw">
-    <div class="book chess visible"><div class="chess_name"><span>защита лужина</span></div>
-      <div class="chess_block"  id="down_chess"></div>
-      <div class="chess_block" id="center_chess1"></div>
-      <div class="chess_block" id="down_chess"></div>
-      <div class="chess_block"></div>
-      <div class="chess_block"></div>
-      <div class="chess_block"></div>
-      <div class="chess_block" id="up_chess"></div>
-      <div class="chess_block" id="center_chess2"></div>
-      <div class="chess_block" id="up_chess"></div>
+    <div class="book chess visible">
+      <img src="horse.png" alt="" width="30vw" class="horse_chess"><img src="chess.png" alt="" width="158vw" class="chess_cover"></div>
     </div>
-  </div>
   <div class="block second_line five" id="second_line_five"></div>
   <div class="img_retort2"><img src="retort3.png" alt="" width="250vw"></div>
   <div class="block second_line six">
@@ -108,7 +86,7 @@
   </div>
   <div class="block third_line five" id="none"></div>
   <div class="block third_line six" id="none">
-  <img src="drak.png" alt="" class="drak hidden" width="157vw">
+    <img src="drak.png" alt="" class="drak hidden" width="157vw">
     <div class="book master visible"><span>мастер и маргарита</span><div class="master_first cube"></div><div class="master_second cube"></div></div>
     <div class="hidden_heart"><img src="heart.png" alt="" width="70vw"></div>
   </div>
@@ -128,7 +106,16 @@
   <div class="block fourth_line_one" id="none"></div>
   <div class="block fourth_line_two" id="none">
     <img src="silent.png" alt="" class="silent hidden" width="162vw">
-    <div class="book player visible"><span>игрок</span><img src="card.png" alt="" width="70vw" id="ace">
+    <div class="book player visible"><span>игрок</span><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+     <img src="card.png" style="width:5vw" class="player_img">
+    </div>
+    <div class="flip-card-back">
+      <p>Федор Михайлович Достоевский</p>
+    </div>
+  </div>
+</div>
     </div>
   </div>
   <div class="block fourth_line_three"></div>
@@ -145,6 +132,18 @@
       <div class="wheel_img visible"><img src="wheel.png" alt="" width="120vw"></div>
     </div>
   </div>
+  <div class="wrap_animation">
+  <div class="wrap">
+    <div class="retort_wrapper">
+    <div class="glass_retort"></div>
+    <div class="retort_entry"></div>
+    <div class="liquid"></div>
+    <div class="drop drop_one"></div>
+    <div class="drop drop_two"></div>
+    <div class="drop drop_three"></div>
+    </div>
+</div>
+<div class="curtain"></div></div>
 </div>
 </div>
 <script src="main.js"></script>
