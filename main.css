@@ -2551,6 +2551,22 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 	height: 2275;
 }*/
 
+.wrap_animation{
+	display: block;
+	position: absolute;
+	top: 256%;
+}
+
+.wrap{
+  
+	transform: translateX(30vw) scale(1.2);
+}
+
+.curtain{
+	width: 375px;
+	height: 770px;
+}
+
 .block_wrapper{
 	overflow: hidden;
 }
@@ -2597,7 +2613,7 @@ body{
 }
 
 .lineblock_first img{
-	transform: translateY(-349vw) scale(.92) translateX(-57vw)
+	transform: translateY(-349vw) scale() translateX(-57vw);
 }
 
 .six img{
@@ -2653,7 +2669,7 @@ body{
 	border: 1px solid #666;
 }
 .img_books{
-	transform: translateY(-132px) scale(.9);
+	transform: translateY(-130px) scale(.9);
 	text-align: center;
 }
 
@@ -2666,6 +2682,9 @@ body{
 
 .retort{
 	position: absolute;
+	transform: scale(1.5);
+	bottom: -1%;
+	left: -43%;
 }
 
 .retort img{
@@ -2823,9 +2842,9 @@ body{
 .chess_name span{
 	font-size:5vw;
 }
-.chess_block{
-	width: 12.98vw;
-	height: 12.97vw;
+.chess_cover{
+	width: 40vw;
+	height: 48vw;
 }
 
 #third_line_one{
@@ -2965,7 +2984,6 @@ body{
 	z-index: 3;
 }
 }
-
 @media (min-width: 2560px) and (max-width: 2600px){
 body{
 	width: 100%;
