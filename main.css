@@ -2546,11 +2546,6 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 		height: 49.4vw;
 	}
 
-/*.curtain{
-	width: 375px;
-	height: 2275;
-}*/
-
 .wrap_animation{
 	display: block;
 	position: absolute;
@@ -2564,16 +2559,12 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 
 .curtain{
 	width: 375px;
-	height: 770px;
+	height: 700px;
 }
 
 .block_wrapper{
 	overflow: hidden;
 }
-
-/*.wrap{
-	transform: scale(.9) translateX(34vw) translateY(10vw);
-}*/
 
 body{
 	width: 375px;
@@ -2683,8 +2674,8 @@ body{
 .retort{
 	position: absolute;
 	transform: scale(1.5);
-	bottom: -1%;
-	left: -43%;
+	bottom: -21%;
+	left: -44%;
 }
 
 .retort img{
@@ -2916,7 +2907,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-101.5vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-10.5vw);
  height: 70vw;}
 
 .silent{
@@ -2960,7 +2951,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 120.2%;
+ top: 138.2%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2969,7 +2960,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 52%
+	top: 62%
 }
 .third{
 	background-color: #fcca2a;
