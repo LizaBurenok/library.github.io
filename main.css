@@ -2559,7 +2559,7 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 
 .curtain{
 	width: 375px;
-	height: 700px;
+	height: 600px;
 }
 
 .block_wrapper{
@@ -2674,7 +2674,7 @@ body{
 .retort{
 	position: absolute;
 	transform: scale(1.5);
-	bottom: -21%;
+	bottom: -27%;
 	left: -44%;
 }
 
@@ -2907,7 +2907,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-10.5vw);
+ transform: translateX(52.4vw) scale(.77) translateY(15.5vw);
  height: 70vw;}
 
 .silent{
@@ -2951,7 +2951,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 138.2%;
+ top: 148.2%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2960,7 +2960,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 62%
+	top: 68%
 }
 .third{
 	background-color: #fcca2a;
