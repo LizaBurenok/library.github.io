@@ -1,28 +1,121 @@
-let chess = anime.timeline({
-  easing: 'easeInOutCirc',
+let retortEntry = anime.timeline({
+  targets: '.retort_wrapper',
+  autoplay: false,
+  rotate: {
+  value: 180,
+  delay: 1500
+},
+  duration: 1000,
+  easing: 'linear',
+})
+
+retortEntry.add({
+  targets: '.wrap',
+  backgroundColor: 'rgb(206, 87, 154)',
+  duration: 1500
+})
+
+retortEntry.add ({
+  targets: '.drop_one',
+  translateX: {
+    value: 5
+  },
+  translateY: -50,
+  opacity: {
+    value: 1,
+    delay: 1500
+  },
+  translateY: {
+    value: -160,
+    delay: 1500
+  }
+})
+
+retortEntry.add({
+  targets: '.drop_two',
+  translateX: 5,
+  translateY: -50,
+  opacity: {
+    value: 1,
+    delay: 450
+  }, translateY: {
+    value: -170,
+    delay: 1500
+  }
+})
+
+retortEntry.add({
+  targets: '.drop_three',
+  translateX: 5,
+  tranlsateY: -50,
+  opacity: {
+    value: 1,
+    delay: 400
+  }, translateY: {
+    value: -170,
+    delay: 1500
+  }
+})
+
+let btnEntry = document.querySelector('.wrap')
+btnEntry.onclick = retortEntry.restart
+
+
+let chessGame = anime.timeline({
+  targets: '.horse_chess',
+  duration: 500,
+  easing: 'easeInOutQuint',
+  autoplay: false
+})
+
+chessGame.add({
+  opacity: {
+    value: 1,
+    duration: 100
+  },
+  translateY: {
+    value: -49,
+    delay: 100
+  },
+  translateX:
+  {
+    value: 54,
+    delay: 300
+  }
+})
+
+chessGame.add({
+  translateY: {
+    value: -104
+  },
+  translateX: {
+    value: 110,
+    delay: 300
+  },
+  opacity: {
+    value: 0,
+    delay: 500
+  }
+})
+
+let whiteNumbers = anime({
+  targets: '.numbers',
+  rotate: {
+    value: -40,
+    delay: 200,
+    duration: 800
+  },
+  scale: {
+    value: 2,
+    delay: 700
+  },
+
   duration: 1000,
   autoplay: false
 })
 
-chess.add({
-  targets: '#down_chess',
-  translateY: 103.5
-})
-
-chess.add({
-  targets: '#center_chess1',
-  translateY: 103
-})
-
-chess.add({
-  targets: '#center_chess2',
-  translateY: -103
-})
-
-chess.add({
-  targets: '#up_chess',
-  translateY: -103.5
-})
+let btnChess = document.querySelector('.chess')
+btnChess.onclick = chessGame.restart
 
 let apple = anime.timeline({
   easing: 'easeInOutSine',
@@ -382,6 +475,16 @@ animalCover.add({
     delay: 1000
   }
 })
+
+let cardFlip = anime({
+  targets: '.flip-card-inner',
+  rotateY: 180,
+  duration: 100,
+  autoplay: false
+})
+
+let btnCard = document.querySelector('.flip-card')
+btnCard.onclick = cardFlip.restart
 /*
 let blinkingBlock = anime.timeline({
   loop: true
@@ -487,14 +590,32 @@ let btnRetort = document.querySelector('.retort').onclick = function(){
     }}
 //
 
+
 //Change color of covers
 let btnColorCover = document.querySelector('.img_books')
 btnColorCover.onclick = function() {
   let cover = document.querySelectorAll('.block')
   for (let i = 0; i < cover.length; i++){
     cover[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
-  }
-}
+  }}
+  /*
+  let firstColorBlock = document.querySelector('#first_one')
+  let secondColorBlock = document.querySelector('#first_two')
+  let thirdColorBlock = document.querySelector('#second_line_one')
+  let fourthColorBlock = document.querySelector('#second_two')
+  let fifthColorBlock = document.querySelector('#third_line_one')
+  let sixColorBlock = document.querySelector('#third_line_two')
+  let firstBlockArray = [
+    'firstColorBlock',
+    'secondColorBlock',
+    'thirdColorBlock',
+    'fourthColorBlock',
+    'fifthColorBlock',
+    'sixColorBlock']
+  for (let i = 0; i < firstBlockArray.lenght; i++){
+    firstBlockArray[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+  }}*/
+
 /*change blank books in filled with color*/
 
 let btnBlankCover = document.querySelector('.third_line_four')
@@ -598,7 +719,6 @@ let timePassed = Date.now() - start;
   let timePassed = Date.now() - start;
 }
 
-let btn01 = document.querySelector ('.chess').onclick = chess.restart
 let btn02 = document.querySelector ('.white_princess').onclick = apple.restart
 let btn04 = document.querySelector('.master').onclick = cards.restart
 let btn05 = document.querySelector('.dostoev').onclick = line.play
