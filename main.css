@@ -2,7 +2,11 @@ body{
 	margin: 0;
 	padding: 0;
 }
-/*.wrap{
+
+.wrap_animation{
+	display: none;
+}
+.wrap{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -68,7 +72,6 @@ body{
 	background-color: #e9ef9a;
 	z-index: 20;
 }
-*/
 
 .block_wrapper{
 	display: flex;
@@ -246,6 +249,28 @@ visibility: hidden;
 	transform: translateY(0.6vw) translateX(1.7vw);
 	position: absolute;
 	visibility: hidden;
+}
+
+.blood_drops_first{
+	position: absolute;
+	top: 89%;
+	left: 78%;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: darkred;
+	z-index: 12;
+}
+
+.blood_drops_second{
+	position: absolute;
+	top: 90%;
+	left: 82%;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: darkred;
+	z-index: 12;
 }
 
 .shine{
@@ -426,6 +451,17 @@ span{
 
 }
 
+.horse_chess{
+	position: absolute;
+	z-index: 4;
+	top: 75%;
+	left: 5%;
+	opacity: 0;
+}
+
+.chess_cover{
+	transform: translateY(-0.5vw);
+}
 .dostoev span{
 	color:#fff;
 	transform: rotate(-90deg) translateY(470%);
@@ -433,31 +469,6 @@ span{
 	z-index: 1;
 }
 
-.chess{
-	background-color: #2887c8;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-}
-
-.chess_name{
-	height: 45%;
-}
-
-.chess_name span{
-	font-size: 1.4vw;
-	color: #fff;
-	margin-left: 1.5%;
-}
-.chess_block{
-	background-color: #2887c8;
-	width: 3.665vw;
-	height: 3.665vw;
-}
-
-.chess_block:nth-child(even){
-	background-color: #9ff0ff;
-}
 
 .far_451{
 	background-color: #7070cc;
@@ -465,6 +476,12 @@ span{
 
 .far_451 img{
 	transform: translateY(30%) translateX(10%);
+}
+
+.numbers{
+	position: absolute;
+	top: 56.2%;
+	left: 73.6%;
 }
 
 .fareng_space{
@@ -588,6 +605,48 @@ span{
 	color: #eb3c1c;
 }
 
+.flip-card {
+  background-color: transparent;
+  width: 6vw;
+  height: 7vw;
+  perspective: 1000px;
+	position: absolute;
+	bottom: 10%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/*
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+*/
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #8fd8d8;;
+}
+
+.flip-card-back {
+  background-color: #8fd8d8;
+  transform: rotateY(180deg);
+  color: #fff;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 13px;
+}
+
 .plus_one{
 	background-color: #2887c8;
 	position: relative;
@@ -615,227 +674,6 @@ span{
 	transform: translateY(-170%) translateX(30%);
 	opacity: 0;
 }
-
-@media (min-width: 2780px) and (max-width: 2880px){
-	/*.wrap{
-		transform: scale(2.6) translateX(330%) translateY(150%);
-	}
-	.curtain{
-		transform: scale(3.14);
-		width: 1395px;
-	}*/
-
-	.block_wrapper{
-		overflow: hidden;
-	}
-
-	.block_blackline{
-		width: 3.2vw;
-		height: 20vw;
-	}
-
-	.line{
-		height: 3vw;
-	}
-
-	.img_books{
-		transform: scale(2) translateY(0.4vw);
-	}
-	.animal{
-		transform: scale(.8)
-	}
-	.animal_mask, .animal_mask1{
-			transform: scale(.5);
-		}
-	.img_retort1 img{
-		transform: scale(3.18);
-	}
-
-	.img_retort2 img{
-		transform: scale(2.2) translateX(2.4vw) translateY(2vw);
-	}
-
-	.far_451 img{
-		transform: scale(2.5) translateY(2.1vw) translateX(1.5vw);
-	}
-
-	.retort{
-		transform: scale(2.1) translateY(1.45vw);
-	}
-	.player img{
-		transform: scale(2.3) translateY(-1.15vw) translateX(-0.7vw);
-	}
-
-	.da_vinci_block{
-		width: 2.2vw;
-	}
-
-	.plus_one img{
-		transform: scale(2.1) translateY(-1vw) translateX(-1.25vw);
-	}
-
-	.wheel_img{
-		position: absolute;
-		top: 104%;
-		left: 103%;
-	}
-
-	.war{
-			transform: translateY(-14.9vw) scale(.85);
-		}
-
-.animal{
-			transform: translateY(-1.3vw) scale(.85);
-		}
-
-		.animal_mask, .animal_mask1{
-			transform: scale(.7)
-		}
-
-		.bird, .numb, .story, .silent, .shine, .drak, .lady{
-			transform: scale(2.2) translateY(2.05vw) translateX(2vw);
-		}
-}
-@media (min-width: 2560px) and (max-width: 2600px){
-
-	/*.wrap{
-		transform: scale(2) translateX(400%) translateY(100%);
-	}
-	.curtain{
-		width: 1405px;
-		transform: scale(2.64);
-	}*/
-
-	.block_wrapper{
-		overflow: hidden;
-	}
-
-	.block_blackline{
-		width: 3.2vw;
-		height: 20vw;
-	}
-
-	.img_retort1 img{
-		transform: scale(1.4) translateX(2vw) translateY(2vw);
-	}
-
-	.img_retort2 img{
-		transform: scale(1.4) translateX(1.5vw) translateY(2vw);
-	}
-
-	.retort{
-		transform: scale(2) translateY(1.5vw);
-	}
-
-	.img_books{
-		transform: scale(1.86) translateY(0.24vw);
-	}
-
-	.far_451 img{
-		transform: scale(2.2) translateY(2vw) translateX(1.6vw);
-	}
-
-	.da_vinci_block{
-		width: 2.2vw;
-	}
-
-	.player img{
-		transform: scale(1.9) translateY(-1vw) translateX(-0.7vw);
-	}
-
-	.plus_one img{
-		transform: scale(1.9) translateX(-1.23vw) translateY(-0.9vw);
-	}
-
-	.wheel_img{
-		position: absolute;
-		top: 104%;
-		left: 104%;
-	}
-
-.animal{
-	transform: scale(.7)
-}
-
-.war{
-			transform: translateY(-14.9vw) scale(.82);
-		}
-
-.animal{
-			transform: translateY(-1.3vw) scale(.82);
-		}
-
-		.animal_mask, .animal_mask1{
-			transform: scale(.7)
-		}
-
-		.bird, .numb, .story, .silent, .shine, .drak, .lady{
-			transform: scale(1.9) translateY(2.05vw) translateX(2vw);
-		}
-}
-@media (min-width: 2340px) and (max-width: 2500px){
-	/*.curtain{
-		width: 100%;
-		height: 250%;
-	}*/
-
-	.letter_k{
-		margin-top: 1px
-	}
-
-	.img_books{
-		transform: scale(1.7) translateY(0.2vw);
-	}
-
-	.block_wrapper{
-		overflow: hidden;}
-
-		.img_retort1, .img_retort2{
-			transform: scale(1.3) translateX(2.8vw) translateY(3vw);
-		}
-
-		.retort{
-			transform: scale(1.6) translateY(1.7vw);
-		}
-
-		.book{
-			width: 12vw;
-		}
-
-		.war{
-			transform: translateY(-14.9vw) scale(.8);
-		}
-
-		.animal{
-			transform: translateY(-1.3vw) scale(.8);
-		}
-
-		.animal_mask, .animal_mask1{
-			transform: scale(.7)
-		}
-
-		.bird, .numb, .story, .silent, .shine, .drak, .lady{
-			transform: scale(1.7) translateY(2.05vw) translateX(2vw);
-		}
-
-		.far_451 img{
-			transform: scale(2) translateY(2.2vw) translateX(1.6vw);
-		}
-
-		.player img{
-			transform: scale(1.7) translateY(-1.1vw) translateX(-0.7vw);
-		}
-
-		.plus_one img{
-			transform: scale(1.7) translateY(-0.95vw) translateX(-1.3vw);
-		}
-
-		.wheel_img{
-			position: absolute;
-			top: 104%;
-			left: 103%
-		}
-		}
 
 @media (min-width: 1680px) {
 /*	.curtain{
@@ -1026,6 +864,12 @@ span{
 	}
 }
 
+@media (min-width: 1448px) and (max-width: 1670px){
+	.far_451 img{
+		transform: scale(1.2) translateY(2.5vw) translateX(1.3vw);
+	}
+}
+
 @media (max-width: 1440px){
 /*	.curtain{
 		height: 880px;
@@ -1094,7 +938,9 @@ span{
 		height: 800px;
 		width: 100%;
 	}*/
-
+	.lineblock_first img{width: 14.1vw;
+	height: 15vw;
+  transform: translateX(0.vw);}
 	.block_wrapper{
 		overflow: hidden;
 	}
@@ -1138,6 +984,11 @@ translateX(-15vw);}
 	.block{
 		width: 14.13vw;
 		height: 14.2vw;
+	}
+
+	.lineblock_first img{
+		width: 14vw;
+		transform: translateX(0.1vw)
 	}
 
 	.letter_o{
@@ -1198,56 +1049,63 @@ translateX(-15vw);}
 		width: 14.125vw;
 		height: 14.125vw;
 	}
+
+	.letter_k, .letter_b{
+		font-size: 40vw;
+	}
+
+ .letter_a{
+		font-size: 39vw;
+		transform: translateX(-18vw) translateY(-8vw);
+	}
 	.letter_o{
 		transform: translateY(-7vw) translateX(-15vw);
+		font-size: 38vw;
 	}
 	.img_books{
 		transform: translateY(-0.6vw) scale(.9)
 	}
 	.lineblock_first img{
-		transform: scale(.9) translateX(-1.1vw) translateY(-1vw)}
+		 width: 14.175vw;
+		 height: 14vw
+		 }
 		.retort{
 			transform: translateY(-1vw) scale(.8)
 		}
 		.book{
-			width: 12vw;
-			height: 13.5vw;
+			width: 11vw;
+			height: 12.7vw;
 		}
 
 		.img_retort1{
-			transform: scale(.7) translateX(-3.4vw) translateY(-3.5vw);
+			transform: scale(.7) translateX(-1vw) translateY(-6vw);
 		}
 
 		.img_retort2{
 			transform: translateY(-7vw) scale(.7);
 		}
 
+		.chess_cover{
+				width: 11vw;
+				height: 13.3vw;
+			}
+
 		.far_451 img{
-			transform: scale(1) translateY(2vw) translateX(1vw);
+			transform: scale(.9) translateY(2vw) translateX(1vw);
 		}
 		.far_451 hr{
 			transform: translateY(-1vw) translateX(-2.8vw);	}
-
-			.chess_block{
-				width: 50.1px;
-				height: 48px
-			}
-			.chess span{
-				font-size: 1.5vw;
-			}
 			.player span{
-				font-size: 4vw;
+				font-size: 3.75vw;
 				transform: translateX(0.3vw);
 			}
 			.harry_potter span{
 				transform: scale(1.2) translateX(0.8vw);
 			}
 			.white_princess span{
-				transform: scale(1.2) translateX(0.6vw) translateY(0.3vw);
+				transform: scale(1.1) translateX(0.2vw) translateY(0.3vw);
 			}
-			.da_vinci span{
-				transform: scale(1.15);
-			}
+
 			.plus_one img{
 				transform: scale(.96) translateY(1vw);
 			}
@@ -1259,20 +1117,24 @@ translateX(-15vw);}
 			.plus_one span{
 				transform: translateX(0.2vw);
 			}
-
+			.animal{
+							height: 14.5vw;
+							transform: scale(.95) translateX(1vw) translateY(-0.3vw);
+						}
+						.war{
+							transform: scale(.93) translateY(-13.8vw) translateX(1vw);
+						}
 			.story, .silent, .shine, .lady, .war, .bird, .drak, .numb{
 				width: 12vw;
 				height: 13.5vw;
 			}
-}
-@media (min-width: 1252px) and (max-width: 1278px){
-	.book{
-		transform: scale(.99) translateY(0.3vw);
-	}
 
-	.chess_block{
-		width: 4vw;
-	}
+			.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+				transform: translateX(1.5vw) translateY(1vw);
+			}
+			.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+				transform: scale(.9) translateX(0.65vw)
+		}
 }
 
 @media (min-width: 1036px) and (max-width: 1250px){
@@ -1299,7 +1161,7 @@ body{
 }
 
 .img_books{
-	transform: scale(1.42) translateY(4.6vw);
+	transform: scale(1.2) translateY(5.5vw);
 }
 
 #second_two{
@@ -1376,11 +1238,6 @@ border: 1px solid #fff;
 
 .chess{
 	transform: translateX(-25vw) translateY(1vw);
-}
-
-.chess_block{
-	width: 4vw;
-	height: 4vw;
 }
 
 .chess_name{
@@ -1546,6 +1403,10 @@ transform: translateY(-19vw) scale(1.75) translateX(-24.8vw);
 		border: 1px solid #fff;
 	}
 
+	#third_line_one, #third_line_two{
+	background-color: #221712;
+	border: 1px solid #666;
+	}
 	.img_retort1, .img_retort2{
 		display: none;
 	}
@@ -1585,7 +1446,7 @@ transform: translateY(-19vw) scale(1.75) translateX(-24.8vw);
 }
 
 .lineblock_first{
-	transform: scale(1.4) translateY(2.7vw) translateX(3.4vw);
+	transform: scale(1.75) translateY(3.05vw) translateX(5.33vw);
 }
 
 .six img{
@@ -1593,78 +1454,141 @@ transform: translateY(-19vw) scale(1.75) translateX(-24.8vw);
 }
 
 .book{
-	transform: scale(1.7) translateY(3.3vw);
+	width: 20.3vw;
+	height: 24vw;
+}
+
+.harry_potter{
+	transform: translateY(0.4vw);
+}
+
+.harry_face{
+	width: 54%;
+	height: 78%;
+}
+
+.harry_glass{
+	width: 7vw;
+	height: 7vw;
+}
+
+.harry_potter hr{
+	width: 54%;
+}
+
+.harry_potter span{
+	font-size: 3.6vw;
+	transform: translateX(0.3vw) translateY(0.9vw);
 }
 
 .dostoev{
-	transform: translateX(25vw) scale(1.7) translateY(3.3vw);
+	transform: translateX(25vw) translateY(0.4vw);
 }
 
-.brown_line{
-	height: 0.7vw;
+.dostoev span{
+	font-size: 1.5vw;
 }
+
 .far_451{
-	position: absolute;
-	left: 31%
+	width: 20vw
 }
 
 .chess{
-	transform: translateX(-25vw) scale(1.7) translateY(3.3vw);
+	transform: translateX(-25vw) translateY(0.5vw);
 }
 
-.chess_block{
-	width: 2.4vw;
-	height: 2.4vw;
+.chess_cover{
+	width: 20.5vw;
+	height: 24.5vw;
 }
 
 .white_princess{
 	position; absolute;
-	bottom: 101%;
+	bottom: 99%;
 	left: 202%;
+	height: 22.8vw;
+	width: 19.6vw
 }
+
+.apple{
+	transform: scale(2);
+}
+
+.white_princess span{
+	font-size: 2.3vw;
+	transform: translateX(0vw);
+}
+
 .retort{
 	transform: scale(1.2) translateY(-81vw) translateX(-21vw);
 }
 
 .far_451{
-	transform: translateX(25vw) translateY(-19.4vw) scale(1.7);
+	transform: translateX(50vw) translateY(-24.5vw);
 	z-index: 2;
-	width: 12vw;
+}
+
+.far_451 img{
+	transform: scale(1.5) translateY(4vw) translateX(2.3vw);
 }
 
 .da_vinci{
-	transform: translateY(-19.3vw) scale(1.7) translateX(0.25vw);
+	transform: translateY(-24.5vw) translateX(0.25vw);
 }
 
+.da_vinci_block{
+	width: 3vw;
+	height: 5vw;
+}
+
+.da_vinci span{
+	font-size: 2.68vw;
+}
 
 .master{
-	transform: translateY(5.6vw) scale(1.7);
+	transform: translateY(0.4vw);
 	z-index: 1;
 }
-.far_451 img{
-	transform: scale(.83) translateY(1vw);
+
+.master span{
+	font-size: 2vw
+}
+.cube{
+	width: 11.9vw;
+	height: 11.9vw;
 }
 
 .plus_one{
 	z-index: 1;
-	transform: translateY(-19.3vw) scale(1.7) translateX(-29.4vw);
+	transform: translateY(-24.5vw) translateX(-50vw);
+}
+
+.plus_one span{
+	font-size: 14vw;
+	transform: translateY(3.1vw);
 }
 
 .wheel_img{
 	position: absolute;
-	top: 108%;
-	left: 108%
-}
-
-.player{
-	transform: translateX(-49.5vw) scale(1.7) translateY(3.4vw);
-}
-.player img{
-	transform: scale(.86) translateY(1vw) translateX(0.5vw);
+	top: 102%;
+	left: 103%;
 }
 
 .plus_one img{
-	transform: scale(.8) translateY(2vw) translateX(1vw);
+	transform: scale(1.2) translateY(-0.5vw) translateX(-1.2vw);
+}
+
+.player{
+	transform: translateX(-49.5vw) translateY(0.4vw);
+}
+
+.player img{
+	transform: scale(1.3) translateY(-1.2vw) translateX(-1.02vw);
+}
+
+.player span{
+	font-size: 6.75vw;
+	transform: translateY(-0.67vw) translateX(0.3vw );
 }
 
 .harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
@@ -1680,33 +1604,36 @@ transform: translateY(-19vw) scale(1.75) translateX(-24.8vw);
 }
 
 .war{
-	transform: scale(1.29) translateX(3.4vw) translateY(-8.4vw);
+	transform: scale(1.29) translateX(3.4vw) translateY(-16.4vw);
 }
 
 .numb{
-	width: 16vw;
-	height: 18.8vw;
+	width: 17vw;
+	height: 19.5vw;
 	position: absolute;
-	left: 52.6%;
-	top: 56.9%;
+	left: 52%;
+	top: 85.7%;
 }
 
 .animal{
+	width: 17vw;
+	height: 19vw;
 	transform: scale(1.24) translateY(2.3vw) translateX(23.6vw);
 }
 
 .drak{
-	width: 16vw;
-	height: 18.8vw;
+	width: 16.6vw;
+	height: 19.2vw;
 	position: absolute;
-	top: 107.2%;
-	left: 77.38%
+	top: 162.2%;
+	left: 76.7%
 }
 
 .bird{
-	height: 13.6vw;
-	z-index: 1;
-	transform: scale(1.7) translateX(-25.3vw) translateY(47.5vw);
+	width: 20vw;
+	height: 23.5vw;
+	z-index: 4;
+	transform: translateX(-22.5vw) translateY(0.6vw);
 }
 
 .shine{
@@ -1720,10 +1647,11 @@ transform: translateY(-19vw) scale(1.75) translateX(-24.8vw);
 }
 
 .silent{
-	transform: scale(1.7) translateX(-10.5vw) translateY(-40.7vw);
-	height: 14vw
+	transform: scale(1.7) translateX(-25.3vw) translateY(3.2vw);
+	height: 14.3vw;
 }
 }
+
 @media (max-width: 1024px){
 	.block{
 		width: 24.8vw;
@@ -1737,6 +1665,10 @@ transform: translateY(-19vw) scale(1.75) translateX(-24.8vw);
 	.block_wrapper{
 		overflow: hidden;
 	}
+
+	.block_blackline{
+	width: 4vw;
+}
 	.letter_k,
 	.letter_l,
 	.letter_b,
@@ -1804,28 +1736,12 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .book{
-	width: 21vw;
-	height: 23.5vw;
+	width: 20.6vw;
+	height: 23.6vw;
 }
 
 .dostoev{
 	transform: translateX(25vw) translateY(0.5vw);
-}
-
-.brown_line{
-	width: 100%;
-	background-color: #4f0000;
-	height: 1vw;
-	position: absolute;
-	top: 41%;
-
-}
-
-.dostoev span{
-	color:#fff;
-	transform: rotate(-90deg) translateY(470%);
-	font-size: 0.8vw;
-	z-index: 1;
 }
 
 .dostoev span{
@@ -1838,20 +1754,17 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .chess_name span{
-	font-size: 2.7vw;
+	font-size: 2.6vw;
+	transform: translateY(-5vw)
 }
 
-.chess_block{
-	width: 7vw;
-	height: 6.7vw;
+.chess_cover{
+	width: 20.6vw;
+	height: 23.9vw;
 }
 
 .img_retort1, .img_retort2{
-	visibility: hidden;
-}
-
-.chess_name{
-	height: 40%;
+	display: none;
 }
 
 .far_451{
@@ -1865,6 +1778,11 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	transform: translateX(-5.8vw) translateY(5vw);
 }
 
+.fareng_space{
+	transform: translateY(-24vw) translateX(52.4vw);
+	width: 20.6%;
+}
+
 .white_princess{
 	transform: translateX(50vw) translateY(-24.6vw)
 }
@@ -1873,8 +1791,9 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	font-size: 3vw;
 	transform: translateX(0.2vw);
 }
+
 .apple{
-	background-color: #8fd8d8;
+
 	border-radius: 50%;
 	width: 11vw;
 	height: 11vw;
@@ -1896,11 +1815,13 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .lineblock_first img{
-	transform: scale(1.24) translateY(2vw) translateX(2vw)
+	width: 24.6vw;
+	height: 24.5vw;
+	transform: translateY(0.05vw) translateX(0.05vw);
 }
 
 .master span{
-	font-size: 2.1vw;
+	font-size: 2.06vw;
 }
 
 .cube{
@@ -1931,10 +1852,10 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .player img{
-	transform: scale(1.2) translateX(-0.7vw) translateY(-0.9vw);
+	transform: scale(1.36) translateX(-0.9vw) translateY(-1.4vw);
 }
 .player span{
-	transform: translateX(0.5vw);
+	transform: translateX(0.7vw);
 	font-size: 7.1vw;
 }
 
@@ -1948,7 +1869,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .plus_one img{
-	transform: scale(1) translateY(0.8.6vw) translateX(-0.2vw);
+	transform: scale(1.1) translateX(-0.8vw);
 }
 
 .hidden_heart{
@@ -1956,59 +1877,153 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	opacity: 0;
 }
 
-.story,
-.drak,
-.silent,
-.shine,
-.lady,
-.bird,
-.numb{
-	transform: translateX(1.95vw) translateY(0.8vw);
-	width: 21vw;
-	height: 23.5vw;
-}
-
 .war{
 	position: absolute;
-	bottom: 6.7%;
+	bottom: 42.5%;
+	left: 2.5%;
+	transform: scale(1.04);
 }
+
+.animal, .animal_mask, .animal_mask1{
+	position: absolute;
+	left: 76.9%;
+	top: 39.8%;
+}
+
+.animal{
+	height: 19.4vw;
+	width: 17vw;
+}
+
+.animal_mask, .animal_mask1{
+	position: absolute;
+	top: 42%;
+	left: 78%;
+}
+
 .story{
-	transform: translateX(-48vw) translateY(0.7vw);
+	transform: translateX(-48.5vw) translateY(-24.5vw);
+	width: 22vw;
+	height: 23.9vw;
 	z-index: 2;
 }
 
 .bird{
-	transform: translateY(100.7vw) translateX(-48vw);
+	transform: translateY(0.7vw) translateX(-23.3vw) ;
+	width: 21vw;
+	height: 23.5vw;
 	z-index: 2;
 }
 .shine{
-	transform: translateY(-49.5vw) translateX(2vw);
+	transform: translateY(-25vw) translateX(1.9vw);
+	width: 21.4vw;
+	height: 24.3vw
 }
 
 .drak{
-	transform: translateX(-23vw) translateY(0.7vw);
+	transform: translateX(2vw) translateY(0.5vw);
+	width: 21vw;
+	height: 23.9vw
 }
+
 .lady{
-	transform: translateX(52vw) translateY(1vw);
+	transform: translateX(52vw) translateY(-24.2vw);
 	z-index: 2;
+	width: 21vw;
+	height: 23.4vw;
 }
+
 .silent{
-	transform: translateX(-23vw) translateY(-49vw);
+	width: 20vw;
+	transform: translateX(-48.2vw) translateY(0.7vw);
+	width: 22vw;
+	height: 24.1vw;
 }
 
 .numb{
-	transform: translateX(52vw) translateY(1vw);
+	width: 20vw;
+	height: 23.6vw;
+	transform: translateX(52vw) translateY(-24.2vw);
 }
 
 #second_two{
 	background-color: #fcca2a;
-	border: none;
+	border:1px solid #fff;
+}
+
+.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+	transform: scale(1.2) translateX(-1.2vw);
 }
 /*
 	.curtain{
 		width: 1024px;
 	}*/
 }
+@media (min-width: 900px) and (max-width: 940px){
+	.img_books{
+		transform: translateY(5.9vw) scale(1.05);
+	}
+
+	.six img{
+		width: 26.2vw;
+		height: 26.3vw;
+	}
+
+	.lineblock_first img{
+		width: 24.9vw;
+		height: 24.6vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.far_451 img{
+		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
+	}
+	.white_princess span{
+		font-size: 2.4vw
+	}
+}
+
+@media (min-width: 940px) and (max-width: 980px){
+	.img_books{
+		transform: translateY(6.4vw) scale(1.05);
+	}
+
+	.six img{
+		width: 26.2vw;
+		height: 26.3vw;
+	}
+
+	.lineblock_first img{
+		width: 24.9vw;
+		height: 24.6vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.far_451 img{
+		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1000px){
+	.img_books{
+		transform: scale(1.05) translateY(6.4vw);
+	}
+	.six img{
+		width: 26.2vw;
+		height: 26.3vw;
+	}
+
+	.lineblock_first img{
+		width: 24.9vw;
+		height: 24.6vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.far_451 img{
+		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
+	}
+}
+
 @media (min-width: 800px) and (max-width: 1000px){
 	.block{
 		width: 24.75vw;
@@ -2034,7 +2049,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	}
 
 	.img_books{
-		transform: scale(1) translateY(5.4vw);
+		transform: scale(.95) translateY(5.4vw);
 	}
 
 	.block_blackline{
@@ -2047,7 +2062,9 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	}
 
 	.lineblock_first img{
-		transform: scale(.97) translateX(-0.4vw) translateY(-0.4vw);
+		transform: translateY(-0.1vw);
+		width: 24.65vw;
+		height: 24.7vw;
 	}
 
 	#second_line_one{
@@ -2056,16 +2073,79 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	}
 
 	.retort{
-		transform: scale(.9) translateY(-111vw) translateX(-28vw);
+		transform: scale(.98) translateY(-102.5vw) translateX(-25vw);
 	}
 
 	.far_451 img{
-		transform: scale(1.2) translateY(3vw) translateX(2vw);
+		transform: scale(1.2) translateY(3.5vw) translateX(2vw);
 	}
 
 	#second_two{
 		background-color: #fcca2a;
 		border: none;
+	}
+
+	.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+		transform: scale(1);
+	}
+
+	.white_princess span{
+		font-size: 2.5vw;
+	}
+
+	.war{
+		position: absolute;
+		bottom: 35.4%;
+		left: 1.5%;
+		transform: scale(.8);
+		height: 23vw;
+	}
+
+	.animal{
+		position: absolute;
+		left: 77.25vw;
+		top: 40%;
+		width: 16vw;
+		height: 18.5vw;
+	}
+
+	.numb{
+		position: absolute;
+		bottom: 0.2vw;
+		left: 52.5%;
+		height: 25vw;
+	}
+
+	.lady{
+		transform: translateY(-24.3vw) translateX(52.50vw);
+	}
+
+	.bird{
+		transform: translateY(0.6vw) translateX(-23vw);
+		height: 23.7vw;
+	}
+
+	.silent{
+		transform: translateY(0.6vw) translateX(-47.7vw);
+		height: 24.2vw;
+	}
+
+	.shine{
+		position: absolute;
+		top: 187.2%;
+		height: 24.1vw;
+	}
+
+	.drak{
+		position: absolute;
+		right: 1.25%;
+		top: 129.4%;
+		height: 24.6vw;
+	}
+
+	.story{
+		transform: translateY(-24.6vw) translateX(-48vw);
+		height: 23.9vw;
 	}
 }
 
@@ -2122,6 +2202,80 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 @media (max-width: 768px){
+	.wrap_animation{
+	display: block;
+	position: absolute;
+	top: 455%;
+}
+
+.wrap{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #e6e3ee;
+    border: 5px solid #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  overflow: hidden;
+	position: absolute;
+	z-index: 23;
+	transform: translateX(43vw) scale(1.4);
+}
+
+.retort_wrapper{
+    position: relative;
+	z-index: 2;
+}
+.glass_retort{
+    width: 20px;
+    height: 40px;
+    background-color: #fff;
+	z-index: 23;
+}
+
+.retort_entry{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+   transform: translateY(-12px) translateX(-6.8px);
+	 	z-index: 23;
+}
+
+.liquid{
+    width: 35px;
+    height: 19px;
+    background-color: lightblue;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+    z-index: 3;
+    position: absolute;
+    transform: translateX(-6.5px) translateY(6px);
+			z-index: 23;
+}
+.drop{
+    width: 10px;
+    height: 10px;
+    background-color: lightblue;
+    z-index: 4;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-40px) translateX(5px);
+    opacity: 0;
+			z-index: 23;
+}
+
+.curtain{
+	width: 767px;
+	height: 770px;
+	position: absolute;
+	background-color: fcca2a;
+	z-index: 20;
+}
+
 	body{
 		width: 768px;
 	}
@@ -2165,7 +2319,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .block_blackline{
-	transform: translateY(-40.2vw) translateX(49.8vw);
+	transform: translateY(-50vw) translateX(49.8vw);
 	height: 110vw;
 }
 
@@ -2174,7 +2328,7 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .lineblock_first img{
-	transform: scale(1.86) translateY(-180.2vw) translateX(-20.4vw);
+	transform: scale(2.05) translateY(-163vw) translateX(-18.37vw);
 }
 
 .six img{
@@ -2182,9 +2336,8 @@ transform: translateX(-102.8vw) translateY(-32vw);
 }
 
 .retort{
-	transform: scale(1.6) translateY(-243vw) translateX(-32vw);
+	transform: scale(1.8) translateY(-215.5vw) translateX(-28vw);
 }
-
 .img_retort1, .img_retort2{
 	display: none;
 }
@@ -2225,14 +2378,14 @@ transform: translateX(-102.8vw) translateY(-32vw);
 .harry_potter_series3 img,
 .harry_potter_series4 img,
 .harry_potter_series5 img{
-	transform: scale(.9) translateY(2.4vw) translateX(1.2vw);
+	transform: scale(1) translateY(2.4vw) translateX(-0.1vw);
 }
 
 .dostoev{
 	transform: translateY(62.5vw) scale(1.9) translateX(26.5vw);
 }
 .dostoev span{
-	font-size: 1.56vw;
+	font-size: 1.62vw;
 }
 
 .chess{
@@ -2240,9 +2393,10 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	height: 26vw;
 }
 
-.chess_block{
-	width: 7.32vw;
-	height: 7.32vw;
+.chess_cover{
+	height: 26.7vw;
+	width: 23vw;
+	transform: translateY(-0.6vw) translateX(-0.5vw);
 }
 
 .chess span{
@@ -2323,16 +2477,16 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	transform: scale(.96) translateY(1.3vw);
 }
 .war{
-	transform: translateY(53vw) translateX(14vw) scale(1.6);
+	transform: translateY(101vw) translateX(12vw) scale(1.6);
 	z-index: 30;
 	width: 34vw;
 }
 
 .story{
-	transform: translateX(-37vw) translateY(-239vw) scale(1.7);
+	transform: translateX(-37vw) translateY(-240vw) scale(1.7);
 	z-index: 5;
 	width: 24vw;
-	height: 28.3vw;
+	height: 28.8vw;
 }
 .silent{
 	transform: translateY(-38.7vw) translateX(13.5vw) scale(1.69);
@@ -2340,11 +2494,13 @@ transform: translateX(-102.8vw) translateY(-32vw);
 	height: 28.5vw;
 }
 .bird{
-	transform: translateY(12.5vw) translateX(64.2vw) scale(1.83);
-	height: 25.2vw;
+	transform: translateY(12vw) translateX(64.2vw) scale(1.83);
+	height: 26.2vw;
+	width: 22vw;
 }
 
 .lady{
+	height: 24.2vw;
 transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 }
 
@@ -2357,10 +2513,10 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 }
 
 .shine{
-	transform: translateY(-139.4vw) translateX(62.7vw) scale(1.65);
+	transform: translateY(-140vw) translateX(63vw) scale(1.65);
 	z-index: 8;
 	width: 24vw;
-	height: 28vw;
+	height: 29vw;
 }
 
 .numb{
@@ -2373,9 +2529,10 @@ transform: translateX(-35.7vw) translateY(13.2vw) scale(2);
 
 .animal{
 	position: absolute;
-	top: 158.7%;
-	left: 57%;
-	width: 31vw;
+	top: 158.5%;
+	left: 56%;
+	width: 33vw;
+	height: 38.5vw;
 }
 
 .block_wrapper{
@@ -2739,14 +2896,9 @@ body{
  opacity: 1;
  transform: scale(2);
 }
-
-	.war{
-	position: absolute;
-	top: 35.8%;
-	left: 53%;
-	transform: scale(.78);
-
-}
+.war{
+ transform: translateX(52.4vw) scale(.77) translateY(-101.5vw);
+ height: 70vw;}
 
 .silent{
  transform: translateY(-187.4vw) scale(1.6) translateX(8vw);
@@ -2758,7 +2910,7 @@ body{
 }
 
 .lady{
- transform: translateY(-36vw) scale(1.85) translateX(8vw);
+ transform: translateY(-36.8vw) scale(1.85) translateX(8vw);
  height: 25.1vw;
  z-index: 2;
 }
@@ -2775,21 +2927,21 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 242.8%;
+ top: 189.4%;
  left: 8%;
  width: 42vw;
  height: 52vw;
 }
 
 .shine{
- transform: translateY(-291.2vw) scale(1.6) translateX(8vw);
+ transform: translateY(-290.7vw) scale(1.6) translateX(8vw);
  height: 31vw
 }
 
 .numb{
  z-index: 4;
  position: absolute;
- top: 155%;
+ top: 120.2%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2798,7 +2950,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 67.5%;
+	top: 52%
 }
 .third{
 	background-color: #fcca2a;
@@ -2812,4 +2964,167 @@ body{
 	transform: translateX(55vw) translateY(-49vw);
 	z-index: 3;
 }
+}
+
+@media (min-width: 2560px) and (max-width: 2600px){
+body{
+	width: 100%;
+}
+
+.block{
+	width: 14.2vw;
+	height: 14.8vw
+}
+
+.line{
+	height: 3.2vw;
+}
+
+.img_books{
+	transform: scale(1.8) translateY(1.17vw);
+}
+
+.retort{
+	transform: scale(1.7) translateY(1.5vw);
+}
+
+.img_retort2{
+	transform: scale(1.4)  translateX(3.3vw) translateY(3.08vw);
+}
+
+.img_retort1{
+	transform: scale(1.6) translateX(2.6vw) translateY(2.85vw);
+}
+
+.far_451 img{
+	transform: scale(2.1) translateX(1.7vw) translateY(2.4vw);
+}
+
+.player img{
+	transform: scale(1.2) translateX(-0.3vw) translateY(-0.4vw);
+}
+
+.plus_one img{
+	transform: scale(1.8) translateY(-1vw) translateX(-0.93vw)
+}
+
+.silent{
+	height: 14.2vw;
+}
+
+.chess_cover{
+	transform: scale(1.9) translateX(1.6vw) translateY(1.6vw);
+}
+
+.horse_chess{
+	width: 3vw;
+}
+
+.hidden_heart{
+	transform: scale(1.4) translateY(-5.3vw) translateX(6vw);
+}
+}
+
+@media (min-width: 2780px) and (max-width: 2880px){
+	/*.wrap{
+		transform: scale(2.6) translateX(330%) translateY(150%);
+	}
+	.curtain{
+		transform: scale(3.14);
+		width: 1395px;
+	}*/
+
+	.block{
+		width: 14.216vw;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	.block_blackline{
+		width: 3.2vw;
+		height: 20vw;
+	}
+
+	.lineblock_first img{
+		width: 14.26vw;
+	}
+
+	.block_lines{
+		width: 14.4vw;
+		height: 14.67vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.line{
+		height: 3.5vw;
+	}
+
+	.img_books{
+		transform: scale(2) translateY(1.1vw);
+	}
+	.animal{
+		transform: scale(.8)
+	}
+	.animal_mask, .animal_mask1{
+			transform: scale(.5);
+		}
+	.img_retort1 img{
+		transform: scale(1.5) translateY(2.4vw) translateX(2vw);
+	}
+
+	.img_retort2 img{
+		transform: scale(1.5) translateX(1.8vw) translateY(3.3vw);
+	}
+
+	.far_451 img{
+		transform: scale(2.5) translateY(2.1vw) translateX(1.5vw);
+	}
+
+	.chess_cover{
+			height: 6.4vw;
+			transform: scale(2.2) translateX(1.4vw) translateY(1.6vw);
+		}
+
+		.flip-card-front{
+			transform: scale(.5) translateY(2.3vw) translateX(2vw);
+		}
+
+	.retort{
+		transform: scale(2.1) translateY(1.45vw);
+	}
+	.player img{
+		transform: scale(2.3) translateY(-1.15vw) translateX(-0.7vw);
+	}
+
+	.da_vinci_block{
+		width: 2.2vw;
+	}
+
+	.plus_one img{
+		transform: scale(2.1) translateY(-1vw) translateX(-1.25vw);
+	}
+
+	.wheel_img{
+		position: absolute;
+		top: 104%;
+		left: 103%;
+	}
+
+	.war{
+			transform: translateY(-1.35vw) scale(.8);
+		}
+
+.animal{
+			transform: translateY(-1.3vw) scale(.85);
+		}
+
+		.animal_mask, .animal_mask1{
+			transform: scale(.7)
+		}
+
+		.bird, .numb, .story, .silent, .shine, .drak, .lady{
+			transform: scale(1) translateX(1vw) translateY(0.35vw);
+		}
 }
