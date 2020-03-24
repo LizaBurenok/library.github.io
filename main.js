@@ -57,10 +57,6 @@ retortEntry.add({
   }
 })
 
-let btnEntry = document.querySelector('.wrap')
-btnEntry.onclick = retortEntry.restart
-
-
 let chessGame = anime.timeline({
   targets: '.horse_chess',
   duration: 500,
@@ -343,7 +339,7 @@ letter.add({
     value: 1,
     duration: 300
   },
-  color: 'rgb(85, 255, 89)'
+  color: 'rgb(0, 63, 172)'
 })
 
 letter.add({
@@ -357,7 +353,7 @@ letter.add({
   targets: '.letter_l',
   opacity: {
     value: 1
-  }, color: 'rgb(170, 0, 38)'
+  }, color: 'rgb(34, 23, 18)'
 })
 
 letter.add({
@@ -372,7 +368,7 @@ letter.add({
   opacity: {
     value: 1
   },
-  color: 'rgb(116, 0, 203)'
+  color: 'rgb(0, 63, 172)'
 })
 
 letter.add({
@@ -387,7 +383,7 @@ letter.add({
   opacity: {
     value: 1
   },
-  color: 'rgb(45, 252, 25)'
+  color: 'rgb(34, 23, 18)'
 })
 /*
 let bubble = anime({
@@ -485,108 +481,26 @@ let cardFlip = anime({
 
 let btnCard = document.querySelector('.flip-card')
 btnCard.onclick = cardFlip.restart
-/*
-let blinkingBlock = anime.timeline({
-  loop: true
-})
-
-blinkingBlock.add({
-  targets: '#first_one',
-  background: {
-    value: 'rgb(252, 202, 42)',
-    duration: 700
-  }
-})
-
-blinkingBlock.add({
-  targets: '#first_one',
-  background: {
-    value: 'rgb(249, 244, 255)',
-    duration: 700
-  }
-})
-
-let stopBlik = document.getElementById('first_one')
-stopBlik.onclick = function(){
-  let stopBlikingBlock = document.getElementById('first_one')
-  stopBlikingBlock.stop()
-}
-
-/*КАРТЫ ГЕНЕРИРОВАНИЕ
-let numberOfCards = 10
-for (let i = 0; i < numberOfCards; i += 1) {
-  let div = document.createElement('div')
-  let size = `${anime.random(0,20)}px`
-  div.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
-  div.style.width = size
-  let ace = div
-}
-*/
-//Create a button > onclick change color and shape of covers
-let btnTransformCover = document.querySelector('#fist_two')
-btnTransformCover.onclick = function() {
-  let changedBook = document.querySelectorAll('.book')
-  for (let i = 0; i < changedBook.length; i++){
-    changedBook[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
-    changedBook[i].style.transform = `translate(${anime.random(0,8)}vw,${anime.random(0,8)}vh) rotate(${anime.random(0,360)}deg)`
-  }
-}
-
-let btnInitialCover = document.querySelector('#first_one')
-btnInitialCover.onclick = function() {
-  let initialBook = document.querySelectorAll('.book')
-  for (let i = 0; i < initialBook.length; i++){
-    let harryCover = document.querySelector('.harry_potter')
-    harryCover.style.background = 'rgb(235, 60, 28)'
-    let chessCover = document.querySelector('.chess')
-    chessCover.style.background = 'rgb(40, 135, 200)'
-    let princessCover = document.querySelector('.white_princess')
-    princessCover.style.background = 'rgb(235, 60, 28)'
-    let codeCover = document.querySelector('.da_vinci')
-    codeCover.style.background = 'rgb(140, 144, 200)'
-    let masterCover = document.querySelector('.master')
-    masterCover.style.background = 'rgb(235, 60, 28)'
-    let farCover = document.querySelector('.far_451')
-    farCover.style.background = 'rgb(112, 112, 204)'
-    let plusOneCover = document.querySelector('.plus_one')
-    plusOneCover.style.background = 'rgb(40, 135, 200)'
-    let punishCover = document.querySelector('.dostoev')
-    punishCover.style.background = 'rgb(235, 60, 28)'
-    let coverArray = {
-      harryCover: 'rgb(235, 60, 28)',
-      playerCover: 'rgb(143, 216, 216)',
-      chessCover: 'rgb(40, 135, 200)',
-      princessCover: 'rgb(235, 60, 28)',
-      codeCover: 'rgb(140, 144, 200)',
-      masterCover: 'rgb(235, 60, 28)',
-      farCover: 'rgb(112, 112, 204)',
-      plusOneCover: 'rgb(40, 135, 200)',
-      punishCover: 'rgb(235, 60, 28)'
-    }
-    initialBook[i].style.background =  coverArray
-    initialBook[i].style.transform = `translate(${anime.random(0,0)}vw, 1.5vh) rotate(${anime.random(0,0)}deg)`
-  }
-}
 
 //Create visible/hidden books function
-let state = {
+let position = {
     hiddenBooks: false
 }
 
 let btnRetort = document.querySelector('.retort').onclick = function(){
   let visibleBooks = document.querySelectorAll('.visible');
   let hiddenBooks = document.querySelectorAll('.hidden');
-  if (state.hiddenBooks) {
+  if (position.hiddenBooks) {
         for (let i = 0; i < hiddenBooks.length; i++) {
             hiddenBooks[i].style.visibility = 'hidden'
             visibleBooks[i].style.visibility = 'visible'
         }
-        state.hiddenBooks = false
+        position.hiddenBooks = false
     } else {
         for (let i = 0; i < hiddenBooks.length; i++) {
             hiddenBooks[i].style.visibility = 'visible'
            visibleBooks[i].style.visibility = 'hidden'}
-        state.hiddenBooks = true
+        position.hiddenBooks = true
     }}
 //
 
@@ -594,85 +508,51 @@ let btnRetort = document.querySelector('.retort').onclick = function(){
 //Change color of covers
 let btnColorCover = document.querySelector('.img_books')
 btnColorCover.onclick = function() {
-  let cover = document.querySelectorAll('.block')
-  for (let i = 0; i < cover.length; i++){
-    cover[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
-  }}
-  /*
-  let firstColorBlock = document.querySelector('#first_one')
-  let secondColorBlock = document.querySelector('#first_two')
-  let thirdColorBlock = document.querySelector('#second_line_one')
-  let fourthColorBlock = document.querySelector('#second_two')
-  let fifthColorBlock = document.querySelector('#third_line_one')
-  let sixColorBlock = document.querySelector('#third_line_two')
-  let firstBlockArray = [
-    'firstColorBlock',
-    'secondColorBlock',
-    'thirdColorBlock',
-    'fourthColorBlock',
-    'fifthColorBlock',
-    'sixColorBlock']
-  for (let i = 0; i < firstBlockArray.lenght; i++){
-    firstBlockArray[i].style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
-  }}*/
+  let changedBlock = document.querySelectorAll('.book')
+  let btnarrow = document.querySelector('.arrow')
+      btnarrow.style.bottom = '80%'
+      btnarrow.style.opacity = '1'
+  let colorWrapperArray = ["#fcca2a", "#f9f4ff","#221712", "#003fac", "#ba1200" ]
+   {
+                var changeBackgr = Math.floor(Math.random() * colorWrapperArray.length);
+                var selectedColor = colorWrapperArray[changeBackgr];
+      for (let i = 0; i < changedBlock.length; i++){
+      changedBlock[i].style.background = selectedColor
+    }}
+    btnarrow.onclick = function(){
+      for (let i = 0; i < changedBlock.length; i++){
+        let harryCover = document.querySelector('.harry_potter')
+        harryCover.style.background = 'rgb(186, 18, 0)'
+        let chessCover = document.querySelector('.chess')
+        chessCover.style.background = 'rgb(0, 63, 172)'
+        let princessCover = document.querySelector('.white_princess')
+        princessCover.style.background = 'rgb(186, 18, 0)'
+        let codeCover = document.querySelector('.da_vinci')
+        codeCover.style.background = 'rgb(0, 63, 172)'
+        let masterCover = document.querySelector('.master')
+        masterCover.style.background = 'rgb(186, 18, 0)'
+        let farCover = document.querySelector('.far_451')
+        farCover.style.background = 'rgb(0, 63, 172)'
+        let plusOneCover = document.querySelector('.plus_one')
+        plusOneCover.style.background = 'rgb(0, 63, 172)'
+        let punishCover = document.querySelector('.dostoev')
+        punishCover.style.background = 'rgb(186, 18, 0)'
+        let playerCover = document.querySelector('.player')
+        playerCover.style.background = 'rgb(0, 63, 172)'
+        let coverArray = {
+          harryCover: 'rgb(186, 18, 0)',
+          playerCover: 'rgb(0, 63, 172)',
+          chessCover: 'rgb(0, 63, 172)',
+          princessCover: 'rgb(186, 18, 0)',
+          codeCover: 'rgb(0, 63, 172)',
+          masterCover: 'rgb(186, 18, 0)',
+          farCover: 'rgb(0, 63, 172)',
+          plusOneCover: 'rgb(0, 63, 172)',
+          punishCover: 'rgb(186, 18, 0)'
+        }
+        changedBlock[i].style.background =  coverArray
+  }}}
 
-/*change blank books in filled with color*/
-
-let btnBlankCover = document.querySelector('.third_line_four')
-btnBlankCover.onclick = function(){
-  let blankCover = document.querySelectorAll('.visible')
-  let playerCover = document.querySelector('.player')
-  playerCover.style.background = 'rgb(143, 216, 216)'
-let harryCover = document.querySelector('.harry_potter')
-harryCover.style.background = 'rgb(235, 60, 28)'
-let chessCover = document.querySelector('.chess')
-chessCover.style.background = 'rgb(40, 135, 200)'
-let princessCover = document.querySelector('.white_princess')
-princessCover.style.background = 'rgb(235, 60, 28)'
-let codeCover = document.querySelector('.da_vinci')
-codeCover.style.background = 'rgb(140, 144, 200)'
-let masterCover = document.querySelector('.master')
-masterCover.style.background = 'rgb(235, 60, 28)'
-let farCover = document.querySelector('.far_451')
-farCover.style.background = 'rgb(112, 112, 204)'
-let plusOneCover = document.querySelector('.plus_one')
-plusOneCover.style.background = 'rgb(40, 135, 200)'
-let punishCover = document.querySelector('.dostoev')
-punishCover.style.background = 'rgb(235, 60, 28)'
-let coverArray = {
-  harryCover: 'rgb(235, 60, 28)',
-  playerCover: 'rgb(143, 216, 216)',
-  chessCover: 'rgb(40, 135, 200)',
-  princessCover: 'rgb(235, 60, 28)',
-  codeCover: 'rgb(140, 144, 200)',
-  masterCover: 'rgb(235, 60, 28)',
-  farCover: 'rgb(112, 112, 204)',
-  plusOneCover: 'rgb(40, 135, 200)',
-  punishCover: 'rgb(235, 60, 28)'
-}
-  let coverState = {
-    filledBooks: false
-  }
-  if (state.filledBooks){
-    for (let i = 0; i < blankCover.length; i++){
-    blankCover[i].style.background = 'transparent'
-    blankCover[i].style.borderWidth = 'bold'
-  } state.filledBooks = false}
-  else {
-    for (let i = 0; i < blankCover.length; i++){
-    blankCover[i].style.background = coverArray
-    state.filledBooks = true
-  }}
-}/*
-
-{
-  let blankCover = document.querySelectorAll('.visible')
-  for (let i = 0; i < blankCover.length; i++){
-  blankCover[i].style.background = 'transparent'
-  blankCover[i].style.borderWidth = 'medium'
-  blankCover[i].style.borderColor = "green purple"
-  }
-}
 /*generate bubbles*/
 let btnCircle = document.querySelector('.far_img')
 btnCircle.onclick = function (){
@@ -686,20 +566,6 @@ btnCircle.onclick = function (){
         littleCircles.style.display = 'none'})
   }}
 
-
-/*
-  for (let i = 0; i < numberOfCirles; i += 1) {
-    let littleCircles = document.createElement('div')
-    document.body.append(littleCircles)
-    if (anime.random(0,100) % 2 === 0) {
-      let size = `${anime.random(0,100)}px`
-      div.style.width = size
-      div.style.height = size
-      div.style.borderRadius = '50%'
-    } else {
-      div.style.width = `${anime.random(0,500)}px`
-      div.style.height = `${anime.random(0,500)}px`
-    }*/
 /*Create moving line*/
 let btnMovingLine = document.querySelector('.block_blackline')
 btnMovingLine.onclick = function(){
