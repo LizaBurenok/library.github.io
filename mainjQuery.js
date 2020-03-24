@@ -1,4 +1,4 @@
-let mouseColorTracking = document.querySelector('.line')
+let mouseColorTracking = document.querySelector('.lineblock_first')
 mouseColorTracking.onclick = function(){
 $(document).mousemove(function (e) {
 
