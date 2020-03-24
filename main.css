@@ -2692,23 +2692,13 @@ body{
 	transform: translateY(1vw);
 }
 .far_451 img{
-	transform: translateY(22%) scale(1) translateX(8%);
+	transform: translateY(21%) scale(1) translateX(8%);
 }
 
 .far_451 hr {
 	height: 10px;
 	width: 0.1px;
 	transform: translateX(-2.7vw) translateY(1.2vw);
-}
-
-.player{
-	transform: translateY(-149.4vw)
-}
-
-.player span{
-	position: absolute;
-	top: -7%;
-	font-size: 12vw;
 }
 
 .plus_one{
@@ -2747,7 +2737,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-1.5vw);
+ transform: translateX(52.4vw) scale(.77) translateY(20.5vw);
  height: 70vw;}
 
 .silent{
@@ -2777,7 +2767,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 210.4%;
+ top: 213.4%;
  left: 8%;
  width: 42vw;
  height: 52vw;
@@ -2791,7 +2781,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 150.2%;
+ top: 152.2%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2800,16 +2790,35 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 68%
+	top: 70%
 }
 .third{
 	background-color: #fcca2a;
 	border: 1px solid #fff;
 }
 
-.fourth_line_two, .fourth_line_three, .fourth_line_four, .fourth_line_six, .fourth_line_seven{
+.player{
+	transform: translateY(500vw);
+
+}
+
+.player span{
+	font-size: 13.5vw;
+	transform: translateX(2vw);
+}
+
+.player img{
+	transform: scale(4) translateY(-1.8vw) translateX(-1.5vw);
+}
+
+.fourth_line_two{
+	position: absolute;
+}
+
+.fourth_line_three, .fourth_line_four, .fourth_line_six, .fourth_line_seven{
 	display: none;
 }
+	
 .harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
 	transform: translateX(55vw) translateY(-49vw);
 	z-index: 3;
