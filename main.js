@@ -1,62 +1,3 @@
-let retortEntry = anime.timeline({
-  targets: '.retort_wrapper',
-  autoplay: false,
-  rotate: {
-  value: 180,
-  delay: 1500
-},
-  duration: 1000,
-  easing: 'linear',
-})
-
-retortEntry.add({
-  targets: '.wrap',
-  backgroundColor: 'rgb(206, 87, 154)',
-  duration: 1500
-})
-
-retortEntry.add ({
-  targets: '.drop_one',
-  translateX: {
-    value: 5
-  },
-  translateY: -50,
-  opacity: {
-    value: 1,
-    delay: 1500
-  },
-  translateY: {
-    value: -160,
-    delay: 1500
-  }
-})
-
-retortEntry.add({
-  targets: '.drop_two',
-  translateX: 5,
-  translateY: -50,
-  opacity: {
-    value: 1,
-    delay: 450
-  }, translateY: {
-    value: -170,
-    delay: 1500
-  }
-})
-
-retortEntry.add({
-  targets: '.drop_three',
-  translateX: 5,
-  tranlsateY: -50,
-  opacity: {
-    value: 1,
-    delay: 400
-  }, translateY: {
-    value: -170,
-    delay: 1500
-  }
-})
-
 let chessGame = anime.timeline({
   targets: '.horse_chess',
   duration: 500,
@@ -110,7 +51,7 @@ let whiteNumbers = anime({
   autoplay: false
 })
 
-let btnChess = document.querySelector('.chess')
+let btnChess = document.querySelector('.chess_game')
 btnChess.onclick = chessGame.restart
 
 let apple = anime.timeline({
@@ -242,9 +183,14 @@ code.add({
 })
 
 let books = anime.timeline({
-  duration: 700,
+  duration: 600,
   easing: 'linear',
   autoplay: 0
+})
+
+books.add({
+  targets: '.war_peace',
+  opacity: 0
 })
 
 books.add({
@@ -261,7 +207,8 @@ books.add({
 books.add({
   targets: '.harry_potter_series1',
     opacity: {
-    value: 0}
+    value: 0,
+  duration: 100}
 })
 
 books.add({
@@ -273,7 +220,8 @@ books.add({
 books.add({
   targets: '.harry_potter_series2',
   opacity: {
-  value: 0}
+  value: 0,
+duration: 100}
 })
 
 books.add({
@@ -285,7 +233,8 @@ books.add({
 books.add({
   targets: '.harry_potter_series3',
   opacity: {
-  value: 0}
+  value: 0,
+duration: 100}
 })
 
 books.add({
@@ -297,7 +246,8 @@ books.add({
 books.add({
   targets: '.harry_potter_series4',
   opacity: {
-  value: 0}
+  value: 0,
+duration: 100}
 })
 
 books.add({
@@ -309,7 +259,14 @@ books.add({
 books.add({
   targets: '.harry_potter_series5',
   opacity: {
-  value: 0}
+  value: 0,
+duration: 100}
+})
+
+books.add({
+  targets: '.harry_potter',
+  opacity: {
+  value: 1}
 })
 
 let wheel = anime({
@@ -512,7 +469,7 @@ btnColorCover.onclick = function() {
   let btnarrow = document.querySelector('.arrow')
       btnarrow.style.bottom = '80%'
       btnarrow.style.opacity = '1'
-  let colorWrapperArray = ["#fcca2a", "#f9f4ff","#221712", "#003fac", "#ba1200" ]
+  let colorWrapperArray = ["#221712", "#003fac", "#ba1200" ]
    {
                 var changeBackgr = Math.floor(Math.random() * colorWrapperArray.length);
                 var selectedColor = colorWrapperArray[changeBackgr];
@@ -590,6 +547,6 @@ let btn04 = document.querySelector('.master').onclick = cards.restart
 let btn05 = document.querySelector('.dostoev').onclick = line.play
 let btn06 = document.querySelector('.da_vinci').onclick = code.restart
 let btn07 = document.querySelector('.harry_potter').onclick = books.restart
-let btnLet = document.querySelector('.block_lines').onclick = letter.restart
+letbtnLet = document.querySelector('.block_lines').onclick = letter.restart
 let btn10 = document.querySelector('.plus_one').onclick = wheel.restart
 let btn11 = document.querySelector('.animal').onclick = animalCover.restart
