@@ -2447,7 +2447,7 @@ body{
 }
 
 .lineblock_first img{
-	transform: translateY(-349vw) scale(.92) translateX(-57vw)
+	transform: translateY(-349vw) scale(.) translateX(-57vw)
 }
 
 .six img{
@@ -2519,9 +2519,8 @@ body{
 }
 
 .retort img{
-	transform: scale(.5) translateX(90vw) translateY(-69vw);
+	transform: scale(.5) translateX(125vw) translateY(-71vw);
 }
-
 .book{
 	width: 39vw;
 	height: 48vw;
@@ -2581,9 +2580,10 @@ body{
 	font-size: 1.8vw;
 	margin-left: 1.5%;
 }
-.chess_block{
-	width: 3.665vw;
-	height: 3.665vw;
+.chess_cover{
+	width: 39.6vw;
+	height: 48.1vw;
+	transform: translateX(-0.1vw);
 }
 
 .chess_block:nth-child(even){
@@ -2747,7 +2747,7 @@ body{
  transform: scale(2);
 }
 .war{
- transform: translateX(52.4vw) scale(.77) translateY(-81.5vw);
+ transform: translateX(52.4vw) scale(.77) translateY(-31.5vw);
  height: 70vw;}
 
 .silent{
@@ -2777,7 +2777,7 @@ body{
 .drak{
  z-index: 2;
  position: absolute;
- top: 200.4%;
+ top: 220.4%;
  left: 8%;
  width: 42vw;
  height: 52vw;
@@ -2791,7 +2791,7 @@ body{
 .numb{
  z-index: 4;
  position: absolute;
- top: 140.2%;
+ top: 160.2%;
  left: 58%;
  width: 42vw;
  height: 52vw;
@@ -2800,7 +2800,7 @@ body{
 .animal{
 	position: absolute;
 	left: 7%;
-	top: 68%
+	top: 65%
 }
 .third{
 	background-color: #fcca2a;
