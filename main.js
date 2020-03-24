@@ -590,6 +590,6 @@ let btn04 = document.querySelector('.master').onclick = cards.restart
 let btn05 = document.querySelector('.dostoev').onclick = line.play
 let btn06 = document.querySelector('.da_vinci').onclick = code.restart
 let btn07 = document.querySelector('.harry_potter').onclick = books.restart
-letbtnLet = document.querySelector('.block_lines').onclick = letter.restart
+let btnLet = document.querySelector('.block_lines').onclick = letter.restart
 let btn10 = document.querySelector('.plus_one').onclick = wheel.restart
 let btn11 = document.querySelector('.animal').onclick = animalCover.restart
