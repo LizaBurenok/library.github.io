@@ -1,0 +1,2893 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.block_wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* БЛОКИ И ИХ СТИЛИ*/
+.block{
+	width: 14.1395vw;
+	height: 14.1395vw;
+}
+
+.one{
+	background-color: #f9f4ff;
+	border: 1px solid #f9f4ff;
+}
+
+.two{
+	background-color: #f9f4ff;
+	border: 1px solid #f9f4ff;
+	z-index: 1;
+}
+
+.three,
+.four,
+.five,
+.six,
+.seven{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.first_line_four,
+.fourth_line_three,
+.fourth_line_four,
+.fourth_line_five{
+	background-color: #221712;
+	border: 1px solid #666;
+	z-index: 1;
+}
+
+.third_line_four,.fourth_line_six{
+	z-index: 1;
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.fourth_line_three,
+.fourth_line_two,
+.fourth_line_four
+{
+	z-index: 1;
+}
+
+#third_line_two{
+	z-index: 2;
+}
+.fourth_line_one, .fourth_line_two{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.book:hover {
+	border: 2px solid #fff;
+}
+
+.letter_k:hover{
+	color: pink;
+	opacity: .6;
+}
+
+.third_line_four:hover{
+	animation-name: lineside;
+	animation-duration: 4s;
+}
+
+.img_books:hover{
+filter: contrast(100%) brightness(50%);
+}
+
+#first_img:hover{
+	animation-name: lineup;
+	animation-duration: 4s;
+}
+
+@keyframes lineup {
+	0%{
+		transform: translateY(-5%);
+	}
+	50%{
+		transform: translateY(50%);
+	}
+	100%{
+		transform: translateY(-15%);
+	}
+}
+
+@keyframes lineside {
+	0%{
+		transform: translateX(10%);
+	}
+	50%{
+		transform: translateX(-25%);
+	}
+	100%{
+		transform: translateX(15%);
+	}
+}
+
+.retort:hover{
+	filter: contrast(100%) brightness(50%)
+}
+
+/*ВЕРХНЯЯ ЛИНИЯ*/
+.line{
+	height: 60px;
+	background-color: #221712;
+	width: 100%;
+}
+
+.block_blackline{
+	width: 60px;
+	height: 480px;
+	background-color:#221712;
+	position: absolute;
+	z-index: 1;
+}
+
+.arrow{
+	position: absolute;
+	bottom: 60%;
+	left: 48%;
+	opacity: 0;
+}
+/*БУКВЫ БРЕНДА*/
+.letter{
+	position: relative;
+	bottom: 8vw;
+	left: -14.5vw;
+}
+
+.letter_k{
+	transform: translateX(-6vw);
+}
+
+.letter_k,
+.letter_l,
+.letter_b,
+.letter_a,
+.letter_o{
+	position: absolute;
+	z-index: 3;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 39.8vw;
+	text-transform: uppercase;
+}
+
+.letter_o{
+	top: 10%;
+	transform: translateX(-1.5vw);
+}
+
+.letters:nth-child(odd){
+	color: #221712;
+}
+
+.letters:nth-child(even){
+	color:rgba(0, 0, 0, 0.2);
+}
+
+.letter_l,
+.letter_b,
+.letter_a{
+	opacity: 0;
+}
+
+/*hidden books*/
+.hidden{
+		position: absolute;
+}
+
+.chess_game{
+	background-color: #003fac;
+	left: 44.45%;
+}
+.mackbet{
+	background-color: #221712;
+	left: 87.3%;
+}
+
+.mackbet img{
+	transform: translateX(1vw);
+}
+
+.silent_lamb{
+	background-color: #00376b;
+	left: 16%;
+}
+
+.silent_lamb img{
+	transform: translateY(3.8vw) translateX(0.5vw);
+}
+.cuckoo{
+	background-color: #00376b;
+	left: 44.45%;
+}
+.war_peace{
+left: 11%;
+
+}
+.war_peace_first{
+	background-color: #f9f4ff;
+	width: 100%;
+	height: 50%;
+}
+
+.war_peace_second{
+	background-color: #00376b;
+	width: 100%;
+	height: 50%;
+}
+.war_peace_img{
+	position: absolute;
+	top: 1%;
+	left: 19%;
+}
+.animal{
+	background-color: #00376b;
+	left: 87.3%;
+}
+
+.animal span{
+	font-size: 1.4vw;
+	color: #f9f4ff;
+}
+.storytell{
+	background-color: #741621;
+	left: 87.2%;
+}
+
+.number{
+	bottom: 33.4%;
+	left: 73%;
+	background-color: #741621;
+}
+
+.number img{
+	transform: translateY(7vw) translateX(0.2vw);
+}
+
+.drak{
+	background-color: #221712;
+	left: 73.05%;
+}
+
+.drak img{
+	transform: translateY(0.1vw) translateX(0.2vw);
+}
+
+.shine_wrap{
+	background-color: #f9f4ff;
+	left: 87.3%;
+}
+
+.shine_wrap span{
+	font-size: 1.8vw;
+	font-family: 'Helvetica', sans-serif;
+	z-index: 2;
+	transform: translateX(0.16vw) translateY(-0.5vw);
+}
+
+.door{
+	background-color: #741621;
+	z-index: 2;
+	width: 8.5vw;
+	height: 12vw;
+	transform: translateY(1vw) translateX(1.25vw);
+}
+
+.door_hand{
+	width: 1.5vw;
+	height: 1.5vw;
+	border-radius: 50%;
+	background-color: #221712;
+	transform: translateY(5vw) translateX(-0.5vw);
+}
+
+.animal_mask, .animal_mask1{
+	position: absolute;
+	transform: translateY(60%) translateX(70%);
+	opacity: 0;
+}
+/*полосатые блоки*/
+.block_lines{
+	display: flex;
+}
+
+.lines{
+	width: 2vw;
+	height: 14.5vw;
+}
+
+.lines:nth-child(even){
+	background-color: #221712;
+}
+
+.lines:nth-child(odd){
+	background-color: #f9f4ff;
+}
+
+.lines_color{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.color_lines{
+	width: 14.5vw;
+	height: 1vw;
+}
+
+.color_first{
+	background-color: #221712;
+}
+
+.color_second{
+	background-color: #f9f4ff;
+}
+/*КАРТИНКИ*/
+.retort{
+	text-align: center;
+	margin-top: 0.5vw;
+	z-index: 1;
+}
+
+.img_books{
+	margin-top: 6.8vw;
+	text-align: center;
+}
+
+.img_retort1{
+	position: absolute;
+	left: 25%;
+	top: 30.5%;
+}
+
+.img_retort2{
+	position: absolute;
+	left: 54.75%;
+	top: 50%;
+}
+
+.six img{
+	z-index: 100;
+}
+
+.book{
+	width: 11vw;
+	height: 13vw;
+	margin: 0 auto;
+	transform: translateY(5%);
+}
+
+span{
+	font-family: 'Helvetica', sans-serif;
+	position: absolute;
+	font-weight: bold;
+}
+
+.harry_potter{
+	background-color: #ba1200;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: relative;
+	z-index: 1;
+}
+
+.cover_wrapper{
+	display:flex;
+	position: relative;
+}
+
+.harry_potter_series1{
+	background-color: #93cbb6;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+	left: 10%;
+}
+
+.harry_potter_series2{
+	background-color: #8955ff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+  left: 10%;
+}
+
+.harry_potter_series3{
+ background-color: #ff5c35;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ position: absolute;
+ opacity: 0;
+left: 10%;
+}
+
+.harry_potter_series4{
+	background-color: #8a006c;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+ left: 10%;
+}
+
+.harry_potter_series5{
+	background-color: #340074;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	opacity: 0;
+left: 10%;
+}
+
+.harry_potter span{
+	font-size: 1.7vw;
+	bottom: 7%;
+	left: 5%;
+	color: #fff;
+}
+
+.harry_face{
+	width: 6.5vw;
+	background-color: #ffe5b4;
+	height: 10.5vw;
+	border-radius: 10% 0 0 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.harry_glass{
+	border-radius: 50%;
+	width: 4vw;
+	height: 4vw;
+	border: 1px solid #8a1300;
+	transform: translateY(-10%);
+}
+
+.harry_glass hr{
+	border: 1px solid #8a1300;
+	width: 2.3vw;
+	position: absolute;
+	top: 30%;
+	right: 100%;
+}
+
+.dostoev{
+	background-color: #ba1200;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.brown_line{
+	width: 100%;
+	background-color: #4f0000;
+	height: 1vw;
+	position: absolute;
+	top: 41%;
+
+}
+
+.horse_chess{
+	position: absolute;
+	z-index: 4;
+	top: 75%;
+	left: 5%;
+	opacity: 0;
+}
+
+.chess_cover{
+	transform: translateY(-0.5vw);
+}
+.dostoev span{
+	color:#fff;
+	transform: rotate(-90deg) translateY(470%);
+	font-size: 0.8vw;
+	z-index: 1;
+}
+
+.far_451{
+	background-color: #003fac;
+}
+
+.far_451 img{
+	transform: translateY(30%) translateX(10%);
+}
+
+.fareng_space{
+	position: absolute;
+	width: 11vw;
+	height: 2vw;
+	margin: 0 auto;
+	transform: translateY(15%) translateX(14%);
+	z-index: 20;
+}
+
+.little_circle{
+	width: 35px;
+	height: 35px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.white_princess{
+	background-color: #ba1200;
+	overflow: hidden;
+	position: relative;
+}
+
+.white_princess span{
+	color: #fff;
+	font-size: 1.2vw;
+	margin-left: 0.5vw;
+}
+.apple{
+	background-color: #003fac;
+	border-radius: 50%;
+	width: 6.5vw;
+	height: 6.5vw;
+	position: absolute;
+	bottom: -7%;
+	left: -10%;
+}
+
+.apple_piece{
+	width: 0;
+	height: 0;
+	border-left: 1.2vw solid transparent;
+	border-right: 1.2vw solid transparent;
+	border-bottom: 2.4vw solid #aa6400;
+	transform: rotate(230deg) translateX(-90%) translateY(150%);
+}
+
+.master{
+	background-color: #ba1200;
+	position: relative;
+}
+
+.master span{
+	font-size: 1.112vw;
+	color: #fff;
+	transform: translateY(-20%);
+}
+
+.cube{
+	width: 6.5vw;
+	height: 6.5vw;
+	border-radius: 10%;
+}
+
+.master_first{
+	background-color: rgba(255, 255, 255, .5);
+	transform: translateY(15%);
+}
+
+.master_second{
+	background-color: rgba(252, 255, 244, .3);
+	transform: translateX(70%);
+}
+
+.da_vinci{
+	background-color: #003fac;
+	display: flex;
+	justify-content: center;
+}
+
+.hidden_x{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+	margin-top: 50%;
+	opacity: 0;
+}
+
+.da_vinci span{
+	font-size: 1.5vw;
+	color: #fff;
+}
+.da_vinci_wrapper{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.da_vinci_block{
+	width: 2vw;
+	height: 3vw;
+	background-color: #f9f4ff;
+	border-radius: 10%;
+}
+
+.player{
+	background-color: #003fac;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: relative;
+}
+
+.player span{
+	position: absolute;
+	top: -7%;
+	right: 5%;
+	font-size: 3.5vw;
+	color: #ba1200;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 6vw;
+  height: 7vw;
+  perspective: 1000px;
+	position: absolute;
+	bottom: 10%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/*
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+*/
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #003fac;
+}
+
+.flip-card-back {
+  background-color: #003fac;
+  transform: rotateY(180deg);
+  color: #fff;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 13px;
+}
+
+.plus_one{
+	background-color: #003fac;
+	position: relative;
+}
+
+.plus_one span{
+	font-size: 8vw;
+	color: #ba1200;
+	position: absolute;
+	left: 20%;
+}
+
+.plus_one img{
+	position: absolute;
+	right: 25%;
+	bottom: 5%;
+}
+
+.wheel_img img{
+	transform: translateX(40%) translateY(13vw);
+	transform-origin: 50% 50%;
+}
+
+.hidden_heart{
+	transform: translateY(-170%) translateX(30%);
+	opacity: 0;
+}
+
+@media (min-width: 1680px) {
+
+.block_wrapper{
+		overflow: hidden;
+	}
+
+  .block{
+    width: 14.167vw;
+    height: 14.62vw;
+  }
+
+ .arrow{
+ 	transform: translateY(-3vw);
+ }
+
+  .letters{
+  	top: 6%;
+  	left: 0.6vw;
+  }
+
+.letter_k{
+	left: 3.2vw;
+}
+
+.book{
+	transform: scale(1.1) translateY(0.7vw);
+}
+
+.retort{
+	transform: scale(1.2) translateY(0.9vw);
+}
+
+.chess_game img{
+	transform: scale(1.18) translateX(0.7vw) translateY(0.7vw);
+}
+
+.img_books{
+	transform: scale(1.2) translateY(0.5vw);
+}
+
+.far_451 img{
+	transform: scale(1.2) translateY(2.2vw) translateX(1.3vw);
+}
+
+.white_princess span{
+	font-size: 1.31vw;
+	transform: translateX(-0.3vw)
+}
+
+.master span{
+	font-size: 1.1vw;
+}
+
+.plus_one img{
+	transform: scale(1.1);
+}
+
+.wheel_img{
+	position: absolute;
+	top: 100%;
+	left: 102%;
+}
+
+.plus_one span{
+	transform: translateX(0.3vw)
+}
+
+.silent_lamb img{
+	transform: scale(1.2) translateY(3.5vw) translateX(1vw);
+}
+
+.cuckoo img{
+	transform: scale(1.17) translateY(0.8vw) translateX(0.7vw);
+}
+
+.mackbet img{
+	transform: scale(1.16) translateX(1.4vw) translateY(0.75vw);
+}
+
+.drak img{
+	transform: scale(1.15) translateY(0.8vw) translateX(0.9vw);
+}
+
+.war_peace img{
+	transform: scale(1.1) translateX(0.5vw) translateY(0.9vw);
+}
+
+.number{
+	bottom: 31vw;
+}
+
+.storytell img{
+	transform: scale(1.2) translateY(0.8vw) translateX(0.78vw);
+}
+}
+@media (width: 1600px){
+	body{
+		width: 100%;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+	.img_books{
+		transform: scale(1.1) translateY(0.3vw);
+	}
+
+	.img_retort2{
+		transform: translateY(-5vw) translateX(1.5vw);
+	}
+}
+
+@media (min-width: 1448px) and (max-width: 1670px){
+	.far_451 img{
+		transform: scale(1.2) translateY(2.5vw) translateX(1.3vw);
+	}
+}
+
+@media (max-width: 1440px){
+/*	.curtain{
+		height: 880px;
+	}*/
+	.block{
+			height: 14.45vw;
+		}
+		.arrow{
+			transform: translateY(-2vw);
+		}
+
+	.img_books{
+			top: 0.1%;
+		}
+
+		.letter{
+		transform: translateX(1vw);
+		z-index: 4;
+	}
+
+	.letters{
+		font-size: 38.5vw;
+	}
+
+	.letter_o{
+		top: 1.%;
+		left: 6%;
+	}
+
+	.letter_k{
+		left: 1.6vw;
+	}
+
+	.letter_b,.letter_l, .letter_a, .letter_k{
+		font-size: 38.5vw;
+		bottom: -216%;
+	}
+
+	body{
+		width: 100%
+	}
+	.block_wrapper{
+			overflow: hidden;
+	}
+
+	.book{
+		transform: scale(1.05) translateY(0.7vw);
+	}
+
+	.retort{
+		transform: scale(.9);
+	}
+	.img_retort1{
+		transform: scale(.8) translateY(-5vw) translateX(0.5vw);
+	}
+
+	.img_retort2{
+		transform: scale(.8) translateX(1vw) translateY(-5vw);
+	}
+
+	.far_451 img{
+		transform: translateY(2.1vw) translateX(0.7vw);
+	}
+
+	.player_img{
+		transform: translateX(0.2vw) scale(1.2) translateY(-0.2vw);}
+	}
+
+	@media (max-width: 1388px){
+		.block_wrapper{
+			overflow: hidden;
+		}
+
+		.img_books{
+			transform: translateY(-0.1vw);
+		}
+
+		.drak img{
+			transform: scale(.96) translateY(-0.2vw) translateX(0.1vw);
+		}
+
+		.mackbet img{
+			transform: scale(.95) translateY(-0.2vw) translateX(0.8vw);
+		}
+
+		.cuckoo img{
+			transform: scale(.96) translateY(-0.3vw) translateX(-0.2vw);
+		}
+
+		.number{
+			top: 33%;
+		}
+
+		.number img{
+			position: relative;
+			bottom: 1.2%;
+		}
+	}
+@media (max-width: 1380px){
+.book{
+height: 13vw;
+}
+
+.chess_game img{
+transform: scale(.97) translateY(-0.3vw) translateX(-0.24vw);
+}
+}
+@media (min-width: 1282px) and (max-width: 1355px){
+	.block{
+		width: 14.13vw;
+		height: 14.2vw;
+	}
+
+	.img_books{
+		transform: scale(.96) translateY(-0.68vw);
+	}
+
+	.img_retort1{
+		transform: translateY(-7vw) scale(.8);
+	}
+	.img_retort2{
+		transform: scale(.8) translateY(-8vw);
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+		}
+
+		.retort{
+			transform: translateY(-0.8vw) scale(.86);
+		}
+
+
+		.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+			left: 12.4%;
+		}
+
+		.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+			transform: scale(.9) translateX(0.6vw);
+		}
+
+		.chess_game img{
+			transform: scale(.9) translateY(-1vw) translateX(-0.7vw);
+		}
+
+		.far_451 img{
+			width: 9vw;
+		}
+
+		.silent_lamb img{
+			transform: scale(.9) translateY(3.4vw);
+		}
+
+		.war_peace img{
+			transform: scale(.9) translateY(-0.6vw) translateX(-0.32vw);
+		}
+		.mackbet img{
+			transform: scale(.87) translateY(-0.7vw) translateX(1vw);
+		}
+
+		.drak img{
+			transform: scale(.9) translateY(-0.8vw) translateX(-0.5vw);
+		}
+
+		.storytell img{
+			transform: scale(.92) translateY(-0.6vw) translateX(-0.4vw);
+		}
+}
+@media (max-width: 1280px){
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	.block{
+		width: 14.125vw;
+		height: 14.125vw;
+	}
+
+	.img_books{
+		transform: translateY(-0.6vw) scale(.9)
+	}
+
+		.retort{
+			transform: translateY(-1vw) scale(.8)
+		}
+		.book{
+			width: 11vw;
+			height: 12.7vw;
+		}
+		.img_retort1{
+			transform: scale(.7) translateX(-1vw) translateY(-7vw);}
+			.img_retort2{
+					transform: translateY(-5vw) scale(.7) translateX(-1vw);
+				}
+
+				.silent_lamb img{
+					transform: scale(.9) translateY(3vw);
+				}
+
+				.cuckoo img{
+					width: 12.8vw;
+					transform: scale(.86) translateY(-1vw) translateX(-1vw);
+				}
+
+				.mackbet img{
+					transform: scale(.86) translateY(-1vw) translateX(0.5vw);
+				}
+
+				.drak img{
+					transform: scale(.87) translateY(-1vw) translateX(-0.4vw);
+				}
+
+				.storytell img{
+					transform: scale(.9) translateY(-1vw) translateX(-0.5vw);
+				}
+
+				.war_peace img{
+					transform: scale(.9) translateY(-1vw) translateX(-0.4vw);
+				}
+		.far_451 img{
+			transform: scale(.9) translateY(1vw) translateX(0.1vw);
+		}
+
+		.chess_game img{
+			transform: scale(.9) translateY(-1.2vw) translateX(-0.7vw);
+		}
+
+		.player span{
+				font-size: 3.75vw;
+				transform: translateX(0.3vw);
+			}
+
+			.harry_potter span{
+				transform: scale(1.2) translateX(0.8vw);
+			}
+			.white_princess span{
+				transform: scale(1.1) translateX(0.2vw) translateY(0.3vw);
+			}
+
+			.plus_one img{
+				transform: scale(.9) translateY(1vw);
+			}
+			.wheel_img{
+					position: absolute;
+					top: 104%;
+					left: 104%;
+			}
+			.plus_one span{
+				transform: translateX(-0.4vw) translateY(0.4vw);
+			}
+
+			.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+				transform: translateX(1.5vw) translateY(1vw);
+			}
+			.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+				transform: scale(.9) translateX(0.65vw)
+		}
+}
+
+@media (min-width: 1036px) and (max-width: 1250px){
+body{
+	width: 100%;
+}
+
+.block{
+	width: 24.8vw;
+	height: 24.8vw;
+}
+
+.lines{
+	height: 24.8vw;
+}
+
+.color_lines{
+	width: 1.65vw;
+	height: 24.8vw;
+}
+
+.book{
+	width: 20vw;
+	height: 23.2vw;
+	transform: translateY(0.3vw);
+}
+
+.img_books{
+	transform: scale(1.5) translateY(5vw);
+}
+
+#second_two{
+	background-color: #fcca2a;
+	border: none;
+}
+
+.img_retort1, .img_retort2{
+	display: none;
+}
+
+#second_line_one, #third_line_one, #third_line_two{
+background-color: #fcca2a;
+border: 1px solid #fff;
+}
+
+.block_blackline{
+	width: 4vw;
+}
+
+.retort{
+	transform: translateY(-96vw) scale(1.5) translateX(-17vw);
+}
+
+.letter_k{
+	font-size: 35vw;
+	transform: translateY(-62.8vw) translateX(-90.5vw);
+}
+
+.letter_l, .letter_b, .letter_a{
+	font-size: 35vw;
+	transform: translateY(-62.6vw) translateX(-87vw);
+}
+
+.letter_o{
+	font-size: 35vw;
+	transform: translateX(-89vw) translateY(-27vw);
+}
+
+.harry_potter{
+	transform: translateX(-0.1vw) translateY(1vw);
+}
+.harry_face{
+	width: 12vw;
+	height: 19vw;
+}
+
+.harry_glass{
+	width: 6vw;
+	height: 6vw;
+	margin-right: 2px;
+}
+
+.harry_potter hr{
+	width: 5.5vw;
+}
+
+.harry_potter span{
+	font-size: 3vw;
+	padding-left: 1vw;
+}
+
+.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img,
+.harry_potter_series4 img, .harry_potter_series5 img{
+	transform: scale(1.5) translateX(-2vw);
+}
+.dostoev{
+	transform: translateX(25.1vw) translateY(1vw);
+}
+
+.dostoev span{
+	font-size: 1.5vw;
+}
+
+.chess_game{
+	transform: translateX(-25vw) translateY(1vw);
+}
+
+.chess_game img{
+	transform: scale(1.6) translateY(2.4vw) translateX(2.3vw)
+}
+
+.far_451{
+	transform: translateY(-24.1vw) translateX(50vw);
+}
+
+.far_451 img{
+	transform: translateY(5vw) scale(1.4) translateX(2.5vw);
+}
+
+.master span{
+	font-size: 2vw;
+}
+
+.cube{
+	width: 11.3vw;
+	height: 11.6vw;
+}
+
+.white_princess{
+	transform: translateY(-24.2vw) translateX(50.2vw);
+}
+
+.white_princess span{
+	font-size: 2.3vw;
+	transform: translateX(0.1vw);
+}
+
+.apple{
+	transform: scale(2.4)
+}
+
+.apple_piece{
+	transform: scale(1.3) translateY(-2vw);
+}
+
+.da_vinci{
+	transform: translateY(-24vw);
+}
+
+.da_vinci span{
+	font-size: 2.69vw;
+	transform: translateX(-0.2vw);
+}
+
+.da_vinci_block{
+	width: 3.4vw;
+	height: 6vw
+}
+
+.hidden_x{
+	font-size: 3vw
+}
+
+.player{
+	transform: translateX(-50vw) translateY(1vw);
+}
+.player span{
+	font-size: 6.7vw;
+	transform: translateX(0.4vw);
+}
+
+.player img{
+	transform: scale(1.3) translateY(-1.15vw) translateX(-1vw);
+}
+
+.plus_one{
+	transform: translateY(-24vw) translateX(-49.9vw);
+}
+	.plus_one img{
+	transform: scale(1.4) translateX(-1vw) translateY(-0.6vw);
+}
+
+.wheel_img{
+	position: absolute;
+	top: 102%;
+	left: 103%;
+}
+
+.plus_one span{
+	font-size: 13vw;
+	transform: translateX(0.7vw) translateY(0.8vw);
+}
+
+.player img{
+	transform: scale(2) translateY(-1vw) translateX(-0.7vw);
+}
+
+
+.animal{
+	transform: translateY(0.9vw) translateX(-9.8vw);
+}
+
+.animal span{
+	font-size: 2vw
+}
+
+.animal_mask, .animal_mask1{
+	width: 10vw;
+	left: 1vw;
+	top: 1vw;
+}
+
+.war_peace{
+	transform: translateY(0.85vw) translateX(-0.5vw);
+}
+.war_peace img{
+	transform: scale(1.4) translateX(1.6vw) translateY(3vw);
+}
+
+.cuckoo{
+	transform: translateX(-17.3vw) translateY(0.8vw);
+}
+
+.cuckoo img{
+	transform: scale(1.54) translateY(2.7vw) translateX(2.5vw);
+}
+
+.mackbet{
+	z-index: 10;
+	transform: translateY(-24.15vw) translateX(-9.75vw);
+}
+
+.mackbet img{
+	transform: scale(1.54) translateY(2.7vw) translateX(3vw);
+}
+
+.number{
+	transform: translateY(34.5vw) translateX(-20.7vw);
+}
+
+.number img{
+	transform: scale(1.6) translateY(9vw) translateX(2vw);
+}
+.shine_wrap{
+	z-index: 40;
+	transform: translateX(-85vw) translateY(-24.3vw);
+}
+
+.door{
+	transform: scale(2) translateX(2.7vw) translateY(3.6vw);
+	height: 10.6vw;
+}
+
+.shine_wrap span{
+	font-size: 3.5vw;
+}
+
+.silent_lamb{
+	transform: translateX(-13.5vw) translateY(0.9vw);
+}
+
+.silent_lamb img{
+	transform: scale(1.5) translateY(6.6vw) translateX(2.2vw)
+}
+
+.drak{
+	transform: translateX(4.5vw) translateY(1vw);
+}
+
+.drak img{
+	transform: scale(1.5) translateY(3.05vw) translateX(3vw);
+}
+
+.storytell{
+	z-index: 40;
+	transform: translateX(-60vw) translateY(-24vw);
+}
+
+.storytell img{
+	transform: scale(1.6) translateY(2.6vw) translateX(2.5vw);
+}
+
+#third_line_one, #third_line_two, #second_line_six, #second_line_seven{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1035px){
+	body{
+		width: 100%;
+	}
+
+	.block{
+		width: 24.8vw;
+		height: 24.8vw;
+	}
+
+	.lines{
+		height: 24.8vw
+	}
+
+	.color_lines{
+		width: 24.8vw; height: 1.65vw;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	#second_line_one, #second_two, #third_line_one, #third_line_two{
+		background-color: #fcca2a;
+		border: 1px solid #fff;
+	}
+
+	#third_line_one, #third_line_two{
+	background-color: #221712;
+	border: 1px solid #666;
+	}
+	.img_retort1, .img_retort2{
+		display: none;
+	}
+
+.letter_k,
+.letter_l,
+.letter_b,
+.letter_a{
+	font-size: 35vw;
+	transform: translateY(-62.8vw) translateX(-90.65vw);
+}
+
+.letter_l,
+.letter_b,
+.letter_a{
+	font-size: 35vw;
+	transform: translateY(-63vw) translateX(-87vw);
+}
+
+.letter_o{
+	font-size: 35vw;
+	transform: translateY(-27vw) translateX(-88vw);
+}
+
+.img_books{
+	transform: scale(1.2) translateY(5.5vw);
+}
+
+.block_blackline{
+	width: 4vw;
+}
+
+.lineblock_first{
+	transform: scale(1.75) translateY(3.05vw) translateX(5.33vw);
+}
+
+.six img{
+	transform: scale(1.23) translateX(1.8vw) translateY(2vw);
+}
+
+.book{
+	width: 20.3vw;
+	height: 24vw;
+}
+
+.harry_potter{
+	transform: translateY(0.4vw);
+}
+
+.harry_face{
+	width: 54%;
+	height: 78%;
+}
+
+.harry_glass{
+	width: 7vw;
+	height: 7vw;
+}
+
+.harry_potter hr{
+	width: 54%;
+}
+
+.harry_potter span{
+	font-size: 3.6vw;
+	transform: translateX(0.3vw) translateY(0.9vw);
+}
+
+.dostoev{
+	transform: translateX(25vw) translateY(0.4vw);
+}
+
+.dostoev span{
+	font-size: 1.5vw;
+}
+
+.far_451{
+	width: 20vw
+}
+
+.chess_game{
+	transform: translateX(-25vw) translateY(0.5vw);
+}
+
+.chess_game img{
+	transform: scale(1.33) translateX(1.9vw) translateY(2vw);
+}
+
+.white_princess{
+	position; absolute;
+	bottom: 99%;
+	left: 202%;
+	height: 22.8vw;
+	width: 19.6vw
+}
+
+.apple{
+	transform: scale(2);
+}
+
+.white_princess span{
+	font-size: 2.3vw;
+	transform: translateX(0vw);
+}
+
+.retort{
+	transform: scale(1.2) translateY(-81vw) translateX(-21vw);
+}
+
+.far_451{
+	transform: translateX(50vw) translateY(-24.5vw);
+	z-index: 2;
+}
+
+.far_451 img{
+	transform: scale(1.5) translateY(4vw) translateX(2.3vw);
+}
+
+.da_vinci{
+	transform: translateY(-24.5vw) translateX(0.25vw);
+}
+
+.da_vinci_block{
+	width: 3vw;
+	height: 5vw;
+}
+
+.da_vinci span{
+	font-size: 2.68vw;
+}
+
+.master{
+	transform: translateY(0.4vw);
+	z-index: 1;
+}
+
+.master span{
+	font-size: 2vw
+}
+.cube{
+	width: 11.9vw;
+	height: 11.9vw;
+}
+
+.plus_one{
+	z-index: 1;
+	transform: translateY(-24.5vw) translateX(-50vw);
+}
+
+.plus_one span{
+	font-size: 14vw;
+	transform: translateY(3.1vw);
+}
+
+.wheel_img{
+	position: absolute;
+	top: 102%;
+	left: 103%;
+}
+
+.plus_one img{
+	transform: scale(1.2) translateY(-0.5vw) translateX(-1.2vw);
+}
+
+.player{
+	transform: translateX(-49.5vw) translateY(0.4vw);
+}
+
+.player img{
+	transform: scale(1.3) translateY(-1.2vw) translateX(-1.02vw);
+}
+
+.player span{
+	font-size: 6.75vw;
+	transform: translateY(-0.67vw) translateX(0.3vw );
+}
+
+.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+	transform: translateX(6.7vw) scale(1.7) translateY(3.4vw);
+}
+
+.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+	transform: scale(.7) translateX(3.1vw);
+}
+
+.mackbet{
+	transform: translateX(-10vw) translateY(-24.5vw) scale(1.01);
+}
+
+.mackbet img{
+	transform: scale(1.3) translateY(2.2vw) translateX(3vw);
+}
+
+.war_peace{
+	transform: translateX(-0.5vw) translateY(0.4vw);
+}
+
+.war_peace img{
+	transform: scale(1.2) translateX(1.5vw) translateY(2.3vw);
+}
+
+.number{
+	position: absolute;
+	left: 52.3%;
+	top: 56.3%;
+	transform: scale(1.01)
+}
+
+.animal{
+	transform: translateY(0.4vw) translateX(-10vw);
+}
+
+.drak{
+	position: absolute;
+	top: 106.2%;
+	left: 77.7%;
+	transform: scale(1.01);
+}
+
+.drak img{
+	transform: scale(1.33) translateX(2vw) translateY(2.2vw);
+}
+
+.cuckoo{
+	transform: translateX(-17vw) translateY(0.5vw) scale(1.01);
+}
+
+.cuckoo img{
+	width: 15.5vw;
+	transform: scale(1.3) translateY(2.3vw) translateX(1.8vw);
+}
+
+.shine_wrap{
+	transform: translateX(-85vw) translateY(-24.6vw);
+}
+
+.door{
+	transform: scale(2) translateX(3vw) translateY(3.6vw);
+	height: 11.2vw;
+}
+
+.shine_wrap span{
+	font-size: 3vw;
+}
+
+.storytell{
+	transform:translateX(-59.9vw) translateY(-24.5vw);
+	z-index: 1;
+}
+
+.storytell img{
+	transform: scale(1.3) translateX(2vw) translateY(2vw);
+}
+
+.silent_lamb{
+	transform: translateX(-13.7vw) translateY(0.4vw);
+	height: 24.1vw;
+}
+.silent_lamb img{
+	transform: scale(1.2) translateX(1.4vw) translateY(8.6vw)
+}
+
+}
+@media (max-width: 1024px){
+	.block{
+		width: 24.8vw;
+		height: 24.8vw;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	.block_blackline{
+	width: 4vw;
+}
+
+.lines{
+	width: 2vw;
+	height: 28.5vw;
+}
+
+	.color_lines{
+	width: 28.5vw;
+	height: 1.67vw;
+}
+
+.letter{
+	transform: translateX(-71vw) translateY(-20vw);
+}
+
+.letter_k, .letter_o, .letter_lm .letter_l, .letter_a{
+	font-size: 35vw;
+}
+
+.letter_k{
+	bottom: -11vw;
+	transform: translateX(-18.7vw);
+}
+
+.img_books{
+	transform: scale(1.2) translateY(5.4vw);
+}
+
+
+.first_line img{
+	transform: scale(1.23) translateY(1.7vw) translateX(1.8vw)
+}
+
+.harry_potter{
+	transform: translateY(0.8vw);
+	z-index: 8;
+}
+
+.harry_face{
+	width: 11vw;
+	height: 19vw;
+	border-radius: 25% 0 0 25%;
+}
+
+.harry_glass{
+	width: 7vw;
+	height: 7vw;
+}
+
+.harry_potter hr{
+	width: 4vw;
+}
+
+.harry_potter span{
+	font-size: 3vw;
+	margin-left: 1vw;
+}
+
+.retort{
+	transform: translateY(-97.6vw) translateX(-26vw) scale(1.2);
+	z-index: 3;
+}
+
+.book{
+	width: 20.6vw;
+	height: 23.8vw;
+}
+
+.dostoev{
+	transform: translateX(25vw) translateY(0.5vw);
+}
+
+.dostoev span{
+	font-size: 1.5vw;
+	z-index: 1;
+}
+
+.chess_game{
+	transform: translateX(-25vw) translateY(0.5vw);
+}
+
+.chess_game img{
+	height: 18vw;
+	transform: scale(1.35) translateX(2vw) translateY(2vw);
+}
+
+.img_retort1, .img_retort2{
+	display: none;
+}
+
+.far_451{
+	transform: translateX(50vw) translateY(-24.5vw);
+}
+
+.far_451 img{
+	transform: scale(1.4) translateY(3.7vw) translateX(2.4vw);
+}
+.far_451 hr {
+	transform: translateX(-5.8vw) translateY(5vw);
+}
+
+.fareng_space{
+	transform: translateY(-24vw) translateX(52.4vw);
+	width: 20.6%;
+}
+
+.white_princess{
+	transform: translateX(50vw) translateY(-24.6vw)
+}
+
+.white_princess span{
+	font-size: 2.4vw;
+	transform: translateX(0.2vw);
+}
+
+.apple{
+	border-radius: 50%;
+	width: 13vw;
+	height: 13vw;
+}
+
+.apple_piece{
+	border-left: 3.2vw solid transparent;
+	border-right: 3.2vw solid transparent;
+	border-bottom: 6.4vw solid #aa6400;
+}
+
+#second_line_one{
+	background-color: #fcca2a;
+	border: 1px solid #fff;}
+
+#third_line_one,
+#third_line_two{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.lineblock_first img{
+	width: 24.6vw;
+	height: 24.5vw;
+	transform: translateY(0.05vw) translateX(0.05vw);
+}
+
+.master span{
+	font-size: 2.06vw;
+}
+
+.master{
+	height: 23vw;
+}
+.cube{
+	width: 11.7vw;
+	height: 11.7vw;
+}
+
+.da_vinci{
+	transform: translateY(-24.3vw);
+}
+
+.hidden_x{
+	font-size: 2.5vw;
+}
+
+.da_vinci span{
+	font-size: 2.9vw;
+	transform: translateX(-0.2vw);
+}
+
+.da_vinci_block{
+	width: 3.5vw;
+	height: 6vw;
+}
+
+.player{
+	transform: translateX(-50vw) translateY(0.6vw);
+}
+
+.player_img{
+	transform: scale(2) translateX(-0.9vw) translateY(-1.4vw);
+}
+.player span{
+	transform: translateX(0.7vw);
+	font-size: 7.1vw;
+}
+
+.plus_one{
+	transform: translateY(-24.3vw) translateX(-50vw);
+}
+
+.plus_one span{
+	font-size: 15vw;
+	transform: translateY(2vw) translateX(-0.1vw);
+}
+
+.plus_one img{
+	transform: scale(1.1) translateX(-0.8vw);
+}
+
+.hidden_heart{
+	transform: translateY(-170%) translateX(30%);
+	opacity: 0;
+}
+
+.war_peace{
+	left: 8%;
+}
+
+.animal, .animal_mask, .animal_mask1{
+	position: absolute;
+	left: 76.9%;
+	top: 42%;
+}
+
+.animal_mask, .animal_mask1{
+	position: absolute;
+	top: 42%;
+	left: 78%;
+}
+
+.storytell{
+	transform: translateX(-60vw) translateY(-24.5vw);
+	z-index: 2;
+}
+
+.storytell img{
+	transform: scale(1.3) translateX(2vw) translateY(2vw);
+}
+
+.cuckoo{
+	transform: translateY(0.7vw) translateX(-17.2vw);
+	z-index: 2;
+}
+
+.cuckoo img{
+	width: 15.9vw;
+	transform: scale(1.3) translateY(2.17vw) translateX(1.8vw);
+}
+
+.drak{
+	transform: translateX(4vw) translateY(0.5vw);
+}
+
+.drak img{
+	transform: scale(1.3) translateY(2.2vw) translateX(2.4vw);
+}
+
+.mackbet{
+	z-index: 2;
+	transform: translateY(-24.4vw) translateX(-10vw);
+}
+
+.mackbet img{
+	transform: scale(1.3) translateY(2.1vw) translateX(3vw);
+}
+
+.silent_lamb{
+	transform: translateX(-13.7vw) translateY(0.7vw);
+}
+
+.silent_lamb img{
+	transform: scale(1.2) translateY(8vw) translateX(2.5vw);
+}
+
+.number{
+	transform: translateY(31.8vw) translateX(-21vw);
+}
+
+.shine_wrap{
+	z-index: 4;
+	transform: translateX(-85.2vw) translateY(-24.6vw);
+}
+
+.shine_wrap span{
+	font-size: 3vw;
+}
+
+.door{
+	height: 11vw;
+	transform: scale(2) translateX(3vw) translateY(3.6vw);
+}
+
+#second_two{
+	background-color: #fcca2a;
+	border:1px solid #fff;
+}
+
+.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+	transform: translateX(-0.6vw) translateY(0.8vw);
+}
+
+.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+	transform: scale(1.2) translateX(-1.2vw);
+}
+
+@media (min-width: 900px) and (max-width: 940px){
+	.img_books{
+		transform: translateY(5.9vw) scale(1.05);
+	}
+
+	.six img{
+		width: 26.2vw;
+		height: 26.3vw;
+	}
+
+	.lineblock_first img{
+		width: 24.9vw;
+		height: 24.6vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.far_451 img{
+		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
+	}
+	.white_princess span{
+		font-size: 2.4vw
+	}
+}
+
+@media (min-width: 940px) and (max-width: 980px){
+	.img_books{
+		transform: translateY(6.4vw) scale(1.05);
+	}
+
+	.six img{
+		width: 26.2vw;
+		height: 26.3vw;
+	}
+
+	.lineblock_first img{
+		width: 24.9vw;
+		height: 24.6vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.far_451 img{
+		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1000px){
+	.img_books{
+		transform: scale(1.05) translateY(6.4vw);
+	}
+	.six img{
+		width: 26.2vw;
+		height: 26.3vw;
+	}
+
+	.lineblock_first img{
+		width: 24.9vw;
+		height: 24.6vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.far_451 img{
+		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1000px){
+	.block{
+		width: 24.75vw;
+		height: 24.75vw;
+	}
+
+	body{
+		width: 100%;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.img_retort1, .img_retort2{
+		display: none;
+	}
+
+	.book{
+		width: 21vw;
+		height: 24vw;
+	}
+
+	.img_books{
+		transform: scale(.95) translateY(5.4vw);
+	}
+
+	.block_blackline{
+		width: 4vw;
+		height: 40vw;
+	}
+
+	.six img{
+		transform: scale(1.05) translateY(0.5vw) translateX(0.4vw);
+	}
+
+	.lineblock_first img{
+		transform: translateY(-0.1vw);
+		width: 24.65vw;
+		height: 24.7vw;
+	}
+
+	#second_line_one{
+		background-color: #fcca2a;
+	border: 1px solid #fff;
+	}
+
+	.retort{
+		transform: scale(.98) translateY(-100.5vw) translateX(-25vw);
+	}
+	.far_451 img{
+			transform: scale(.7) translateY(1vw) translateX(-2.8vw);
+		}
+	#second_two{
+		background-color: #fcca2a;
+		border: none;
+	}
+
+	.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+		transform: scale(1);
+	}
+
+	.white_princess span{
+		font-size: 2.5vw;
+	}
+
+	.war{
+		position: absolute;
+		bottom: 35.4%;
+		left: 1.5%;
+		transform: scale(.8);
+		height: 23vw;
+	}
+
+	.animal{
+		position: absolute;
+		left: 77.25vw;
+		top: 40%;
+		width: 16vw;
+		height: 18.5vw;
+	}
+
+	.numb{
+		position: absolute;
+		bottom: 0.2vw;
+		left: 52.5%;
+		height: 25vw;
+	}
+
+	.lady{
+		transform: translateY(-24.3vw) translateX(52.50vw);
+	}
+
+	.bird{
+		transform: translateY(0.6vw) translateX(-23vw);
+		height: 23.7vw;
+	}
+
+	.silent{
+		transform: translateY(0.6vw) translateX(-47.7vw);
+		height: 24.2vw;
+	}
+
+	.shine{
+		position: absolute;
+		top: 187.2%;
+		height: 24.1vw;
+	}
+
+	.drak{
+		position: absolute;
+		right: 1.25%;
+		top: 129.4%;
+		height: 24.6vw;
+	}
+
+	.story{
+		transform: translateY(-24.6vw) translateX(-48vw);
+		height: 23.9vw;
+	}
+}
+
+@media (min-width: 770px) and (max-width: 800px){
+
+/*	.curtain{
+		width: 100%;
+		height: 210%
+	}*/
+
+	body{
+		width: 100%;
+	}
+
+	.block{
+		width: 24.74vw;
+		height: 24.74vw;
+	}
+
+	.block-wrapper{
+		overflow: hidden;
+	}
+	#second_line_one{
+		background-color: #fcca2a;
+		border: 1px solid #fff;}
+	.fourth_line #none{
+		display: none;
+	}
+
+	.retort{
+		transform: scale(.9) translateY(-112vw) translateX(-28vw);
+	}
+
+	.lineblock_first img{
+		transform: scale(.95) translateY(-1vw) translateX(-1vw);
+	}
+
+	.six img{
+		transform: scale(.92) translateY(-1.2vw) translateX(-1.3vw);
+	}
+
+	.img_books{
+		transform: scale(.96) translateY(4.6vw);
+	}
+
+	.block_blackline{
+		width: 4vw;
+		height: 40vw;
+}
+
+	.far_451 img{
+		transform: scale(1) translateY(3vw) translateX(2vw);
+	}
+}
+
+@media (max-width: 768px){
+
+	body{
+		width: 768px;
+	}
+
+#second_line_one{
+	background-color: #fcca2a;
+	border: 1px solid #fff;}
+#fist_two{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+	.block{
+		width: 49.74vw;
+		height: 49.74vw;
+	}
+
+	.book{
+		width: 22vw;
+		height: 26vw;
+	}
+
+.letters{
+	transform: translateY(-116.7vw) translateX(-21.3vw);
+}
+
+.letter_k,
+.letter_l,
+.letter_b,
+.letter_a,
+.letter_o{
+	font-size: 70vw;
+}
+
+.letter_o{
+	transform: translateY(-142vw) translateX(-17vw);
+}
+
+ .letter_l, .letter_a, .letter_b{
+ 	transform: translateY(-213.4vw) translateX(-13vw);
+ }
+
+.line{
+	width: 100vw;
+}
+
+.block_lines{
+transform: translateY(-50vw) translateX(-50vw);}
+
+.lines_color{
+	transform: translateY(50vw);
+	z-index: 30;
+}
+
+.color_lines{
+	width: 50vw;
+	height: 3.3vw;
+}
+
+.lines{
+	width: 5vw;
+	height: 50vw;
+}
+
+.block_blackline{
+	display: none;
+}
+
+.img_books{
+	transform: scale(1.6) translateY(15vw) translateX(2.8vw);
+}
+
+
+.retort{
+	z-index: 30;
+	position: absolute;
+	transform: scale(1.8) translateY(-215vw) translateX(10vw);
+}
+
+.img_retort1, .img_retort2{
+	display: none;
+}
+
+.harry_potter{
+	top: 60vw;
+	z-index: 40;
+	transform: translateX(-0.5vw) translateY(-48.2vw)  scale(1.9);
+}
+
+.harry_potter span{
+	font-size: 3.5vw;
+}
+
+.harry_face{
+	width: 11vw;
+	height: 19vw;
+}
+
+.harry_glass{
+	width: 6vw;
+	height: 6vw;
+	transform: translateX(-0.2vw);
+}
+
+.harry_potter hr{
+	width: 4.6vw;
+}
+
+.harry_potter_series1,
+.harry_potter_series2,
+.harry_potter_series3,
+.harry_potter_series4,
+.harry_potter_series5{
+	transform: translateY(64vw) translateX(14.3vw);
+}
+
+.harry_potter_series1 img,
+.harry_potter_series2 img,
+.harry_potter_series3 img,
+.harry_potter_series4 img,
+.harry_potter_series5 img{
+	transform: scale(1) translateY(2.4vw) translateX(-0.1vw);
+}
+
+.dostoev{
+	transform: translateY(11.85vw) translateX(49.5vw) scale(1.9);
+}
+.dostoev span{
+	font-size: 1.62vw;
+}
+
+.chess_game{
+	transform: translateY(262vw) scale(1.9) translateX(26.3vw);
+}
+
+.chess_game img{
+	width: 16.4vw;
+	height: 19.5vw;
+	left: 1px;
+	position: relative;
+	top: 3px;
+}
+
+.far_451{
+	position: absolute;
+	bottom: -384.3%;
+	left: 64%;
+	z-index: 200;
+	transform: scale(1.9)
+}
+
+.far_451 img{
+	transform: translateY(4vw) scale(1.1) translateX(1.3vw);
+}
+
+.white_princess{
+	transform: scale(1.9) translateY(6.27vw) translateX(0vw);
+}
+
+.white_princess span{
+	font-size: 2.5vw;
+	transform: translateX(0.2vw);
+}
+
+.da_vinci{
+	transform: translateY(-88.3vw) scale(1.92);
+}
+
+.da_vinci span{
+	font-size: 3vw;
+	transform: translateX(0.05vw);
+}
+
+.da_vinci_block{
+	width: 3.8vw;
+	height: 7vw;
+}
+
+.master{
+	position: absolute;
+	transform: translateY(-188vw) translateX(-37vw) scale(1.9);
+}
+
+.master_first, .master_second{
+	width: 12.47vw;
+	height: 12.47vw;
+}
+
+.master span{
+	font-size: 2.2vw;
+}
+.player{
+	z-index: 4;
+	transform: translateY(12vw) translateX(0vw) scale(1.9);
+}
+
+.player img{
+	transform: scale(2.4) translateX(-1vw) translateY(-1.3vw);
+}
+
+.hidden_heart{
+	transform: translateY(-90vw) translateX(-42vw);
+}
+
+.player span{
+	font-size: 7.5vw;
+	transform: translateX(0.7vw) translateY(-0.9vw);
+}
+
+.plus_one{
+	transform: translateY(-238.2vw) scale(1.92);
+	z-index: 3;
+}
+
+.plus_one span{
+	transform: translateX(0.5vw) scale(1) translateY(2.9vw);
+}
+
+.plus_one img{
+	transform: scale(.96) translateY(1.3vw);
+}
+
+.war_peace{
+	transform:  translateX(60vw) translateY(12vw) scale(1.9);
+}
+
+.war_peace img{
+	transform: scale(.95) translateY(1vw) translateX(1vw);
+}
+
+.storytell{
+	transform: translateX(-23vw) translateY(-238vw) scale(1.93);
+	z-index: 5;
+}
+
+.storytell img{
+	transform: scale(1.1) translateY(1vw) translateX(1vw);
+}
+
+.silent_lamb{
+	z-index: 3;
+	transform: translateY(12vw) translateX(47.8vw) scale(1.9);
+}
+
+.silent_lamb img{
+	transform: scale(1) translateY(9vw) translateX(0.9vw);
+}
+
+.cuckoo{
+	transform: translateY(262vw) translateX(-30.2vw) scale(1.9);
+}
+
+.cuckoo img{
+	width: 20.8vw;
+	transform: scale(1.06) translateY(0.7vw) translateX(0.6vw);
+}
+
+.mackbet{
+transform: translateX(-74vw) translateY(12.2vw) scale(1.9);
+}
+
+.mackbet img{
+	transform: scale(1.1) translateY(1vw) translateX(2.5vw);
+}
+
+.drak{
+	position: absolute;
+	transform: scale(1.9) translateY(-99vw) translateX(31vw);
+	left: 5.2%;
+}
+
+.drak img{
+	transform: scale(1.05) translateY(1.1vw) translateX(1.2vw);
+}
+
+.shine_wrap{
+	transform: translateY(-88vw) translateX(-73vw) scale(1.92);
+	z-index: 8;
+}
+
+.door{
+	width: 9.5vw;
+	height: 12.2vw;
+	position: relative;
+	top: 1.6%;
+}
+
+.shine_wrap span{
+	z-index: 3;
+}
+
+.number{
+	top: 620vw;
+	left: 105px;
+	transform: scale(1.9);
+	z-index: 3;
+}
+
+.number img{
+	transform: translateY(15vw);
+}
+
+.animal{
+	transform: scale(1.9) translateX(-33.2vw);
+	top: 127.4%;
+}
+
+.animal span{
+	font-size: 2vw
+}
+.block_wrapper{
+	overflow: hidden;
+}
+
+.fourth_line_three, .fourth_line_four, .fourth_line_five{
+	z-index: 0;
+	background-color: #fcca2a;
+	border: 1px solid #fff;}
+}
+
+.fourth_line_six{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.fourth_line_seven{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+}
+@media (max-width: 375px) and (min-width: 320px){
+.block{
+		width: 49.4vw;
+		height: 49.4vw;
+	}
+
+.block_wrapper{
+	overflow: hidden;
+}
+
+body{
+	width: 375px;
+}
+
+.block_blackline{
+	display: none;
+}
+
+.line{
+	height: 30px;
+}
+
+.first_line .six{
+	background-color: #221712;
+	border: 1px solid #666;
+}
+
+.img_books{
+	transform: translateY(60px) scale(.9);
+	text-align: center;
+}
+
+.img_retort1{
+	display: none;
+}
+.img_retort2{
+	display: none;
+}
+
+.retort{
+	position: absolute;
+	left: -51%;
+	transform: translateY(-339vw) scale(1.6);
+	z-index: 4;
+}
+
+.retort img{
+	transform: scale(.56) translateX(126vw) translateY(-69vw);
+}
+
+.book{
+	width: 22vw;
+	height: 26vw;
+	margin: 0 auto;
+}
+
+.harry_potter{
+	transform:
+}
+.harry_potter span{
+	z-index: 3;
+}
+
+.brown_line{
+	width: 100%;
+	height: 1.5vw;
+	top: 41%;
+}
+
+.dostoev span{
+	font-size: 1.6vw;
+	z-index: 1;
+}
+
+.white_princess span{
+	font-size: 2.6vw;
+}
+.apple{
+	width: 12vw;
+	height: 12vw;
+}
+
+.apple_piece{
+	width: 0;
+	height: 0;
+	border-left: 2.2vw solid transparent;
+	border-right: 2.2vw solid transparent;
+	border-bottom: 4.4vw solid #aa6400;
+}
+
+#second_line_three{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.hidden_x{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 4.5vw;
+	text-align: center;
+	margin-top: 50%;
+	opacity: 0;
+}
+
+.da_vinci span{
+	font-size: 2.95vw;
+}
+
+.plus_one img{
+	transform: scale(.5) translateY(17.2vw) translateX(13.5vw);
+}
+
+#third_line_one{
+	bbackground-color: #fcca2a;
+	border: 1px solid #fff;}
+
+#second_three{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.flip-card{
+	transform: translateX(-5vw);
+}
+.flip-card-back p{
+	font-size: 1.5vw;
+}
+
+.master span{
+	font-size: 2.2vw;
+	transform: translateY(-20%);
+}
+
+.cube{
+	width: 13vw;
+	height: 13vw;
+}
+
+.chess_game img{
+	transform: translateX(2.5vw) scale(1.35) translateY(2vw);
+}
+
+.far_451{
+	bottom: -429vw;
+	z-index: 4;
+}
+
+.far_451 img{
+	transform: scale(.55) translateX(-10vw) translateY(-10vw);
+}
+
+.third{
+	background-color: #fcca2a;
+	border: 1px solid #fff;
+}
+
+.war_peace img{
+	transform: scale(.5) translateY(-21.8vw) translateX(-11.5vw);
+}
+
+.cuckoo img{
+	width: 21vw;
+	height: 24.4vw;
+}
+
+.silent_lamb img{
+	transform: scale(.5) translateX(-18vw) translateY(-0.4vw);
+}
+
+.number {
+	left: 13vw;
+}
+
+.number img{
+	transform: scale(.5) translateY(20vw) translateX(-10vw);
+}
+.drak img{
+	transform: scale(.5) translateY(-22vw) translateX(-17.7vw);
+}
+
+.mackbet img{
+	transform: scale(.52) translateY(-22.7vw) translateX(-12vw)
+}
+
+.storytell img{
+	transform: scale(.53) translateY(-20vw) translateX(-17vw);
+}
+
+.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+	transform: translateX(8vw) translateY(12vw) scale(1.8);
+}
+
+.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
+	transform: scale(.5) translateX(20vw);
+	z-index: 3;
+}
+
+.animal{
+	transform: translateY(-106vw) scale(1.9) translateX(-33vw);
+}
+}
+@media (min-width: 2560px) and (max-width: 2600px){
+body{
+	width: 100%;
+}
+
+.block{
+	width: 14.2vw;
+	height: 14.8vw
+}
+
+.line{
+	height: 3.2vw;
+}
+
+.img_books{
+	transform: scale(1.8) translateY(1.17vw);
+}
+
+.retort{
+	transform: scale(1.7) translateY(1.5vw);
+}
+
+.img_retort2{
+	transform: scale(1.4)  translateX(3.3vw) translateY(3.08vw);
+}
+
+.img_retort1{
+	transform: scale(1) translateX(2.6vw) translateY(2.85vw);
+}
+
+.far_451 img{
+	transform: scale(2.1) translateX(1.7vw) translateY(2.4vw);
+}
+
+.player img{
+	transform: scale(1.2) translateX(-0.3vw) translateY(-0.4vw);
+}
+
+.plus_one img{
+	transform: scale(1.8) translateY(-1vw) translateX(-0.93vw)
+}
+
+.silent{
+	height: 14.2vw;
+}
+
+.chess_cover{
+	transform: scale(1.9) translateX(1.6vw) translateY(1.6vw);
+}
+
+.horse_chess{
+	width: 3vw;
+}
+
+.hidden_heart{
+	transform: scale(1.4) translateY(-5.3vw) translateX(6vw);
+}
+}
+
+@media (min-width: 2780px) and (max-width: 2880px){
+	.block{
+		width: 14.216vw;
+	}
+
+	.block_wrapper{
+		overflow: hidden;
+	}
+
+	.block_blackline{
+		width: 3.2vw;
+		height: 20vw;
+	}
+
+	.lineblock_first img{
+		width: 14.26vw;
+	}
+
+	.block_lines{
+		width: 14.4vw;
+		height: 14.67vw;
+		transform: translateX(-0.1vw);
+	}
+
+	.line{
+		height: 3.5vw;
+	}
+
+	.img_books{
+		transform: scale(2) translateY(1.1vw);
+	}
+	.animal{
+		transform: scale(.8)
+	}
+	.animal_mask, .animal_mask1{
+			transform: scale(.5);
+		}
+	.img_retort1 img{
+		transform: scale(1.5) translateY(2.4vw) translateX(2vw);
+	}
+
+	.img_retort2 img{
+		transform: scale(1.5) translateX(1.8vw) translateY(3.3vw);
+	}
+
+	.far_451 img{
+		transform: scale(2.5) translateY(2.1vw) translateX(1.5vw);
+	}
+
+	.chess_cover{
+			height: 6.4vw;
+			transform: scale(2.2) translateX(1.4vw) translateY(1.6vw);
+		}
+
+		.flip-card-front{
+			transform: scale(.5) translateY(2.3vw) translateX(2vw);
+		}
+
+	.retort{
+		transform: scale(2.1) translateY(1.45vw);
+	}
+	.player img{
+		transform: scale(2.3) translateY(-1.15vw) translateX(-0.7vw);
+	}
+
+	.da_vinci_block{
+		width: 2.2vw;
+	}
+
+	.plus_one img{
+		transform: scale(2.1) translateY(-1vw) translateX(-1.25vw);
+	}
+
+	.wheel_img{
+		position: absolute;
+		top: 104%;
+		left: 103%;
+	}
+
+	.war{
+			transform: translateY(-1.35vw) scale(.8);
+		}
+
+.animal{
+			transform: translateY(-1.3vw) scale(.85);
+		}
+
+		.animal_mask, .animal_mask1{
+			transform: scale(.7)
+		}
+
+		.bird, .numb, .story, .silent, .shine, .drak, .lady{
+			transform: scale(1) translateX(1vw) translateY(0.35vw);
+		}
+}
