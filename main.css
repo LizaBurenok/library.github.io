@@ -2699,11 +2699,11 @@ body{
 }
 
 .chess_game img{
-	transform: translateX(2.5vw) scale(1.35) translateY(2vw);
+	transform: translateX(2.5vw) scale(1.347) translateY(2vw);
 }
 
 .far_451{
-	bottom: -429vw;
+	bottom: -449vw;
 	z-index: 4;
 }
 
@@ -2761,7 +2761,7 @@ body{
 }
 
 .animal{
-	transform: translateY(-106vw) scale(1.9) translateX(-33vw);
+	transform: translateY(-74vw) scale(1.9) translateX(-33vw);
 }
 
 .animal_mask, .animal_mask1{
