@@ -1,4 +1,3 @@
-
 let chessGame = anime.timeline({
   targets: '.horse_chess',
   duration: 500,
