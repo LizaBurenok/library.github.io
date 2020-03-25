@@ -342,19 +342,7 @@ letter.add({
   },
   color: 'rgb(34, 23, 18)'
 })
-/*
-let bubble = anime({
-  targets: '.bubble',
-  translateX: {
-    value: 800
-  }, rotate: {
-    value: '+=3turn',
-    easing: 'linear'
-  },   duration: 6000,
-    direction: 'alternate',
-    loop: true
-})
-*/
+
 let animalCover = anime.timeline({
   easing: 'easeOutSine',
   duration: 2000,
