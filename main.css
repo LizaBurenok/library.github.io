@@ -73,16 +73,16 @@ body{
 	opacity: .6;
 }
 
-.third_line_four:hover{
+.lines_color:hover .color_lines{
 	animation-name: lineside;
-	animation-duration: 4s;
+	animation-duration: 2s;
 }
 
 .img_books:hover{
 filter: contrast(100%) brightness(50%);
 }
 
-#first_img:hover{
+.block_lines:hover .lines{
 	animation-name: lineup;
 	animation-duration: 4s;
 }
@@ -92,22 +92,22 @@ filter: contrast(100%) brightness(50%);
 		transform: translateY(-5%);
 	}
 	50%{
-		transform: translateY(50%);
+		transform: translateY(24%);
 	}
 	100%{
-		transform: translateY(-15%);
+		transform: translateY(-24%);
 	}
 }
 
 @keyframes lineside {
 	0%{
-		transform: translateX(10%);
+		transform: translateX(-5%);
 	}
 	50%{
-		transform: translateX(-25%);
+		transform: translateX(-23%);
 	}
 	100%{
-		transform: translateX(15%);
+		transform: translateX(-23%);
 	}
 }
 
@@ -187,6 +187,7 @@ filter: contrast(100%) brightness(50%);
 	background-color: #003fac;
 	left: 44.45%;
 }
+
 .mackbet{
 	background-color: #221712;
 	left: 87.3%;
@@ -197,7 +198,7 @@ filter: contrast(100%) brightness(50%);
 }
 
 .silent_lamb{
-	background-color: #00376b;
+	background-color: #003fac;
 	left: 16%;
 }
 
@@ -205,13 +206,14 @@ filter: contrast(100%) brightness(50%);
 	transform: translateY(3.8vw) translateX(0.5vw);
 }
 .cuckoo{
-	background-color: #00376b;
+	background-color: #003fac;
 	left: 44.45%;
 }
+
 .war_peace{
 left: 11%;
-
 }
+
 .war_peace_first{
 	background-color: #f9f4ff;
 	width: 100%;
@@ -219,17 +221,18 @@ left: 11%;
 }
 
 .war_peace_second{
-	background-color: #00376b;
+	background-color: #003fac;
 	width: 100%;
 	height: 50%;
 }
+
 .war_peace_img{
 	position: absolute;
 	top: 1%;
 	left: 19%;
 }
 .animal{
-	background-color: #00376b;
+	background-color: #003fac;
 	left: 87.3%;
 }
 
@@ -237,15 +240,16 @@ left: 11%;
 	font-size: 1.4vw;
 	color: #f9f4ff;
 }
+
 .storytell{
-	background-color: #741621;
+	background-color: #ba1200;
 	left: 87.2%;
 }
 
 .number{
-	bottom: 33.4%;
+	transform: translateY(30vw);
 	left: 73%;
-	background-color: #741621;
+	background-color: #ba1200;
 }
 
 .number img{
@@ -274,7 +278,7 @@ left: 11%;
 }
 
 .door{
-	background-color: #741621;
+	background-color: #ba1200;
 	z-index: 2;
 	width: 8.5vw;
 	height: 12vw;
@@ -295,13 +299,21 @@ left: 11%;
 	opacity: 0;
 }
 /*полосатые блоки*/
+#first_img{
+	overflow: hidden;
+}
+
+.third_line_four{
+	overflow: hidden;
+}
+
 .block_lines{
 	display: flex;
 }
 
 .lines{
 	width: 2vw;
-	height: 14.5vw;
+	height: 54.5vw;
 }
 
 .lines:nth-child(even){
@@ -319,7 +331,7 @@ left: 11%;
 }
 
 .color_lines{
-	width: 14.5vw;
+	width: 50.5vw;
 	height: 1vw;
 }
 
@@ -648,11 +660,7 @@ left: 10%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-/*
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-*/
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -787,10 +795,6 @@ left: 10%;
 	transform: scale(1.1) translateX(0.5vw) translateY(0.9vw);
 }
 
-.number{
-	bottom: 31vw;
-}
-
 .storytell img{
 	transform: scale(1.2) translateY(0.8vw) translateX(0.78vw);
 }
@@ -871,11 +875,11 @@ left: 10%;
 		transform: scale(.9);
 	}
 	.img_retort1{
-		transform: scale(.8) translateY(-5vw) translateX(0.5vw);
+		transform: scale(.8)  translateX(0.5vw);
 	}
 
 	.img_retort2{
-		transform: scale(.8) translateX(1vw) translateY(-5vw);
+		transform: scale(.8) translateX(1vw);
 	}
 
 	.far_451 img{
@@ -907,10 +911,6 @@ left: 10%;
 			transform: scale(.96) translateY(-0.3vw) translateX(-0.2vw);
 		}
 
-		.number{
-			top: 33%;
-		}
-
 		.number img{
 			position: relative;
 			bottom: 1.2%;
@@ -920,7 +920,12 @@ left: 10%;
 .book{
 height: 13vw;
 }
-
+.block{
+	width: 14.1vw;
+}
+.img_retort1{
+	transform: translateY(-6vw) scale(.9) translateX(0.3vw);
+}
 .chess_game img{
 transform: scale(.97) translateY(-0.3vw) translateX(-0.24vw);
 }
@@ -1086,6 +1091,9 @@ body{
 .block{
 	width: 24.8vw;
 	height: 24.8vw;
+}
+.arrow{
+	transform: translateX(37vw) scale(1.5);
 }
 
 .lines{
@@ -1668,6 +1676,10 @@ border: 1px solid #fff;
 		overflow: hidden;
 	}
 
+	.arrow{
+		transform: translateX(35vw)
+	}
+
 	.block_blackline{
 	width: 4vw;
 }
@@ -1684,6 +1696,10 @@ border: 1px solid #fff;
 
 .letter{
 	transform: translateX(-71vw) translateY(-20vw);
+}
+
+.letter_o{
+	transform: translateY(-7vw) translateX(-15vw);
 }
 
 .letter_k, .letter_o, .letter_lm .letter_l, .letter_a{
@@ -1878,7 +1894,17 @@ border: 1px solid #fff;
 	left: 8%;
 }
 
-.animal, .animal_mask, .animal_mask1{
+.animal{
+	width: 19.5vw;
+	left: 77.8%;
+	height: 23vw;
+}
+
+.animal span{
+	font-size: 2vw;
+}
+
+.animal_mask, .animal_mask1{
 	position: absolute;
 	left: 76.9%;
 	top: 42%;
@@ -1886,8 +1912,8 @@ border: 1px solid #fff;
 
 .animal_mask, .animal_mask1{
 	position: absolute;
-	top: 42%;
-	left: 78%;
+	top: 2%;
+	left: 6%;
 }
 
 .storytell{
@@ -1935,7 +1961,11 @@ border: 1px solid #fff;
 }
 
 .number{
-	transform: translateY(31.8vw) translateX(-21vw);
+	transform: translateY(25.5vw) translateX(-21vw);
+}
+
+.number img{
+	transform: translateY(14vw) scale(1.2) translateX(0.4vw);
 }
 
 .shine_wrap{
@@ -2155,11 +2185,6 @@ border: 1px solid #fff;
 
 @media (min-width: 770px) and (max-width: 800px){
 
-/*	.curtain{
-		width: 100%;
-		height: 210%
-	}*/
-
 	body{
 		width: 100%;
 	}
@@ -2181,14 +2206,6 @@ border: 1px solid #fff;
 
 	.retort{
 		transform: scale(.9) translateY(-112vw) translateX(-28vw);
-	}
-
-	.lineblock_first img{
-		transform: scale(.95) translateY(-1vw) translateX(-1vw);
-	}
-
-	.six img{
-		transform: scale(.92) translateY(-1.2vw) translateX(-1.3vw);
 	}
 
 	.img_books{
@@ -2352,7 +2369,7 @@ transform: translateY(-50vw) translateX(-50vw);}
 
 .far_451{
 	position: absolute;
-	bottom: -384.3%;
+	bottom: -384.5%;
 	left: 64%;
 	z-index: 200;
 	transform: scale(1.9)
@@ -2511,7 +2528,7 @@ transform: translateX(-74vw) translateY(12.2vw) scale(1.9);
 
 .animal{
 	transform: scale(1.9) translateX(-33.2vw);
-	top: 127.4%;
+  top: 127.5%;
 }
 
 .animal span{
@@ -2764,11 +2781,15 @@ body{
 }
 
 .img_retort1{
-	transform: scale(1) translateX(2.6vw) translateY(2.85vw);
+	transform: scale(1.4) translateX(3vw) translateY(2.85vw);
+}
+
+.chess_game img{
+	transform: scale(1.8) translateY(1.45vw) translateX(1.3vw)
 }
 
 .far_451 img{
-	transform: scale(2.1) translateX(1.7vw) translateY(2.4vw);
+	transform: scale(1.8) translateX(1.7vw) translateY(2.4vw);
 }
 
 .player img{
@@ -2783,16 +2804,40 @@ body{
 	height: 14.2vw;
 }
 
-.chess_cover{
-	transform: scale(1.9) translateX(1.6vw) translateY(1.6vw);
-}
-
 .horse_chess{
 	width: 3vw;
 }
 
 .hidden_heart{
 	transform: scale(1.4) translateY(-5.3vw) translateX(6vw);
+}
+
+.cuckoo img{
+	transform: scale(1.8) translateX(1.4vw) translateY(1.5vw);
+}
+
+.war_peace img{
+	transform: scale(1.7) translateX(0.8vw) translateY(1.6vw);
+}
+
+.number img{
+	transform: scale(1.6) translateY(5.3vw) translateX(1vw);
+}
+
+.mackbet img{
+	transform: scale(1.75) translateY(1.65vw) translateX(1.6vw);
+}
+
+.drak img{
+	transform: scale(1.8) translateX(1.4vw) translateY(1.6vw);
+}
+
+.storytell img{
+	transform: scale(1.79) translateX(1.5vw) translateY(1.5vw);
+}
+
+.silent_lamb img{
+	transform: scale(1.7) translateY(3.5vw) translateX(1.5vw);
 }
 }
 
