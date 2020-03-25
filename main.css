@@ -1040,6 +1040,10 @@ transform: scale(.97) translateY(-0.3vw) translateX(-0.24vw);
 					transform: scale(.9) translateY(-1vw) translateX(-0.5vw);
 				}
 
+				.number img{
+									bottom: 1vw;
+								}
+
 				.war_peace img{
 					transform: scale(.9) translateY(-1vw) translateX(-0.4vw);
 				}
@@ -1112,7 +1116,7 @@ body{
 }
 
 .img_books{
-	transform: scale(1.5) translateY(5vw);
+	transform: scale(1.3) translateY(5vw);
 }
 
 #second_two{
@@ -1134,7 +1138,7 @@ border: 1px solid #fff;
 }
 
 .retort{
-	transform: translateY(-96vw) scale(1.5) translateX(-17vw);
+	transform: translateY(-97.5vw) scale(1.3) translateX(-19vw);
 }
 
 .letter_k{
@@ -1177,7 +1181,7 @@ border: 1px solid #fff;
 
 .harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img,
 .harry_potter_series4 img, .harry_potter_series5 img{
-	transform: scale(1.5) translateX(-2vw);
+	transform: scale(1.3) translateX(-1.6vw);
 }
 .dostoev{
 	transform: translateX(25.1vw) translateY(1vw);
@@ -1192,7 +1196,7 @@ border: 1px solid #fff;
 }
 
 .chess_game img{
-	transform: scale(1.6) translateY(2.4vw) translateX(2.3vw)
+	transform: scale(1.31) translateX(1.82vw) translateY(1.8vw);
 }
 
 .far_451{
@@ -1300,7 +1304,7 @@ border: 1px solid #fff;
 	transform: translateY(0.85vw) translateX(-0.5vw);
 }
 .war_peace img{
-	transform: scale(1.4) translateX(1.6vw) translateY(3vw);
+	transform: scale(1.2) translateY(2vw) translateX(1vw);
 }
 
 .cuckoo{
@@ -1308,7 +1312,8 @@ border: 1px solid #fff;
 }
 
 .cuckoo img{
-	transform: scale(1.54) translateY(2.7vw) translateX(2.5vw);
+	transform: scale(1.3) translateX(1.8vw) translateY(2vw);
+	width: 15vw;
 }
 
 .mackbet{
@@ -1317,15 +1322,15 @@ border: 1px solid #fff;
 }
 
 .mackbet img{
-	transform: scale(1.54) translateY(2.7vw) translateX(3vw);
+	transform: scale(1.26) translateY(2.07vw) translateX(3vw);
 }
 
 .number{
-	transform: translateY(34.5vw) translateX(-20.7vw);
+	transform: translateY(25.7vw) translateX(-20.7vw);
 }
 
 .number img{
-	transform: scale(1.6) translateY(9vw) translateX(2vw);
+	transform: scale(1.3) translateY(11vw) translateX(2vw);
 }
 .shine_wrap{
 	z-index: 40;
@@ -1346,7 +1351,7 @@ border: 1px solid #fff;
 }
 
 .silent_lamb img{
-	transform: scale(1.5) translateY(6.6vw) translateX(2.2vw)
+	transform: scale(1.3) translateX(2vw) translateY(6.8vw);
 }
 
 .drak{
@@ -1354,7 +1359,7 @@ border: 1px solid #fff;
 }
 
 .drak img{
-	transform: scale(1.5) translateY(3.05vw) translateX(3vw);
+	transform: scale(1.27) translateY(2.1vw) translateX(2.4vw);
 }
 
 .storytell{
@@ -1363,7 +1368,7 @@ border: 1px solid #fff;
 }
 
 .storytell img{
-	transform: scale(1.6) translateY(2.6vw) translateX(2.5vw);
+	transform: scale(1.3) translateX(2vw) translateY(2vw);
 }
 
 #third_line_one, #third_line_two, #second_line_six, #second_line_seven{
@@ -1607,7 +1612,7 @@ border: 1px solid #fff;
 .number{
 	position: absolute;
 	left: 52.3%;
-	top: 56.3%;
+	top: 142.7%;
 	transform: scale(1.01)
 }
 
@@ -1891,7 +1896,12 @@ border: 1px solid #fff;
 }
 
 .war_peace{
-	left: 8%;
+	width: 19vw;
+	height: 23vw;
+}
+
+.war_peace img{
+	transform: translateX(1vw) scale(1.2) translateY(2vw);
 }
 
 .animal{
@@ -1994,73 +2004,60 @@ border: 1px solid #fff;
 .harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img, .harry_potter_series4 img, .harry_potter_series5 img{
 	transform: scale(1.2) translateX(-1.2vw);
 }
+}
+@media (min-width: 901px) and (max-width: 1022px){
+	.block{
+		width: 24.77vw;
+	}
 
-@media (min-width: 900px) and (max-width: 940px){
 	.img_books{
-		transform: translateY(5.9vw) scale(1.05);
+		transform: scale(1.2) translateY(4.2vw);
 	}
 
-	.six img{
-		width: 26.2vw;
-		height: 26.3vw;
+	.retort{
+		transform: scale(1.08) translateY(-91.7vw) translateX(-22vw);
 	}
 
-	.lineblock_first img{
-		width: 24.9vw;
-		height: 24.6vw;
-		transform: translateX(-0.1vw);
+	.war_peace{
+		transform: scale(.99);
+	}
+
+	.war_peace img{
+		transform: scale(1.2) translateY(1.3vw) translateX(1vw);
+	}
+
+	.chess_game img{
+		transform: scale(1.18) translateX(1.3vw) translateY(1.3vw);
+		height: 20.5vw;
 	}
 
 	.far_451 img{
-		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
+		transform: scale(1.3) translateY(2.7vw) translateX(2vw)
 	}
-	.white_princess span{
-		font-size: 2.4vw
+
+	.cuckoo img{
+		transform: scale(1.13) translateY(1.55vw) translateX(1vw);
+		width: 18vw;
+	}
+
+	.mackbet img{
+		transform: scale(1.12) translateY(1.37vw) translateX(3vw);
+	}
+
+	.drak img{
+		transform: scale(1.15) translateY(1.4vw) translateX(1.8vw);
+	}
+
+	.silent_lamb img{
+		transform: scale(1.2) translateX(1.4vw) translateY(7vw);
+	}
+
+	.storytell img{
+		transform: scale(1.2) translateX(1.4vw) translateY(1.2vw);
 	}
 }
 
-@media (min-width: 940px) and (max-width: 980px){
-	.img_books{
-		transform: translateY(6.4vw) scale(1.05);
-	}
-
-	.six img{
-		width: 26.2vw;
-		height: 26.3vw;
-	}
-
-	.lineblock_first img{
-		width: 24.9vw;
-		height: 24.6vw;
-		transform: translateX(-0.1vw);
-	}
-
-	.far_451 img{
-		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
-	}
-}
-
-@media (min-width: 980px) and (max-width: 1000px){
-	.img_books{
-		transform: scale(1.05) translateY(6.4vw);
-	}
-	.six img{
-		width: 26.2vw;
-		height: 26.3vw;
-	}
-
-	.lineblock_first img{
-		width: 24.9vw;
-		height: 24.6vw;
-		transform: translateX(-0.1vw);
-	}
-
-	.far_451 img{
-		transform: scale(.7) translateX(-2.6vw) translateY(2vw);
-	}
-}
-
-@media (min-width: 800px) and (max-width: 1000px){
+@media (min-width: 800px) and (max-width: 900px){
 	.block{
 		width: 24.75vw;
 		height: 24.75vw;
@@ -2246,6 +2243,10 @@ border: 1px solid #fff;
 		height: 26vw;
 	}
 
+	.arrow{
+		transform: translateY(54vw) translateX(25vw) scale(1.6);
+	}
+
 .letters{
 	transform: translateY(-116.7vw) translateX(-21.3vw);
 }
@@ -2270,12 +2271,12 @@ border: 1px solid #fff;
 	width: 100vw;
 }
 
-.block_lines{
-transform: translateY(-50vw) translateX(-50vw);}
-
 .lines_color{
-	transform: translateY(50vw);
-	z-index: 30;
+	position: absolute;
+	top: 343.5%;
+	z-index: 100;
+	left: 0.01vw;
+
 }
 
 .color_lines{
@@ -2293,7 +2294,7 @@ transform: translateY(-50vw) translateX(-50vw);}
 }
 
 .img_books{
-	transform: scale(1.6) translateY(15vw) translateX(2.8vw);
+	transform: scale(1.8) translateY(13vw) translateX(1vw);
 }
 
 
@@ -2337,7 +2338,7 @@ transform: translateY(-50vw) translateX(-50vw);}
 .harry_potter_series3,
 .harry_potter_series4,
 .harry_potter_series5{
-	transform: translateY(64vw) translateX(14.3vw);
+	transform: translateY(12vw) translateX(9vw) scale(1.9);
 }
 
 .harry_potter_series1 img,
@@ -2345,7 +2346,7 @@ transform: translateY(-50vw) translateX(-50vw);}
 .harry_potter_series3 img,
 .harry_potter_series4 img,
 .harry_potter_series5 img{
-	transform: scale(1) translateY(2.4vw) translateX(-0.1vw);
+	transform: scale(1) translateY(2.4vw) translateX(0.2vw);
 }
 
 .dostoev{
@@ -2447,7 +2448,7 @@ transform: translateY(-50vw) translateX(-50vw);}
 }
 
 .war_peace{
-	transform:  translateX(60vw) translateY(12vw) scale(1.9);
+	top: 40%;
 }
 
 .war_peace img{
@@ -2486,7 +2487,7 @@ transform: translateX(-74vw) translateY(12.2vw) scale(1.9);
 }
 
 .mackbet img{
-	transform: scale(1.1) translateY(1vw) translateX(2.5vw);
+	transform: scale(1.05) translateY(1vw) translateX(2.5vw);
 }
 
 .drak{
@@ -2542,7 +2543,6 @@ transform: translateX(-74vw) translateY(12.2vw) scale(1.9);
 	z-index: 0;
 	background-color: #fcca2a;
 	border: 1px solid #fff;}
-}
 
 .fourth_line_six{
 	background-color: #221712;
@@ -2554,6 +2554,7 @@ transform: translateX(-74vw) translateY(12.2vw) scale(1.9);
 	border: 1px solid #666;
 }
 }
+
 @media (max-width: 375px) and (min-width: 320px){
 .block{
 		width: 49.4vw;
@@ -2566,6 +2567,12 @@ transform: translateX(-74vw) translateY(12.2vw) scale(1.9);
 
 body{
 	width: 375px;
+}
+
+.lines_color{
+	position: absolute;
+	top: 211.6%;
+	z-index: 30;
 }
 
 .block_blackline{
@@ -2709,6 +2716,9 @@ body{
 	border: 1px solid #fff;
 }
 
+.war_peace{
+	transform: scale(1.9) translateY(-26vw) translateX(4vw);
+}
 .war_peace img{
 	transform: scale(.5) translateY(-21.8vw) translateX(-11.5vw);
 }
@@ -2753,7 +2763,14 @@ body{
 .animal{
 	transform: translateY(-106vw) scale(1.9) translateX(-33vw);
 }
+
+.animal_mask, .animal_mask1{
+	width: 10vw;
+	left: -8vw;
+	top: -8vw;
 }
+}
+
 @media (min-width: 2560px) and (max-width: 2600px){
 body{
 	width: 100%;
