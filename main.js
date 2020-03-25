@@ -471,10 +471,10 @@ btnColorCover.onclick = function() {
       btnarrow.style.opacity = '1'
   let colorWrapperArray = ["#221712", "#003fac", "#ba1200" ]
    {
-                var changeBackgr = Math.floor(Math.random() * colorWrapperArray.length);
-                var selectedColor = colorWrapperArray[changeBackgr];
+                let changeBackgr = Math.floor(Math.random() * colorWrapperArray.length);
+                let changedColor = colorWrapperArray[changeBackgr];
       for (let i = 0; i < changedBlock.length; i++){
-      changedBlock[i].style.background = selectedColor
+      changedBlock[i].style.background = changedColor
     }}
     btnarrow.onclick = function(){
       for (let i = 0; i < changedBlock.length; i++){
