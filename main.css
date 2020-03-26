@@ -2648,7 +2648,7 @@ transform: translateX(-74vw) translateY(12.2vw) scale(1.9);
 }
 }
 
-@media (max-width: 375px) and (min-width: 320px){
+/*@media (max-width: 375px) and (min-width: 320px){
 .block{
 		width: 49.4vw;
 		height: 49.4vw;
@@ -2865,6 +2865,227 @@ body{
 	left: -8vw;
 	top: -8vw;
 }
+}
+*/
+@media (max-width: 375px) and (min-width: 320px){
+.block{
+		width: 32.8vw;
+		height: 32.8vw;
+	}
+
+.block_wrapper{
+	overflow: hidden;
+}
+
+body{
+	width: 100%;
+}
+
+.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img,
+.harry_potter_series4 img, .harry_potter_series5 img{
+	width: 20vw;
+}
+
+.harry_potter_series1, .harry_potter_series2, .harry_potter_series3, .harry_potter_series4, .harry_potter_series5{
+	transform: scale(1.5) translateY(-22vw) translateX(22.5vw);
+	heigth: 29vw;
+}
+
+.letters{
+	transform: translateY(-38vw) translateX(13.8vw);
+	font-size: 48vw;
+}
+
+.letter_a{
+	transform: translateY(-99.8vw) translateX(18vw);
+}
+
+.letter_l, .letter_b{
+	transform: translateY(-99vw) translateX(18vw);
+}
+
+.letter_o{
+	transform: translateY(-53vw) translateX(17vw);
+}
+
+.line{
+	width: 100%;
+	height: 4%;
+}
+
+#third_line_two{
+	z-index: 0;
+}
+.retort{
+	z-index: 200;
+	top: 103.5%;
+	left: 70vw;
+	transform: scale(.9)
+}
+
+.harry_potter{
+	transform: scale(1.3) translateY(-70vw) translateX(26vw);
+}
+.img_books{
+	transform: scale(.7) translateX(-10vw) translateY(2vw);
+}
+
+
+.chess_game{
+	transform: scale(1.5) translateY(-2vw);
+	height: 29vw;
+}
+
+
+.silent_lamb img{
+	transform: scale(.2);
+	position: absolute;
+}
+
+.da_vinci{
+	transform: scale(1.5) translateY(-24.4vw) translateX(3.5vw);
+ 	height: 29vw;
+ 	z-index: 3;
+ 	position: absolute;
+}
+
+.white_princess{
+	transform: scale(1.5) translateY(20.1vw);
+ 	height: 29vw;
+}
+
+#third_line_four{
+	z-index: 0;
+}
+
+.number{
+	transform: scale(1.5) translateY(20.1vw);
+	top: 30%;
+	z-index: 4;
+
+}
+
+.mackbet{
+	top: 172.15vw;
+	height: 29vw;
+	left: 39vw;
+	transform: scale(1.5);
+
+}
+
+.mackbet img{
+	transform: scale(.57) translateY(-17.4vw) translateX(-10vw);
+}
+
+
+.war_peace{
+	transform: scale(1.5) translateY(-2vw) translateX(1vw);
+	z-index: 10;
+	height: 29vw;
+}
+
+.war_peace img{
+	transform: scale(.55) translateY(-16.8vw) translateX(-10.5vw);
+}
+
+.drak{
+	transform: scale(1.5) translateY(42.2vw);
+	height: 29vw;
+	left: 5.4vw;
+	z-index: 2
+}
+
+.drak img{
+	transform: scale(.55) translateX(-17.95vw) translateY(-19vw);
+	height: 51vw;
+}
+.shine_wrap{
+	height: 29vw;
+	transform: scale(1.5) translateY(-24.3vw) translateX(-10vw);
+}
+
+.silent_lamb{
+	transform: scale(1.5) translateY(-91vw) translateX(37.55vw);
+	height: 29vw
+}
+
+.silent_lamb img{
+	transform: scale(.5) translateX(-18.6vw) translateY(6vw);
+}
+
+.lines_color{
+	transform: translateY(-610vw) scale(.7) translateX(-21.2vw);
+}
+
+#fourth_line_one{
+	z-index: 0;
+}
+    
+.storytell img{
+	transform: scale(.3)
+}
+.number{
+	height: 29vw;
+	transform: translateY(206.8vw) scale(1.5) translateX(7.3vw);
+}
+
+.number img{
+	transform: scale(.6) translateY(20vw) translateX(-9vw);
+}
+
+.fourth_line_seven{
+	   position:absolute;
+	   opacity: .1; 
+}
+
+.cuckoo{
+	transform: translateY(-3.1vw) scale(1.5) translateX(-3.7vw);
+	height: 29vw;
+}
+
+.cuckoo img{
+	transform: scale(.95);
+	height: 29vw
+}
+
+ .dostoev{
+ 	transform: scale(1.5) translateY(20vw);
+ 	height: 29vw;
+ }
+
+ .far_451{
+ 	top: 125.6%;
+ 	transform: scale(1.5) translateX(-16.7vw);
+ 	height: 29vw;
+ }
+
+ .far_451 img{
+ 	transform: scale(.55) translateY(-7vw) translateX(-10vw);
+ }
+
+ .player{
+ 	transform: scale(1.5) translateY(-91vw) translateX(22vw);
+ 	height: 29vw;
+ }
+
+ .master{
+ 	top: 272vw;
+ 	left: 5.6%;
+ 	z-index: 1;
+ 	transform: scale(1.5);
+ 	height: 29vw;
+ }
+
+ .plus_one{
+ 	position: absolute;
+ 	z-index: 300;
+ 	opacity: 1;
+ }
+
+ .animal{
+ 	transform: scale(1.5) translateX(-48.2vw)translateY(-113.6vw);
+ 	height: 29vw;
+ }
 }
 
 @media (min-width: 2560px) and (max-width: 2600px){
