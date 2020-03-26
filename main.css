@@ -2810,7 +2810,7 @@ body{
 }
 
 .war_peace{
-	transform: scale(1.9) translateY(-22vw) translateX(4vw);
+	transform: scale(1.9) translateY(-19.6vw) translateX(4vw);
 }
 .war_peace img{
 	transform: scale(.5) translateY(-21.8vw) translateX(-11.5vw);
