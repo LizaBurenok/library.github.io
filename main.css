@@ -2810,7 +2810,7 @@ body{
 }
 
 .war_peace{
-	transform: scale(1.9) translateY(-26vw) translateX(4vw);
+	transform: scale(1.9) translateY(-22vw) translateX(4vw);
 }
 .war_peace img{
 	transform: scale(.5) translateY(-21.8vw) translateX(-11.5vw);
@@ -2857,7 +2857,7 @@ body{
 }
 
 .animal{
-	transform: translateY(-40.5vw) scale(1.9) translateX(-33vw);
+	transform: translateY(-42.5vw) scale(1.9) translateX(-33vw);
 }
 
 .animal_mask, .animal_mask1{
