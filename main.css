@@ -736,6 +736,10 @@ left: 10%;
 	transform: scale(1.1) translateY(0.7vw);
 }
 
+.img_retort1, .img_retort2{
+	transform: translateX(2vw) translateY(-2.5vw)
+}
+
 .retort{
 	transform: scale(1.2) translateY(0.9vw);
 }
@@ -804,15 +808,76 @@ left: 10%;
 		width: 100%;
 	}
 
+	.letter_k{
+		transform: translateX(0.2vw);
+	}
+
 	.block_wrapper{
 		overflow: hidden;
+	}
+
+	.chess_game{
+		width: 12vw;
+		height: 13.8vw;
+	}
+
+	.chess_game img{
+		transform: scale(1.21) translateY(0.89vw) translateX(0.9vw);
+		height: 11.2vw;
 	}
 	.img_books{
 		transform: scale(1.1) translateY(0.3vw);
 	}
 
 	.img_retort2{
-		transform: translateY(-5vw) translateX(1.5vw);
+		transform: translateY(-10vw) translateX(1.5vw);
+	}
+
+	.player span{
+		font-size: 3.8vw;
+		transform: translateX(0.55vw);
+	}
+
+	.flip-card-front img{
+		transform: scale(1.2);
+	}
+
+	.white_princess span{
+		font-size: 1.3vw;
+	}
+
+	.plus_one img{
+		transform: scale(1.1);
+	}
+
+	.wheel_img{
+		position: absolute;
+		top: 100%;
+		left: 100%;
+	}
+
+	.cuckoo img{
+		transform: scale(1.1) translateY(0.6vw) translateX(0.6vw)
+	}
+
+	.far_img{
+		width: 7.4vw;
+	}
+
+	.plus_one span{
+		transform: translateY(0.4vw) translateX(0.7vw)
+	}
+
+	.drak img{
+		transform: scale(1.1) translateY(0.7vw) translateX(0.75vw)
+	}
+
+	.storytell img{
+		transform: scale(1.1) translateX(0.7vw) translateY(0.5vw)
+	}
+
+	.mackbet img{
+		transform: scale(1.07) translateY(0.7vw) translateX(1.2vw)
 	}
 }
 
@@ -874,6 +939,7 @@ left: 10%;
 	.retort{
 		transform: scale(.9);
 	}
+
 	.img_retort1{
 		transform: scale(.8)  translateX(0.5vw);
 	}
@@ -2059,12 +2125,20 @@ border: 1px solid #fff;
 
 @media (min-width: 800px) and (max-width: 900px){
 	.block{
-		width: 24.75vw;
-		height: 24.75vw;
+		width: 24.7vw;
+		height: 24.7vw;
 	}
 
 	body{
 		width: 100%;
+	}
+
+	.letter_a{
+		transform: translateY(-42.5vw) translateX(-14vw);
+	}
+
+	.letter_l, .letter_b{
+		transform: translateY(-39.5vw) translateX(-18vw);
 	}
 
 	.block_wrapper{
@@ -2082,22 +2156,12 @@ border: 1px solid #fff;
 	}
 
 	.img_books{
-		transform: scale(.95) translateY(5.4vw);
+		transform: scale(1.05) translateY(4.2vw);
 	}
 
 	.block_blackline{
 		width: 4vw;
 		height: 40vw;
-	}
-
-	.six img{
-		transform: scale(1.05) translateY(0.5vw) translateX(0.4vw);
-	}
-
-	.lineblock_first img{
-		transform: translateY(-0.1vw);
-		width: 24.65vw;
-		height: 24.7vw;
 	}
 
 	#second_line_one{
@@ -2106,10 +2170,19 @@ border: 1px solid #fff;
 	}
 
 	.retort{
-		transform: scale(.98) translateY(-100.5vw) translateX(-25vw);
+		transform: scale(.98) translateY(-102.2vw) translateX(-25vw);
 	}
+
+	.chess_game img{
+		width: 15.7vw;
+	}
+
 	.far_451 img{
 			transform: scale(.7) translateY(1vw) translateX(-2.8vw);
+		}
+
+		.far_451 img{
+			transform: scale(1.1) translateY(3vw) translateX(1.5vw)
 		}
 	#second_two{
 		background-color: #fcca2a;
@@ -2124,59 +2197,40 @@ border: 1px solid #fff;
 		font-size: 2.5vw;
 	}
 
-	.war{
-		position: absolute;
-		bottom: 35.4%;
-		left: 1.5%;
-		transform: scale(.8);
-		height: 23vw;
+	.war_peace{
+		z-index: 4;
 	}
 
 	.animal{
-		position: absolute;
-		left: 77.25vw;
-		top: 40%;
-		width: 16vw;
-		height: 18.5vw;
+		left: 77%;
+		height: 23vw;
 	}
 
-	.numb{
-		position: absolute;
-		bottom: 0.2vw;
-		left: 52.5%;
-		height: 25vw;
+	.animal_mask, .animal_mask1{
+		width: 9vw;
+		top: -1vw;
+		left: -2%;
 	}
 
-	.lady{
-		transform: translateY(-24.3vw) translateX(52.50vw);
+	.animal span{
+		font-size: 2.3vw;
 	}
 
-	.bird{
-		transform: translateY(0.6vw) translateX(-23vw);
-		height: 23.7vw;
+	.cuckoo img{
+		transform: scale(1.02) translateY(0.2vw) translateX(0.2vw);
+		width: 20.3vw;
 	}
 
-	.silent{
-		transform: translateY(0.6vw) translateX(-47.7vw);
-		height: 24.2vw;
+	.mackbet img{
+		transform: scale(1.025) translateX(2.5vw) translateY(0.2vw);
 	}
 
-	.shine{
-		position: absolute;
-		top: 187.2%;
-		height: 24.1vw;
+	.silent_lamb img{
+		transform: scale(1.1) translateX(1.1vw) translateY(6vw);
 	}
 
-	.drak{
-		position: absolute;
-		right: 1.25%;
-		top: 129.4%;
-		height: 24.6vw;
-	}
-
-	.story{
-		transform: translateY(-24.6vw) translateX(-48vw);
-		height: 23.9vw;
+	.drak img{
+		transform: scale(1.03) translateX(1.44vw) translateY(0.4vw)
 	}
 }
 
@@ -2191,9 +2245,48 @@ border: 1px solid #fff;
 		height: 24.74vw;
 	}
 
+	.chess_game img{
+		width: 15.5vw;
+	}
+
+	.war_peace img{
+		transform: scale(.9) translateX(-0.4vw);
+	}
+
+	.mackbet img{
+		transform: scale(.96) translateX(2vw);
+	}
+
+	.cuckoo img{
+		transform: scale(.97);
+		width: 21vw;
+	}
+
+	.harry_potter_series1 img, .harry_potter_series2 img, .harry_potter_series3 img,
+	.harry_potter_series4 img, .harry_potter_series5 img{
+		transform: scale(1.05) translateX(-0.4vw);
+	}
+
+	.drak img{
+		transform: scale(.97) translateX(0.8vw);
+	}
+
+	.silent_lamb img{
+		transform: scale(.99) translateX(0.1vw) translateY(6.6vw);
+	}
+
+	.storytell img{
+		transform: scale(.99) translateX(0.3vw);
+	}
+
+	.number img{
+		transform: scale(.99) translateY(14vw)
+	}
+
 	.block-wrapper{
 		overflow: hidden;
 	}
+
 	#second_line_one{
 		background-color: #fcca2a;
 		border: 1px solid #fff;}
@@ -2209,16 +2302,15 @@ border: 1px solid #fff;
 		transform: scale(.96) translateY(4.6vw);
 	}
 
-	.block_blackline{
-		width: 4vw;
-		height: 40vw;
-}
-
 	.far_451 img{
 		transform: scale(1) translateY(3vw) translateX(2vw);
 	}
-}
 
+	.animal_mask, .animal_mask1{
+		width: 8vw;
+		left: -1vw;
+	}
+}
 @media (max-width: 768px){
 
 	body{
@@ -2311,7 +2403,7 @@ border: 1px solid #fff;
 .harry_potter{
 	top: 60vw;
 	z-index: 40;
-	transform: translateX(-0.5vw) translateY(-48.2vw)  scale(1.9);
+	transform: translateX(0.3vw)translateY(-48.2vw)  scale(1.92);
 }
 
 .harry_potter span{
@@ -2448,8 +2540,9 @@ border: 1px solid #fff;
 }
 
 .war_peace{
-	top: 40%;
+	transform: scale(1.93) translateY(5.9vw) translateX(4.5vw);
 }
+
 
 .war_peace img{
 	transform: scale(.95) translateY(1vw) translateX(1vw);
@@ -2699,11 +2792,11 @@ body{
 }
 
 .chess_game img{
-	transform: translateX(2.5vw) scale(1.347) translateY(2vw);
+	transform: translateX(2.5vw) scale(1.35) translateY(2vw);
 }
 
 .far_451{
-	bottom: -472vw;
+	bottom: -476vw;
 	z-index: 4;
 }
 
@@ -2723,6 +2816,9 @@ body{
 	transform: scale(.5) translateY(-21.8vw) translateX(-11.5vw);
 }
 
+.horse_chess{
+	display: none;
+}
 .cuckoo img{
 	width: 21vw;
 	height: 24.4vw;
@@ -2761,7 +2857,7 @@ body{
 }
 
 .animal{
-	transform: translateY(-39.7vw) scale(1.9) translateX(-33vw);
+	transform: translateY(-40.5vw) scale(1.9) translateX(-33vw);
 }
 
 .animal_mask, .animal_mask1{
@@ -2872,10 +2968,6 @@ body{
 		height: 20vw;
 	}
 
-	.lineblock_first img{
-		width: 14.26vw;
-	}
-
 	.block_lines{
 		width: 14.4vw;
 		height: 14.67vw;
@@ -2889,46 +2981,48 @@ body{
 	.img_books{
 		transform: scale(2) translateY(1.1vw);
 	}
-	.animal{
-		transform: scale(.8)
-	}
+
 	.animal_mask, .animal_mask1{
 			transform: scale(.5);
 		}
+
 	.img_retort1 img{
-		transform: scale(1.5) translateY(2.4vw) translateX(2vw);
+		transform: scale(1.7) translateY(2.4vw) translateX(3vw);
 	}
 
 	.img_retort2 img{
-		transform: scale(1.5) translateX(1.8vw) translateY(3.3vw);
+		transform: scale(1.7) translateX(3vw) translateY(3vw);
+	}
+
+	.chess_game img{
+		transform: scale(2.03) translateX(1.35vw) translateY(1.55vw);
 	}
 
 	.far_451 img{
-		transform: scale(2.5) translateY(2.1vw) translateX(1.5vw);
+		transform: scale(2) translateY(2.1vw) translateX(1.5vw);
 	}
 
-	.chess_cover{
-			height: 6.4vw;
-			transform: scale(2.2) translateX(1.4vw) translateY(1.6vw);
-		}
-
-		.flip-card-front{
+	.flip-card-front{
 			transform: scale(.5) translateY(2.3vw) translateX(2vw);
 		}
 
 	.retort{
-		transform: scale(2.1) translateY(1.45vw);
+		transform: scale(2) translateY(1.45vw) translateY(0.3vw);
 	}
 	.player img{
 		transform: scale(2.3) translateY(-1.15vw) translateX(-0.7vw);
 	}
 
+	.hidden_heart{
+		transform: scale(2) translateX(5.3vw) translateY(-3vw);
+	}
+
 	.da_vinci_block{
-		width: 2.2vw;
+		width: 2vw;
 	}
 
 	.plus_one img{
-		transform: scale(2.1) translateY(-1vw) translateX(-1.25vw);
+		transform: scale(2) translateY(-1vw) translateX(-0.7vw);
 	}
 
 	.wheel_img{
@@ -2937,19 +3031,32 @@ body{
 		left: 103%;
 	}
 
-	.war{
-			transform: translateY(-1.35vw) scale(.8);
-		}
+	.animal_mask, .animal_mask1{
+		width: 5vw;
+		left: 7%; top: 7%;
+	}
 
-.animal{
-			transform: translateY(-1.3vw) scale(.85);
-		}
+	.cuckoo img{
+		transform: scale(2) translateY(1.6vw) translateX(1.4vw)
+	}
 
-		.animal_mask, .animal_mask1{
-			transform: scale(.7)
-		}
+	.war_peace img{
+		transform: scale(1.8) translateY(1.7vw) translateX(1vw);
+	}
 
-		.bird, .numb, .story, .silent, .shine, .drak, .lady{
-			transform: scale(1) translateX(1vw) translateY(0.35vw);
-		}
+	.number img{
+		transform: scale(1.7) translateY(5.3vw) translateX(1vw;)
+	}
+
+	.mackbet img{
+		transform: scale(1.95) translateY(1.7vw) translateX(1.5vw);
+	}
+
+	.drak img{
+		transform: scale(2) translateY(1.65vw) translateX(1.46vw)
+	}
+
+	.silent_lamb img{
+		transform: scale(1.8) translateY(3.7vw) translateX(1.3vw)
+	}
 }
