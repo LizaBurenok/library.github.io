@@ -2703,7 +2703,7 @@ body{
 }
 
 .far_451{
-	bottom: -419vw;
+	bottom: -459vw;
 	z-index: 4;
 }
 
@@ -2761,7 +2761,7 @@ body{
 }
 
 .animal{
-	transform: translateY(-54vw) scale(1.9) translateX(-33vw);
+	transform: translateY(-38vw) scale(1.9) translateX(-33vw);
 }
 
 .animal_mask, .animal_mask1{
